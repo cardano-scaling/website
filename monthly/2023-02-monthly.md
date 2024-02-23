@@ -104,7 +104,7 @@ This month, the team worked on the following:
   profile the scripts used in these transactions and identify code that uses a
   lot of the memory or CPU budget in flame graphs like this:
   
-  ![](../benchmarks/profile-mem.svg) [Interactive]Head not closable/limiting
+  ![](img/2023-02-profile-mem.svg) [Interactive]Head not closable/limiting
   script size discussion + acceptance property
 
 ## Community

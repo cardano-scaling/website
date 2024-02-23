@@ -1,42 +1,34 @@
 {
-  "name": "hydra-head-protocol-docs",
+  "name": "cardano-scaling-website",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "prepare": "yarn enrich-document-metadata && yarn regenerate-plantuml",
-    "build": "yarn prepare && docusaurus build",
-    "build-dev": "yarn prepare && docusaurus build --no-minify -l en",
-    "start": "yarn dummy-spec && docusaurus start",
-    "validate:inputs": "./validate-api.js publish '/' '../hydra-node/golden/ReasonablySized (ClientInput (Tx BabbageEra)).json'",
-    "validate:outputs": "./validate-api.js subscribe '/' '../hydra-node/golden/ReasonablySized (TimedServerOutput (Tx BabbageEra)).json'",
-    "validate": "yarn validate:inputs && yarn validate:outputs",
+    "build": "docusaurus build",
+    "build:dev": "docusaurus build --no-minify -l en",
+    "start": "docusaurus start",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "enrich-document-metadata": "node ./scripts/enrich-document-metadata.js",
-    "dummy-spec": "[ -e static/hydra-spec.pdf ] || echo 'Do a nix build .#spec and put this instead here' > static/hydra-spec.pdf",
-    "regenerate-plantuml": "./scripts/regenerate-plantuml.sh"
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "@asyncapi/specs": "4.2.1",
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/plugin-client-redirects": "^2.4.1",
-    "@docusaurus/plugin-content-docs": "^2.4.1",
-    "@docusaurus/preset-classic": "^2.4.1",
-    "@docusaurus/theme-mermaid": "^2.4.1",
-    "@mdx-js/react": "^1.6.22",
-    "asyncapi-validator": "4.0.0",
-    "clsx": "^1.1.1",
-    "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@docusaurus/core": "^3.1.1",
+    "@docusaurus/preset-classic": "^3.1.1",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "resolutions": {
-    "@asyncapi/specs": "4.2.1"
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.1.1",
+    "@docusaurus/tsconfig": "3.1.1",
+    "@docusaurus/types": "3.1.1",
+    "typescript": "~5.2.2"
   },
   "browserslist": {
     "production": [
@@ -50,9 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "glob": "^8.0.3",
-    "moment": "^2.29.4",
-    "prettier": "2.7.1"
+  "engines": {
+    "node": ">=18.0"
   }
 }
