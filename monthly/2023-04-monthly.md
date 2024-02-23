@@ -161,7 +161,7 @@ QuickCheck](https://engineering.iog.io/2022-09-28-introduce-q-d/).
 The new property
 [headOpensIfAllPartiesCommit](https://github.com/input-output-hk/hydra/blob/commit_vs_rollback/hydra-node/test/Hydra/ModelSpec.hs#L185)
 helped prove the issue. At the end of the day, the problem came from a
-concurrency issue introduced while implementing [ADR 18](./adr/18).
+concurrency issue introduced while implementing [ADR 18](https://hydra.family/head-protocol/adr/18).
 
 In the figure below, the `DirectChain` processes a new block, updating the
 `chainState` stored inside the `headState`. This also leads to an event being
@@ -192,7 +192,7 @@ We decided to implement the following solution:
 - A local chain state is re-introduced in the chain component, not shared with
   the head logic.
 - A copy of the chain state is kept in the head state to keep the benefits of
-  ADR [18](./adr/18) regarding persistence.
+  ADR [18](https://hydra.family/head-protocol/adr/18) regarding persistence.
 - The rollback event is removed from the API until [#185](https://github.com/input-output-hk/hydra/issues/185).
 
 ![possible solution](./img/2023-04-possible-solution.png) <small><center>Possible solution</center></small>

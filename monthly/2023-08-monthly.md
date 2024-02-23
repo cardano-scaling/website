@@ -77,7 +77,7 @@ inside the node was the state persistence logic, which simply overwrites the
 full state with whatever new state has been produced.
 
 For that reason, we changed the persistent state to a sequence of events
-according to [ADR24](/adr/24). Persistence is now done incrementally by saving
+according to [ADR24](https://hydra.family/head-protocol/adr/24). Persistence is now done incrementally by saving
 only the `StateChanged` deltas.
 
 As a consequence, the first spike confirmed the following performance

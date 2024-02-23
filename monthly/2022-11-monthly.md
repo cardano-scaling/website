@@ -69,7 +69,7 @@ been working on:
   [#541](https://github.com/input-output-hk/hydra/issues/541) of the Head protocol and the specification, we kept
   discovering bigger and bigger issues and hence realized the need for
   a discussion on transaction validity in context of closing /
-  contesting Heads. [#615](#615)
+  contesting Heads. [#615](https://github.com/input-output-hk/hydra/issues/615)
 
 ## Formal verification & specification
 

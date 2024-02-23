@@ -86,7 +86,7 @@ easier to configure and more isomorphic to L1.
 
 #### Improving CI runtime
 
-The Hydra project [embraces Test Driven Development](./adr/12) and implements
+The Hydra project [embraces Test Driven Development](https://hydra.family/head-protocol/adr/12) and implements
 [Continuous
 Integration](https://github.com/input-output-hk/hydra/actions/workflows/ci-nix.yaml)
 (CI), checking all these tests pass and more.

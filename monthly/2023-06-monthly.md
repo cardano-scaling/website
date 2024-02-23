@@ -124,8 +124,8 @@ The results have been somewhat disappointing, and further investigations lead to
   persistence strategy as described in [this
   ADR](https://github.com/input-output-hk/hydra/pull/940)
 - More benchmarks:
-  - The aforementioned [End-to-end benchmarks](/benchmarks/end-to-end-benchmarks),
-  - [Ledger Micro-benchmarks](/benchmarks/ledger) as a comparison basis.
+  - The aforementioned [End-to-end benchmarks](https://hydra.family/head-protocol/benchmarks/end-to-end-benchmarks),
+  - [Ledger Micro-benchmarks](https://hydra.family/head-protocol/benchmarks/ledger) as a comparison basis.
 
 #### Operating hydra nodes
 
