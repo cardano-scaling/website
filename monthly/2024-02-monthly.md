@@ -26,20 +26,18 @@ TODO
 
 ## Hydra Roadmap
 
-The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7) updates of this month.
+The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7) only saw few changes this month:
 
-TODO: update
-
-![The roadmap with features and ideas](./img/2024-01-roadmap.jpg) <small><center>The latest roadmap with features and ideas</center></small>
+![The roadmap with features and ideas](./img/2024-02-hydra-roadmap.jpg) <small><center>The latest roadmap with features and ideas</center></small>
 
 #### Notable updates
 
-* Started work on https://github.com/input-output-hk/hydra/issues/199 as the UX will be very similar to https://github.com/input-output-hk/hydra/issues/1057
+* New: [Drop support for JSON encoded transactions #1213](https://github.com/input-output-hk/hydra/issues/1213) to cover breaking changes we experienced when switching `cardano-node` and `cardano-ledger` versions
+* [Smoke tests on Sanchonet #1257](https://github.com/input-output-hk/hydra/issues/1257) took longer than anticipated as it uncovered some issues, but seeing smoke tests run on Sanchonet now makes us confident the `hydra-node` is ready for the Conway hard-fork
+* [Build and deploy a Hydra heads explorer #696](https://github.com/input-output-hk/hydra/issues/696) is about half-way done as the data is available for `sanchonet` under http://explorer.hydra.family/heads and we're only missing a user interface
+* Also started work on [Incremental commit #199](https://github.com/input-output-hk/hydra/issues/199) as the UX will be very similar to [Incremental decommit #1057](https://github.com/input-output-hk/hydra/issues/1057)
   - Having both features implemented off-chain, would allow early adopters to try this out while we work on the on-chain security.
-* Added https://github.com/input-output-hk/hydra/issues/1325 feature to cover SundaeLab's work on their Catalyst proposal
-* https://github.com/input-output-hk/hydra/issues/1257 took longer than anticipated as it uncovered some issues, but seeing smoke tests run on Sanchonet now makes us confident the `hydra-node` is ready for the Conway hard-fork
-* https://github.com/input-output-hk/hydra/issues/696 is about half-way done as the data is available for `sanchonet` under http://explorer.hydra.family/heads and we're only missing a user interface
-* New: https://github.com/input-output-hk/hydra/issues/1213 to communicate breaking changes we experienced when switching cardano-node and cardano-ledger versions
+* Added [Streaming Plugins #1325](https://github.com/input-output-hk/hydra/issues/1325) feature to cover SundaeLab's work on their Catalyst proposal
 
 ## Hydra Development Highlights
 
