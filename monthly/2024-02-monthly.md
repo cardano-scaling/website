@@ -51,7 +51,16 @@ TODO
 
 ### Hydra explorer supporting multiple versions
 
-TODO
+The hydra explorer currently supports only one version on one network. This is
+because the Hydra scripts are compiled into `hydra-node` and
+`hydra-chain-observer` binaries and the observer talks is connected to a single
+`cardano-node` running as a client on one network. To support multiple versions,
+we need to compile the scripts of each version into individual chain observer
+binaries and communicate with them through an API. While Plutus validators
+change on any modification (their hashes and addresses), this API between the
+`hydra-chain-observer` and `hydra-explorer` components can serve as an
+integration point which we can support through multiple versions of the
+protocol.
 
 ## Community update
 
