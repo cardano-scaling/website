@@ -22,7 +22,27 @@ TODO
 
 ## Mithril Development Highlights
 
-TODO
+[Issues and pull requests closed in February](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29).
+
+### Release and publication
+
+- Released the distribution [`2408.0`](https://github.com/input-output-hk/mithril/releases/tag/2408.0).
+- Published a development blog post [Mithril SanchoNet network released](https://mithril.network/doc/dev-blog/2024/02/08/testing-sanchonet-network-available).
+- Published a development blog post [Mithril client CLI output breaking change](https://mithril.network/doc/dev-blog/).
+
+### Signing Cardano transactions proof-of-concept
+
+The team has kept working on the implementation of a proof-of-concept of a data type for certifying Cardano transactions within Mithril networks. Last month, we have extended the [Mithril client library](https://crates.io/crates/mithril-client) to support the certification of Cardano transactions. This month, we have ugraded the [client CLI](https://mithril.network/doc/manual/developer-docs/nodes/mithril-client/) and implemented a new `cardano-transaction` command that can list snapshots and certify a list of Cardano transactions. Addtionally, we have implemented the same API surface on the [WASM client](https://www.npmjs.com/package/@mithril-dev/mithril-client-wasm) that now supports transaction certification in the browser.
+
+![](img/2024-02-mithril-cardano-tx.png)
+
+### Enhanced support for Conway and Sanchonet
+
+We have extensively tested the upcoming `Conway` era and we are now confident that Mithril networks will smoothly transition to this new era. Moreover, we have released a new [`testing-sanchonet`](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator) network that has been opened to SPOs so that we can jointly test upcoming and experimental features (e.g. the aforementioned signature of the Cardano transactions).
+
+### Community update
+
+The TxPipe team has kept working on the implementation of the `Pallas Chain Observer` for Mithril nodes and has contributed to retrieving the stake distribution and Mithril era markers (stored in the UTxOs of the chain) directly from the Cardano node with mini-protocols.
 
 ## Hydra Roadmap
 
