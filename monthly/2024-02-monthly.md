@@ -55,7 +55,35 @@ The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/
 
 ### Contest after fanout bug hunt
 
-TODO
+While working on [hydra-chess](https://github.com/abailly-iohk/hydra-chess) we
+experienced a [bug](https://github.com/input-output-hk/hydra/issues/1260) in
+the Hydra node where in the two party Hydra Head nobody was able to do a
+`Fanout`. This happened because one of the nodes was at the initial `Snapshot`
+state and somehow missed to see the request for new `Snapshot` while the other
+one already had one confirmed `Snapshot` locally. 
+
+When the `Close` was posted, the Head was closed with initial `Snapshot` and
+then the Head got contested by the node that saw newer `Snapshot`.
+
+After contest we saw this weird behaviour where both nodes could not `Fanout`
+and we expect this failure in the node that was having only the initial
+`Snapshot` since it actually didn't have the correct `UTxO` locally to be able
+to `Fanout`, but failure in the other node with the newer `Snapshot` should not
+happen. 
+
+When inspecting code we noticed that the `Contest` observation was never
+pushing the deadline further after the contestation was made and the `Fanout`
+tx was invalid.
+
+Before fixing this bug we wanted to reproduce it using the MBT (Model Based
+Tests) framework we are using as one of the tools in our test suite. In order
+to do that we had to finish modelling the complete Head life-cycle and then the
+exact scenario we saw happening in real life since arbitrary actions in all
+Head states didn't reveal this bug.
+
+Fixing the bug was trivial in the end but the bug reproduction made us build
+more knowledge on using the framework correctly and of course improve our
+specs.
 
 ### Hydra explorer supporting multiple versions
 
