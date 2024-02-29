@@ -1,7 +1,7 @@
 ---
 title: February 2024
 slug: 2024-02
-authors: [ch1bo, jpraynaud]
+authors: [ch1bo, jpraynaud, v0d1ch]
 tags: [monthly]
 ---
 
