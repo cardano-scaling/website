@@ -5,20 +5,20 @@ authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
-This is the first joint report of the Hydra and Mithril projects and summarizes on the work done since January 2024.
+This is the first joint report of the 🐲 Hydra and 🛡 Mithril projects and summarizes on the work done since January 2024.
 
 In the past, each team had published updates as part of their repositories in varying form and cadence:
 
-  - Hydra [monthly reports](https://hydra.family/head-protocol/monthly)
-  - Mithril [dev blog](https://mithril.network/doc/dev-blog/)
+- Hydra [monthly reports](https://hydra.family/head-protocol/monthly)
+- Mithril [dev blog](https://mithril.network/doc/dev-blog/)
 
-Keeping such "procedural" documents as part of the code base is not ideal, as it often requires special handling when building versioned, published documentation. For example, [this workflow](https://github.com/input-output-hk/hydra/blob/fad12fd7d967e5e8af4d8b832396e68bd8510e9a/.github/workflows/publish-docs.yaml#L87-L92) in the Hydra project which publishes to https://hydra.family required several attempts to work around how docusaurus websites are built. Consequently, we introduced a [dedicated repository](https://github.com/cardano-scaling/website) that builds into a [website](https://cardano-scaling.github.io/website). This not only helps in keeping the original product repositories clean of inherently dated information, but also serves as a new home for joint reports, announcements or occasional articles.
+Both those sites are created from the individual project repositories. However, keeping such "procedural" documents as part of the code base is not ideal, as it often requires special handling when building versioned, published documentation. For example, [this workflow](https://github.com/input-output-hk/hydra/blob/fad12fd7d967e5e8af4d8b832396e68bd8510e9a/.github/workflows/publish-docs.yaml#L87-L92) in the Hydra project which publishes to https://hydra.family required several attempts to work around how docusaurus websites are built. Consequently, we introduced a [dedicated repository](https://github.com/cardano-scaling/website) that builds into a [website](https://cardano-scaling.github.io/website). This not only helps in keeping the original product repositories clean of inherently dated information, but also serves as a new home for joint reports, announcements or occasional articles.
 
-Finally, this monthly report here serves us as preparation for the monthly review meeting (see [slides][slides] and [recording][recording]), where the team updates project stakeholders on recent developments to gather their feedback on proposed plans.
+This monthly report also serves as preparation for the monthly review meeting (see [slides][slides] and [recording][recording]), where the team updates project stakeholders on recent developments to gather their feedback on proposed plans.
 
-## Mithril Updates
+## Mithril
 
-[Issues and pull requests closed in February](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29).
+[Issues and pull requests closed in February](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29)
 
 #### Release and publication
 
@@ -36,11 +36,9 @@ The team has kept working on the implementation of a proof-of-concept of a data 
 
 We have extensively tested the upcoming `Conway` era and we are now confident that Mithril networks will smoothly transition to this new era. Moreover, we have released a new [`testing-sanchonet`](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator) network that has been opened to SPOs so that we can jointly test upcoming and experimental features (e.g. the aforementioned signature of the Cardano transactions).
 
-### Community
+## Hydra
 
-The TxPipe team has kept working on the implementation of the `Pallas Chain Observer` for Mithril nodes and has contributed to retrieving the stake distribution and Mithril era markers (stored in the UTxOs of the chain) directly from the Cardano node with mini-protocols.
-
-## Hydra updates
+[Issues and pull requests closed in February](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29)
 
 The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7) only saw few changes this month:
 
@@ -52,10 +50,8 @@ The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/
 * [Smoke tests on Sanchonet #1257](https://github.com/input-output-hk/hydra/issues/1257) took longer than anticipated as it uncovered some issues, but seeing smoke tests run on Sanchonet now makes us confident the `hydra-node` is ready for the Conway hard-fork
 * [Build and deploy a Hydra heads explorer #696](https://github.com/input-output-hk/hydra/issues/696) is about half-way done as the data is available for `sanchonet` under http://explorer.hydra.family/heads and we're only missing a user interface
 * Also started work on [Incremental commit #199](https://github.com/input-output-hk/hydra/issues/199) as the UX will be very similar to [Incremental decommit #1057](https://github.com/input-output-hk/hydra/issues/1057)
-  - Having both features implemented off-chain, would allow early adopters to try this out while we work on the on-chain security.
+- Having both features implemented off-chain, would allow early adopters to try this out while we work on the on-chain security.
 * Added [Streaming Plugins #1325](https://github.com/input-output-hk/hydra/issues/1325) feature to cover SundaeLab's work on their Catalyst proposal
-
-[Issues and pull requests closed since the last report](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29).
 
 ### Contest after fanout bug hunt
 
@@ -63,26 +59,51 @@ TODO
 
 ### Hydra explorer supporting multiple versions
 
+This month we deployed the `hydra-explorer` to serve data under
+http://explorer.hydra.family/heads. As we also changed the hydra scripts and
+switched to the latest pre-release version of `cardano-node` for Conway, we are
+running it on the `sanchonet` network right now.
+
+![](./img/2024-02-explorer.png)
+
 The hydra explorer currently supports only one version on one network. This is
 because the Hydra scripts are compiled into `hydra-node` and
 `hydra-chain-observer` binaries and the observer talks is connected to a single
-`cardano-node` running as a client on one network. To support multiple versions,
-we need to compile the scripts of each version into individual chain observer
-binaries and communicate with them through an API. While Plutus validators
-change on any modification (their hashes and addresses), this API between the
+`cardano-node` running as a client on one network.
+
+To support multiple versions
+[#1282](https://github.com/input-output-hk/hydra/issues/1282), we need to
+compile the scripts of each version into individual chain observer binaries and
+communicate with them through an API. While Plutus validators change on any
+modification (their hashes and addresses), this API between the
 `hydra-chain-observer` and `hydra-explorer` components can serve as an
 integration point which we can support through multiple versions of the
 protocol.
 
-### Community update
+## Community
 
-TODO: Ikigai on hydra auctions?
+Both projects saw community contributions this month:
+
+### TxPipe on Mithril
+
+The TxPipe team has kept working on the implementation of the `Pallas Chain Observer` for Mithril nodes and has contributed to retrieving the stake distribution and Mithril era markers (stored in the UTxOs of the chain) directly from the Cardano node with mini-protocols.
+
+### Ikigai auctions on Hydra
+
+As it also was briefly shown in the review meeting, Ikigai continued work on [Hydra for Auctions](monthly/2023-06#hydra-for-auctions-contributions-and-closing-of-project) in their Catalyst-backed project. Their use case is about starting auctions on the Cardano mainnet, but then collecting bids off-chain and only committing the final result on-chain. This is a perfect use case for Hydra, as it allows for a large number of off-chain transactions to be processed in parallel and then committed to the blockchain in a single transaction.
 
 ## Conclusion
 
 We held the monthly review meeting for February 2024 on 2024-02-26 via Google Meet, presenting these [slides][slides] and this [recording][recording].
 
-TODO
+This month, both projects focused on preparing for Conway and the upcoming hard-fork combinator event. Preparations of the hard-fork also make the `cardano-node` a moving target, but we are convinced that early integration is key and have been proven correct as we saw unexpected issues pop up in both projects.
+
+New feature development is progressing fine with Mithril's transaction signing becoming available to early adopters. With this feature coming, we can even think about making `hydra-node`s more light-weight without relying on a single third-party for providing to be trusted chain data, but could verify on the client (the hydra node) using mithril certificates. Hydra's incremental decommit feature is also in the works. There is significang work still to be done on the on-chain parts, but decided to already implement the off-chain workflow for the incremental commits. Having both features available for users to try it out will allow us to validate the API changes although we cannot release this to mainnet withou the required on-chain security work. During review meeting, we also asked for feedback on a potential further simplification of the Hydra on-chain protocol to have "directly open" heads and any thumbs up/down or thoughts about this fresh [feature idea
+#1329](https://github.com/input-output-hk/hydra/issues/1329) are appreciated.
+
+In general, if you read this far we would like to hear from you, dear reader, on any of our communication channels on Discord or a shout out on twitter. Maybe along with some feedback on the new, common website and the joint monthly report format? 🙏 
+
+We are looking forward to the next month and when it happens, the Conway hard-fork on the first public testnets (no date yet) when 🛡 Mithril serving certificates and 🐲 Hydra heads remaining open throughout.
 
 [slides]: https://docs.google.com/presentation/d/18buDs_TcMHgFAYjJt9GftQiEnVB3ubcoD3Djh3ovxSc/edit#slide=id.g1f87a7454a5_0_1392
-[recording]: 
+[recording]: https://drive.google.com/file/d/1WZ03vcpfxgYhGw91-L3QXVfyNwhdaCBY/view
