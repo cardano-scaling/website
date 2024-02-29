@@ -71,9 +71,13 @@ and we expect this failure in the node that was having only the initial
 to `Fanout`, but failure in the other node with the newer `Snapshot` should not
 happen. 
 
+![Fanout after contest bug sketching](./img/2024-02-fanout-after-contest.png)
+
 When inspecting code we noticed that the `Contest` observation was never
 pushing the deadline further after the contestation was made and the `Fanout`
-tx was invalid.
+tx was invalid because our validator checks that `Fanout` tx lower validity
+bound is higher than the deadline to contest - in another words, the check is
+there to make sure you can only fanout after the contestation period is over. 
 
 Before fixing this bug we wanted to reproduce it using the MBT (Model Based
 Tests) framework we are using as one of the tools in our test suite. In order
