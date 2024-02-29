@@ -90,7 +90,7 @@ The TxPipe team has kept working on the implementation of the `Pallas Chain Obse
 
 ### Ikigai auctions on Hydra
 
-As it also was briefly shown in the review meeting, Ikigai continued work on [Hydra for Auctions](monthly/2023-06#hydra-for-auctions-contributions-and-closing-of-project) in their Catalyst-backed project. Their use case is about starting auctions on the Cardano mainnet, but then collecting bids off-chain and only committing the final result on-chain. This is a perfect use case for Hydra, as it allows for a large number of off-chain transactions to be processed in parallel and then committed to the blockchain in a single transaction.
+As it also was briefly shown in the review meeting, Ikigai continued work on [Hydra for Auctions](/monthly/2023-06#hydra-for-auctions-contributions-and-closing-of-project) in their Catalyst-backed project. Their use case is about starting auctions on the Cardano mainnet, but then collecting bids off-chain and only committing the final result on-chain. This is a perfect use case for Hydra, as it allows for a large number of off-chain transactions to be processed in parallel and then committed to the blockchain in a single transaction.
 
 ## Conclusion
 
