@@ -1,7 +1,7 @@
 ---
 title: February 2024
 slug: 2024-02
-authors: [ch1bo]
+authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
@@ -16,19 +16,15 @@ Keeping such "procedural" documents as part of the code base is not ideal, as it
 
 Finally, this monthly report here serves us as preparation for the monthly review meeting (see [slides][slides] and [recording][recording]), where the team updates project stakeholders on recent developments to gather their feedback on proposed plans.
 
-## Mithril Roadmap & Status
-
-TODO
-
-## Mithril Development Highlights
+## Mithril Updates
 
 [Issues and pull requests closed in February](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29).
 
-### Release and publication
+#### Release and publication
 
-- Released the distribution [`2408.0`](https://github.com/input-output-hk/mithril/releases/tag/2408.0).
-- Published a development blog post [Mithril SanchoNet network released](https://mithril.network/doc/dev-blog/2024/02/08/testing-sanchonet-network-available).
-- Published a development blog post [Mithril client CLI output breaking change](https://mithril.network/doc/dev-blog/).
+This month, the mithril team [released distribution `2408.0`](https://github.com/input-output-hk/mithril/releases/tag/2408.0) and published two blog post entries:
+- [Mithril SanchoNet network released](https://mithril.network/doc/dev-blog/2024/02/08/testing-sanchonet-network-available).
+- [Mithril client CLI output breaking change](https://mithril.network/doc/dev-blog/).
 
 ### Signing Cardano transactions proof-of-concept
 
@@ -40,11 +36,11 @@ The team has kept working on the implementation of a proof-of-concept of a data 
 
 We have extensively tested the upcoming `Conway` era and we are now confident that Mithril networks will smoothly transition to this new era. Moreover, we have released a new [`testing-sanchonet`](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator) network that has been opened to SPOs so that we can jointly test upcoming and experimental features (e.g. the aforementioned signature of the Cardano transactions).
 
-### Community update
+### Community
 
 The TxPipe team has kept working on the implementation of the `Pallas Chain Observer` for Mithril nodes and has contributed to retrieving the stake distribution and Mithril era markers (stored in the UTxOs of the chain) directly from the Cardano node with mini-protocols.
 
-## Hydra Roadmap
+## Hydra updates
 
 The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7) only saw few changes this month:
 
@@ -59,11 +55,7 @@ The Hydra project [roadmap](https://github.com/orgs/input-output-hk/projects/21/
   - Having both features implemented off-chain, would allow early adopters to try this out while we work on the on-chain security.
 * Added [Streaming Plugins #1325](https://github.com/input-output-hk/hydra/issues/1325) feature to cover SundaeLab's work on their Catalyst proposal
 
-## Hydra Development Highlights
-
 [Issues and pull requests closed since the last report](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-01-31..2024-02-29).
-
-This month, the team worked on the following:
 
 ### Contest after fanout bug hunt
 
@@ -82,11 +74,9 @@ change on any modification (their hashes and addresses), this API between the
 integration point which we can support through multiple versions of the
 protocol.
 
-## Community update
+### Community update
 
 TODO: Ikigai on hydra auctions?
-
-TODO: on-going mithril contributions by TxPipe?
 
 ## Conclusion
 
