@@ -1,10 +1,10 @@
 # Overview
 
-Sources for the [website](https://cardano-scaling.github.io/website) of the Cardano Scaling group.
+Sources for the [website](https://cardano-scaling.org) of the Cardano Scaling group.
 
 # Building
 
-The user-manual is built using [Docusaurus](https://docusaurus.io/), which combines React components and markdown into a customisable static website.
+This website is built using [Docusaurus](https://docusaurus.io/), which combines React components and markdown into a customisable static website.
 
 #### Installation
 

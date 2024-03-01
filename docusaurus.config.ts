@@ -4,8 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: "Cardano Scaling",
-  url: "https://cardano-scaling.github.io",
-  baseUrl: "/website/",
+  url: "https://cardano-scaling.org",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/faviconl.io",
