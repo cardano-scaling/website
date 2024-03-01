@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -28,7 +27,9 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build website
-        run: yarn build
+        run: |
+          yarn build
+          echo "cardano-scaling.org" > ./build/CNAME
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
