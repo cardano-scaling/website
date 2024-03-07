@@ -64,7 +64,7 @@ While reviewing the code, the team discovered that the `Contest` observation was
 
 Before fixing this bug, the team tried reproducing it using the MBT (Model Based Tests) framework, one of the tools in the test suite. However, to do that, they needed to complete modeling the entire head lifecycle and the specific scenario they observed in real life and arbitrary actions in all head states did not reveal this bug.
 
-Finally, the team was able to fix the bug easily. However, reproducing the bug helped them gain more knowledge on using the framework correctly and improve their specifications.
+After also improving the framework itself to correctly validate transactions and a fix for simulating rollbacks, the team was able to fix the bug easily. However, it proves that being able to reproduce a bug is not only improving the code, but also allowed the team to gain knowledge and improve their test suites.
 
 ### Hydra explorer supporting multiple versions
 
