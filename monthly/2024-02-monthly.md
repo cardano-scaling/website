@@ -22,7 +22,7 @@ This monthly report serves as preparation for the monthly stakeholder review mee
 
 #### Release and publication
 
-This month, the mithril team [released distribution `2408.0`](https://github.com/input-output-hk/mithril/releases/tag/2408.0) and published two blog post entries:
+This month, the Mithril team [released distribution `2408.0`](https://github.com/input-output-hk/mithril/releases/tag/2408.0) and published two blog post entries:
 - [Mithril SanchoNet network released](https://mithril.network/doc/dev-blog/2024/02/08/testing-sanchonet-network-available).
 - [Mithril client CLI output breaking change](https://mithril.network/doc/dev-blog/).
 
@@ -34,7 +34,7 @@ The team has been working on implementing a proof-of-concept of a new data type 
 
 ### Enhanced support for Conway and Sanchonet
 
-The team has conducted thorough testing on the upcoming 'Conway' era and are confident that Mithril networks will transition smoothly to this new era. Additionally, the team have released a new [`testing-sanchonet`](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator) network that has been opened to SPOs so that we can jointly test upcoming and experimental features (e.g. the aforementioned signature of the Cardano transactions).
+The team has conducted thorough testing on the upcoming Conway era and are confident that Mithril networks will transition smoothly to this new era. Additionally, the team have released a new [`testing-sanchonet`](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator) network that has been opened to SPOs so that we can jointly test upcoming and experimental features (e.g. the aforementioned signature of the Cardano transactions).
 
 ## Hydra
 
