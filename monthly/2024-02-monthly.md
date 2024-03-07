@@ -62,7 +62,7 @@ When the `Close` was posted, the Head was closed with the initial `Snapshot` and
 
 While reviewing the code, the team discovered that the `Contest` observation was not extending the deadline after the contestation was made. As a result, the `Fanout` transaction was invalid because the validator checks that the `Fanout` transaction's lower validity bound is higher than the deadline to contest. This check ensures that one can only fan out after the contestation period is over.
 
-Before fixing this bug, the team tried reproducing it using the MBT (Model Based Tests) framework, one of the tools in the test suite. However, to do that, they needed to complete modeling the entire head lifecycle and the specific scenario they observed in real life. Arbitrary actions in all head states did not reveal this bug.
+Before fixing this bug, the team tried reproducing it using the MBT (Model Based Tests) framework, one of the tools in the test suite. However, to do that, they needed to complete modeling the entire head lifecycle and the specific scenario they observed in real life and arbitrary actions in all head states did not reveal this bug.
 
 Finally, the team was able to fix the bug easily. However, reproducing the bug helped them gain more knowledge on using the framework correctly and improve their specifications.
 
