@@ -99,14 +99,11 @@ TODO daniel or sebastian
 
 ### Streaming plugins
 
-TODO sebastian
+SundaeLabs is working on a Hydra-based layer two protocol ("gummiworm") that requires the usage of `hydra-node` components in a different way than the default setup. As part of that, one of their fund 10 catalyst proposals was to extend the Hydra node with a couple different features that would make it easier both for them and for everybody building on Hydra.
 
-- mention sundaelabs in text
-- Plugin architecture for exfiltrating and infiltrating events
-- Enables hygienic forks of Hydra which add different connections to the world
-  (examples)
-- Clear interface for new mainline persistence
-- Maybe even refactor the existing API server as an EventSink
+They have been working on a plugin architecture for exfiltrating and infiltrating events, which enables hygienic forks of Hydra that add different connections to the world. In the case of SundaeLabs, they are interested in consuming the Hydra event stream through Amazon Kinesis and store transaction archives on S3 for later reference.
+
+After an initial design phase resulting in [ADR29](https://hydra.family/head-protocol/adr/29/), they contributed the event source and sink abstractions, and refactored the Hydra node to use these new extension points together with core contributors. The `EventSource` and `EventSink` interfaces, along with the configurable list of `eventSinks` in the main `HydraNode` handle, allow to extend the `hydra-node` with any external system. It also paves the way for more scalable persistence methods on the mainline Hydra node, and might even allow to refactor the existing API server as an `EventSink`.
 
 ## Community
 
