@@ -94,7 +94,9 @@ TODO daniel or sebastian
 
 - mention modulo-p in text
 - available on branch + modulo-p repository
-- plan when to merge it
+
+* Migrated hydra's ledger format to support Conway transactions. We plan to merge this after hydra-0.16 is released. This is available on the `lc/conway-support` branch.
+
 - explorer fixes / details about tx formats?
 
 ### Streaming plugins
