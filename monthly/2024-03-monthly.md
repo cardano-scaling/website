@@ -19,10 +19,9 @@ on Gooble Meet. This month the meeting was on 2024-03-27, using these
 [Issues and pull requests closed in
 March](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-02-29..2024-03-31)
 
-TODO reza on overall protocol status?
+There has been a surge of SPOs joining the Mithril protocol this month, in particular we have noticed that new multi-pool operators have setup the Mithril signer in their infrastructure. At the end of epoch **#475**, there were **230** pools registered with **4.6B₳** stake involved (which represents **~20%** of the total active stake). We will keep bringing regular updates to the community to encourage their participation in the protocol.
 
-- include screenshot of signing stake and pools
-- brief explanation and any notable change
+![](img/2024-03-mithril-participation.png)
 
 We have released the new Mithril distribution [`2412.0`](https://github.com/input-output-hk/mithril/releases/tag/2412.0). This release includes several critical updates and enhancements, such as support for Prometheus metrics endpoint in signer, deprecation of the `snapshot` command in the client CLI, full Pallas based implementation of the chain observer, and support for Cardano node `8.9.0`. 
  
