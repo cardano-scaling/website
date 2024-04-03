@@ -119,31 +119,20 @@ After an initial design phase resulting in [ADR29](https://hydra.family/head-pro
 
 ### Mithril office hours
 
-TODO roy/reza/jp? .. or sebastian
+As the catalyst project of TxPipe on Mithril is completed, we want to build upon this initial maintenance work in a more open format. For this, we are transforming our alignment calls into a public weekly office hour where we invite the community to join and discuss concrete pull requests, issues and questions on Mithril. 
 
-- explain evolving alignment between TxPipe, PaloIT and IOG into a public office
-  hour
-- provide links to where and when
+:point_right: Mitril office hours happen every Tuesday at 16:00 UTC on the [#mithril-live](https://discord.com/channels/826816523368005654/1146481948794032260) discord channel.
 
 ### Hydra governance walkthrough
 
-TODO sebastian
+This month, the Hydra team has been asked to provide a walkthrough of how we use Github to run and govern the project. We have prepared a video that explains how we use Github issues, pull requests, discussions, and projects to manage the development of the Hydra project. Note that this is only a current snapshot and we are excited to evolve this continuously into a more open process. 
 
-- briefly mention that people asked how we use Github to run / govern the
-  project
-- embed video
-- current snapshot view and excited to evolve this continuously into a more open
-  process
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGUeO7A6mMU?si=T5Dy4zuRb6NLReJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+<br/>
 
-### Hydra/Intersect working group
-
-TODO sebastian
-
-- basically what has been said in the meeting
-- scope: where to start, what to include
-- less brands, more variants
-- explain potential of this
-- condition on ratification of Intersect processes
+Especially as we look forward to establish a Hydra working group at Intersect to have more community involvement in proposing feature backlog, roadmap and RFPs. While the scope of such a working group would start with the concrete Hydra Head protocol (state channels), variations like Hydrozoa, and combined scalability protocols like Gummiworm, Lightning-like payment channel networks or the Hydra Tail protocol (~ rollups) need to see more community involvement. Expect more news on this in the coming months.
 
 ## Conclusion
 
