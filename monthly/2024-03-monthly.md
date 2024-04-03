@@ -90,14 +90,22 @@ change much this month:
 
 ### Conway support 
 
-TODO daniel or sebastian
+As mentioned in previous roadmap updates, we separated work to support the upcoming `Conway` era on Cardano in two:
 
-- mention modulo-p in text
-- available on branch + modulo-p repository
+  + [Conway support #1177](https://github.com/input-output-hk/hydra/issues/1177) will make the `hydra-node` support Conway and allow users to keep heads open across the hard fork.
+  + [Drop Babbage support #1178](https://github.com/input-output-hk/hydra/issues/1178) will eventually drop support for the Babbage era and retain maintainability.
 
-* Migrated hydra's ledger format to support Conway transactions. We plan to merge this after hydra-0.16 is released. This is available on the `lc/conway-support` branch.
+While the former was already merged and is currently released in versions `0.15.0` onwards, the team prepared the latter this month.
 
-- explorer fixes / details about tx formats?
+Ideally switching the transaction format in the `hydra-node` is as simple as setting the type alias `type Era = Conway`. However, the code was `Babbage`-specific in several areas and work on this resulted in various pull requests making switching easier in several places: [#1326](https://github.com/input-output-hk/hydra/pull/1326), [#1327](https://github.com/input-output-hk/hydra/pull/1327), [#1328](https://github.com/input-output-hk/hydra/pull/1328), [#1334](https://github.com/input-output-hk/hydra/pull/1334), and [#1342](https://github.com/input-output-hk/hydra/pull/1342).
+
+The result is a relatively simple switch in this [draft pull request](https://github.com/input-output-hk/hydra/pull/1338) and available on branch `lc/conway-support`, which we intend to bump and merge once the public Cardano networks hard-forked.
+
+Having full `Conway`-era support, including `PlutusV3`, on the Hydra L2 already prepared on a branch allows early adopting users from the community to explore and use this already. Modulo-P has been on the forefront here by developing zero-knowledge hybrid DApps and wrapping the hydra branch up in this [example repository](https://github.com/Modulo-P/hydra-node-plutusv3).
+
+:::info
+A full-on `Conway` `hydra-node` can be used on `sanchonet` already and the Hydra protocol scripts did not change from `master` / the upcoming `0.16.0`. However, note that the [Hydra explorer](explorer.hydra.family) does show such `Conway`-built heads only as `Initializing`. More details about why can be found in this [pull request](https://github.com/input-output-hk/hydra/pull/1373).
+:::
 
 ### Streaming plugins
 
