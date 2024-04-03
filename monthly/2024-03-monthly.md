@@ -36,7 +36,7 @@ We have also completed the roadmap of the MVP that will be released on the `main
 
 ![](img/2024-03-mithril-cardano-tx-roadmap.png)
 
-### Transactions validation in frontend
+### Transactions verification in frontend
 
 The [Mithril client WASM library](https://www.npmjs.com/package/@mithril-dev/mithril-client-wasm) has been used to implement a Cardano transaction verifier inside the [Mithril explorer](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator).
 This feature is currently available only on `testing-sanchonet` network and will be progressively rolled out to the other Mithril networks.
@@ -56,7 +56,7 @@ Additionally, a Grafana template has been created to easily setup a dashboard fo
 
 The chain observer deployed in the latest stable distribution is now fully implemented with the [`pallas`](https://crates.io/crates/pallas) crate. We have also started working with TxPipe on the implemetation of the `chainsync` mini protocol with pallas in order to reduce the latency of signatures for the Cardano transactions.
 
-### Deprecation of the 'snapshot' command of client CLI 
+### Deprecation warning
 
 We have deprecated the `snapshot` command of the Mithril client CLI as explained in this dev blog post: https://mithril.network/doc/dev-blog/2024/03/26/client-cli-deprecated-command
 
@@ -139,13 +139,13 @@ Especially as we look forward to establish a Hydra working group at Intersect to
 We held the monthly review meeting for March 2024 on 2024-03-27 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-TODO sebastian
+This month we have made significant progress on Mithril transaction signatures, while the Hydra team has been busy working on the incremental commits/decommits features. Both projects are fully prepared for the upcoming Conway hard-fork on Cardano and continuously demonstrate user experience improvements.
 
-- mention that we had 2/4 guest demos
-- transaction verification feedback
-- explorer demo + mention integrating hydra explorer data into block explorers
-- summarize trends of decentralizing governance on both projects
-- maybe under a scaling umbrella, maybe not
+This was exemplified by the demos of this month's review meeting, where we showcased the Mithril transaction verification for frontends and the Hydra explorer user interface. Especially on the former, we hope this will inspire DApp developers and wallet creators to see the potential of Mithril verified transactions as an additional level of confirmation.
+
+Besides these, Modulo-P showcased their early adoption on Hydra heads using `Conway` and `PlutusV3` for their quite involved zero knowledge protocols. Briefly after the meeting they released a first look on their [zkMastermind DApp](https://zkmastermind.modulo-p.io/). Also, SundaeLabs presented their streaming plugins for Hydra. Both are examples of how the Hydra protocol can be extended and used in different ways, and we are excited to see more community contributions in the future. 
+
+As a closing remark, we definitely see the trend of decentralizing governance on both projects, Hydra and Mithril, while at large the overall "age of Voltaire" is unfolding. Consequently, we will see moves, merges or restructuring of repositories, projects and working groups. What an exciting time to be part of this big Cardano community!
 
 [slides]: https://docs.google.com/presentation/d/1pxV7VTDHW-wtvJy1RDuei7H14gQvgrrUlqoiOco6j9E
 [recording]: https://drive.google.com/file/d/1SL5Js8wBIoBeb87exCmZTWtHSQy7xF1W/view
