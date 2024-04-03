@@ -120,7 +120,7 @@ After an initial design phase resulting in [ADR29](https://hydra.family/head-pro
 
 As the catalyst project of TxPipe on Mithril is completed, we want to build upon this initial maintenance work in a more open format. For this, we are transforming our alignment calls into a public weekly office hour where we invite the community to join and discuss concrete pull requests, issues and questions on Mithril. 
 
-:point_right: Mitril office hours happen every Tuesday at 16:00 UTC on the [#mithril-live](https://discord.com/channels/826816523368005654/1146481948794032260) discord channel.
+:point_right: Mithril office hours happen every Tuesday at 16:00 UTC on the [#mithril-live](https://discord.com/channels/826816523368005654/1146481948794032260) discord channel.
 
 ### Hydra governance walkthrough
 
