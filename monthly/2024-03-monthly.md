@@ -19,47 +19,47 @@ on Gooble Meet. This month the meeting was on 2024-03-27, using these
 [Issues and pull requests closed in
 March](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-02-29..2024-03-31)
 
-There has been a surge of SPOs joining the Mithril protocol this month, in particular we have noticed that new multi-pool operators have setup the Mithril signer in their infrastructure. At the end of epoch **#475**, there were **230** pools registered with **4.6B₳** stake involved (which represents **~20%** of the total active stake). We will keep bringing regular updates to the community to encourage their participation in the protocol.
+This month, there has been a noticeable increase in SPOs joining the Mithril protocol. In particular, many new multi-pool operators have set up the Mithril signer in their infrastructure. At the end of epoch **#475**, there were **230** pools registered with **4.6B₳** stake involved representing approximately 20% of the total active stake. We will continue to provide regular updates to the community to encourage their participation in the protocol.
 
 ![](img/2024-03-mithril-participation.png)
 
-We have released the new Mithril distribution [`2412.0`](https://github.com/input-output-hk/mithril/releases/tag/2412.0). This release includes several critical updates and enhancements, such as support for Prometheus metrics endpoint in signer, deprecation of the `snapshot` command in the client CLI, full Pallas based implementation of the chain observer, and support for Cardano node `8.9.0`. 
+We have released the new Mithril distribution [`2412.0`](https://github.com/input-output-hk/mithril/releases/tag/2412.0). This release includes several critical updates and enhancements, such as support for Prometheus metrics endpoint in signer, deprecation of the `snapshot` command in the client CLI, full Pallas based implementation of the chain observer, and support for Cardano node version `8.9.0`.
  
-### Transactions signatures
+### Transaction signatures
 
-We have worked on scaling the signature and proof generation for the `mainnet`: we have implemented a signing structure that allows for fast proof generation on the aggregator and light footprint on the signer given the `100 Millions` transactions magnitude that we need to handle. For this we have created a **Block range Merkle tree** that allows to store transactions of a block range in a Merkle tree and use its root to create another Merkle tree. According to our benchmarks, we can now create a batch proof for `100` transactions in less than `250 ms`.
+We have developed a signing structure that enables quick proof generation while maintaining a light footprint on the signer for the `mainnet`. This is crucial as we need to handle a vast amount of transactions (100 million). To achieve this, we created a **block range Merkle tree**, which stores transactions in a Merkle tree and uses its root to create another Merkle tree. According to the our benchmark tests, a batch proof for `100` transactions can now be created in less than `250 ms`.
 
 ![](img/2024-03-mithril-block-range-mktree.jpg)
 
-We have also completed the roadmap of the MVP that will be released on the `mainnet`:
+We have also completed the roadmap of the MVP that will be released on `mainnet`:
 
 ![](img/2024-03-mithril-cardano-tx-roadmap.png)
 
-### Transactions verification in frontend
+### Transaction verification in frontend
 
 The [Mithril client WASM library](https://www.npmjs.com/package/@mithril-dev/mithril-client-wasm) has been used to implement a Cardano transaction verifier inside the [Mithril explorer](https://mithril.network/explorer/?aggregator=https%3A%2F%2Faggregator.testing-sanchonet.api.mithril.network%2Faggregator).
-This feature is currently available only on `testing-sanchonet` network and will be progressively rolled out to the other Mithril networks.
-Wallet and DApp developers could leverage the client WASM library to implement a security layer that verifies transactions provided by a third-party.
+This feature is currently available only on the `testing-sanchonet` network and will be progressively rolled out to the other Mithril networks.
+Wallet and DApp developers could leverage the client WASM library to implement a security layer that verifies transactions provided by a third party.
 
 ![](img/2024-03-mithril-explorer.png)
 
 ### Prometheus metrics
 
-We have released a new Prometheus endpoint with the latest stable version of the signer. The feature can be easily activated by the SPOs as explained in this dev blog post: https://mithril.network/doc/dev-blog/2024/03/26/mithril-signer-prometheus-endpoint
+We have released a new Prometheus endpoint with the latest stable version of the signer. The feature can be easily activated by the SPOs as explained in this [developer blog post](https://mithril.network/doc/dev-blog/2024/03/26/mithril-signer-prometheus-endpoint).
 
-Additionally, a Grafana template has been created to easily setup a dashboard for this Prometheus endpoint: https://grafana.com/grafana/dashboards/20776-mithril-signer/
+Additionally, we created a Grafana template to easily set up a dashboard for this Prometheus endpoint: https://grafana.com/grafana/dashboards/20776-mithril-signer/
 
 ![](img/2024-03-mithril-prometheus-metrics.png)
 
 ### Pallas updates
 
-The chain observer deployed in the latest stable distribution is now fully implemented with the [`pallas`](https://crates.io/crates/pallas) crate. We have also started working with TxPipe on the implemetation of the `chainsync` mini protocol with pallas in order to reduce the latency of signatures for the Cardano transactions.
+The latest stable distribution now includes a fully implemented chain observer powered by the [`pallas`](https://crates.io/crates/pallas) crate. Additionally, we have been collaborating with TxPipe to implement the `chainsync` mini-protocol with Pallas. This will significantly reduce the latency of signatures for Cardano transactions.
 
 ### Deprecation warning
 
-We have deprecated the `snapshot` command of the Mithril client CLI as explained in this dev blog post: https://mithril.network/doc/dev-blog/2024/03/26/client-cli-deprecated-command
+We have deprecated the `snapshot` command of the Mithril client CLI as explained in this [developer blog post](https://mithril.network/doc/dev-blog/2024/03/26/client-cli-deprecated-command).
 
-We strongly encourage users of the client CLI to use the replacement `cardano-db snapshot` command.
+We recommend using the replacement `cardano-db snapshot` command for users of the client CLI.
 
 ## Hydra
 
