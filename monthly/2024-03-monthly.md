@@ -5,14 +5,9 @@ authors: [ch1bo,jpraynaud]
 tags: [monthly]
 ---
 
-This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects since
-February 2024. These reports have recently moved to
-https://cardano-scaling.org/monthly (more details [here](./2024-02)).
+This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects since February 2024. These reports have recently moved to https://cardano-scaling.org/monthly (more details [here](/monthly/2024-02)).
 
-This document serves as a preparation for and a written summary of the monthly
-stakeholder review meeting, which is announced on our Discord channels and held
-on Google Meet. This month, the meeting was held on 2024-03-27, using these
-[slides][slides] and [you can see the recording here][recording].
+This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month, the meeting was held on 2024-03-27, using these [slides][slides] and [you can see the recording here][recording].
 
 ## Mithril
 
@@ -103,7 +98,7 @@ The result is a relatively simple switch in this [draft pull request](https://gi
 Having full `Conway` era support, including `PlutusV3`, on the Hydra layer 2 already prepared on a branch allows early adopting users from the community to explore and use this already. Modulo-P has been on the forefront here by developing zero-knowledge hybrid DApps and wrapping the Hydra branch up in this [example repository](https://github.com/Modulo-P/hydra-node-plutusv3).
 
 :::info
-A full-on `Conway` `hydra-node` can be used on `SanchoNet` already and the Hydra protocol scripts did not change from `master` / the upcoming `0.16.0`. However, note that the [Hydra explorer](explorer.hydra.family) shows such `Conway`-built heads only as `Initializing`. More details about why can be found in this [pull request](https://github.com/input-output-hk/hydra/pull/1373).
+A full-on `Conway` `hydra-node` can be used on `SanchoNet` already and the Hydra protocol scripts did not change from `master` / the upcoming `0.16.0`. However, note that the [Hydra explorer](http://explorer.hydra.family) shows such `Conway`-built heads only as `Initializing`. More details about why can be found in this [pull request](https://github.com/input-output-hk/hydra/pull/1373).
 :::
 
 ### Streaming plugins
