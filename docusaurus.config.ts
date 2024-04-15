@@ -34,7 +34,9 @@ const config: Config = {
           path: "monthly",
           routeBasePath: "monthly",
           authorsMapPath: "../authors.yaml",
-          editUrl: "https://github.com/cardano-scaling/website/tree/master/"
+          editUrl: "https://github.com/cardano-scaling/website/tree/master/",
+          blogSidebarTitle: 'Monthly reports',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
