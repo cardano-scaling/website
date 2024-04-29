@@ -1,3 +1,8 @@
+# Cardano Scaling working group
+
+Consortium of projects and teams working on the common vision of increasing
+growth and adoption of Cardano by solving scalability problems.
+
 ## Vision
 
 We stand for growth and adoption of Cardano. To empower individuals, bank the
