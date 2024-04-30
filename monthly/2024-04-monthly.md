@@ -1,7 +1,7 @@
 ---
 title: April 2024
 slug: 2024-04
-authors: [ch1bo]
+authors: [ch1bo, quantumplation, cleanerm5]
 tags: [monthly]
 ---
 
@@ -21,11 +21,13 @@ TODO sebastian (confirm with Alex first)
 [Issues and pull requests closed in
 April](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-03-31..2024-04-30)
 
-TODO ?: update usage
+TODO reza:
+- save latest diagram in `img/2024-04-mithril-participation.png`
+- explain changes in usage (why number go up?)
 
-![](img/2024-03-mithril-participation.png)
+![](img/2024-04-mithril-participation.png)
 
-TODO ?: mention any releases
+TODO jp: mention any releases and point to important release notes
 
 ### Signer registration PoC
 
@@ -93,6 +95,15 @@ TODO sebastian
 
 The monthly review meeting for April 2024 was held on 2024-04-30 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
+
+- some demos, but cardano buidler fest was the real highlight this month
+- great talks, connections and bridges being built (literally)
+- as can be seen already from the sections contributed above by Pi (SundaeLabs) and Sebastian (CF)
+
+- in the meeting we used the chance to also highlight longer term plans (next couple of months)
+- and to show first steps into creating a Hydra / Cardano Scaling working group
+- Sneak peek of new paper on fresh scalability tech (Ouroboros Leios)
+- conversation on games and great ways to show off Hydra V1 at rare evo - "Can it run doom?" 
 
 [slides]: https://docs.google.com/presentation/d/1GwABNDvdFFF7LlgIlycyLsQub0Btd9XvwpgEYPrGQ9I/edit#slide=id.g1f87a7454a5_0_1392
 [recording]: https://

@@ -1,42 +1,42 @@
 ch1bo:
   name: Sebastian Nagel
-  title: Software Engineering Lead
+  title: Software Engineering Lead, IOG
   url: https://github.com/ch1bo
   image_url: https://github.com/ch1bo.png
 
 abailly:
   name: Arnaud Bailly
-  title: Lead Architect
+  title: Lead Architect, IOG
   url: https://github.com/abailly-iohk
   image_url: https://github.com/abailly-iohk.png
 
 ffakenz:
   name: Franco Testagrossa
-  title: Senior Software Engineer
+  title: Senior Software Engineer, IOG
   url: https://github.com/ffakenz
   image_url: https://github.com/ffakenz.png
 
 pgrange:
   name: Pascal Grange
-  title: Senior Software Engineer
+  title: Senior Software Engineer, IOG
   url: https://github.com/pgrange
   image_url: https://github.com/pgrange.png
 
 v0d1ch:
   name: Sasha Bogicevic
-  title: Senior Software Engineer
+  title: Senior Software Engineer, IOG
   url: https://github.com/v0d1ch
   image_url: https://github.com/v0d1ch.png
 
 locallycompact:
   name: Daniel Firth
-  title: Senior Software Engineer
+  title: Senior Software Engineer, IOG
   url: https://github.com/locallycompact
   image_url: https://github.com/locallycompact.png
 
 cardenaso11:
   name: Elaine Cardenas
-  title: Software Engineer
+  title: Software Engineer, Sundae Labs
   url: https://github.com/cardenaso11
   image_url: https://github.com/cardenaso11.png
 
@@ -48,6 +48,12 @@ quantumplation:
 
 jpraynaud:
   name: Jean-Philippe Raynaud
-  title: Software Engineering Lead
+  title: Software Engineering Lead, Palo IT
   url: https://github.com/jpraynaud
   image_url: https://github.com/jpraynaud.png
+
+cleanerm5:
+  name: Sebastian Bode
+  title: Director of Engineering, Cardano Foundation
+  url: https://github.com/cleanerm5
+  image_url: https://github.com/cleanerm5.png
