@@ -73,10 +73,13 @@ In a second phase that is scheduled to run from April till roughly beginning of 
 
 ### Gummiworm
 
-TODO pi
+Gummiworm is a low-divergence fork of the Hydra node being built by Sundae Labs, which teases apart execution and custody; By sacrificing some control over the opening and closing of heads, it dramatically strengthens the security model specifically in the case when non-head participants are transacting in the head.
 
-- summary on demo shown on buidler fest and at the review meeting
-- ideally explaining how it would use hydra head
+At Buidler-fest, we demo'd a very early, duct-tape and bubble-gum demo of depositing into a smart contract, minting those funds in the hydra head, and achieving auditability of the transactions in the head.
+
+We also spoke about our longer term plans, such as changes to the ledger to accomodate a better user experience, and making the custody model "plug and play", so you could provide different mechanisms for different use cases.
+
+![image](https://github.com/SundaeSwap-finance/cardano-scaling-website/assets/49870/0b2907e4-43f1-4e6d-8f54-f18eeb648b8b)
 
 ## Starmap update
 
