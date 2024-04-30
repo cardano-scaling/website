@@ -62,5 +62,5 @@ Some members of this organization are also on Twitter, so follow them for update
 
 ## Disclaimer
 
-- The logo is currently not licensed as we reached out to the creator and await response.
+- The logo is still a draft and was created by Alexander Wende.
 - This organization is in a **drafting stage** and we are currently evaluating whether moving repositories, project organization and communication into this organization makes sense.

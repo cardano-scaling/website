@@ -48,6 +48,10 @@ const config: Config = {
   themeConfig: {
       navbar: {
         title: "Cardano Scaling",
+        logo: {
+          src: "img/scaling-logo-draft-black.png",
+          srcDark: "img/scaling-logo-draft-white.png",
+        },
         items: [
           {
             to: "/monthly",
