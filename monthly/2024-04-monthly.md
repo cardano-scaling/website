@@ -21,9 +21,7 @@ TODO sebastian (confirm with Alex first)
 [Issues and pull requests closed in
 April](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-03-31..2024-04-30)
 
-TODO reza:
-- save latest diagram in `img/2024-04-mithril-participation.png`
-- explain changes in usage (why number go up?)
+As a part of our strategy to increase the participation in the Mithril protocol we have been reaching out to SPO's who don't yet run a Mithril signer, providing them with the support they need to set up and run their signer. We appreciate the SPO's such as Cardano Foundation who took the step in joining the protocol. As of epoch 481, the number of stake pools registered in the Mithril protocol as signers has reached 258 representing ~50 billion ADA which is ~22% of the Cardano's active stake.
 
 ![](img/2024-04-mithril-participation.png)
 
