@@ -1,7 +1,7 @@
 ---
 title: April 2024
 slug: 2024-04
-authors: [ch1bo, quantumplation, cleanerm5]
+authors: [ch1bo, quantumplation, cleanerm5, jpraynaud]
 tags: [monthly]
 ---
 
@@ -24,15 +24,37 @@ As a part of our strategy to increase the participation in the Mithril protocol 
 
 ![](img/2024-04-mithril-participation.png)
 
-TODO jp: mention any releases and point to important release notes
 
-### Signer registration PoC
+We have prepared the pre-release of the new Mithril distribution [`2418.1-pre`](https://github.com/input-output-hk/mithril/releases/tag/2418.1-pre). This release includes several critical updates and enhancements:
+- A **breaking change** is introduced in **Mithril client / Mithril client CLI**:
+  - The certificate chain structure has been modified to remove coupling with immutable file number.
+  - The client **must be updated** to verify certificate chain.
+- We have switched the **memory allocator** to `jemallocator` on the signer and the aggregator to avoid memory fragmentation.
+- We have enabled the BLST `portable` feature by default in order to benefit from **runtime check** of intel ADX instruction set.
 
-TODO jp
+### Signer registration decentralization PoC
 
-- give a quick summary of what the poc was about using libp2p 
-- short-comings / problem statement
-- next step: draft a cardano problem statement out of this and ask for any feedback (speaking to the reader)
+We have kept working on the decentralization experiments for Mithril networks. The **signature diffusion** decentralization has already been implemented in a previous proof-of-concept, and we have created a new proof-of-concept for decentralizing the **signer registration process**. 
+
+In order to do so, we have created a new **peer-to-peer pubsub topic** using `libp2p` and adapted the **relay** so that:
+- When a **signer relay** receives a signer registration from a signer, it broadcasts it to the new P2P topic.
+- When an **aggregator relay** receives a new signer registration from the P2P topic, it calls back the aggregator with it.
+- A **repeater mechanism** has been implemented so that a **signer relay** sends the signer registration multiple times during an epoch (at regular pace) to prevent missed messages.
+
+![](img/2024-04-mithril-p2p-signer-registration-poc.jpg)
+
+We don't need strong guarantees or consensus for the diffusion of signatures: different aggregators can create valid multi-signatures from different subsets of individual signatures as long as the quorum is reached. We could also implement the repeater mechanism so that a signature is broadcast a few times in order to prevent missed messages and reach more aggregators. 
+
+However, we need stronger guarantees for the signer registration: in order to create a valid multi-signature a **minimum number** of signers and aggregators must use **exactly the same set of signer registrations** (enough signers and aggregators so that the individual signatures created allow to reach the quorum). In case of a partition, the network could get in a situation where the quorum is never reached during an epoch: this would lead to a gap in the certification and the security of the protocol could not be guaranteed. Adversarial behaviors from some signers could for example be responsible for such partitions. Moreover, with the current design, as the number of aggregators is much lower than the number of signers, the risk of partition could be even higher.
+
+This will lead us to:
+- Reach for a consensus or quasi-consensus for the signer registrations.
+- Adapt the topology of the network so that there are approximately the same number of signers and aggregators (i.e. all signers are also aggregators) or modify the aggregation process so that aggregators don't verify the message that is certified.
+
+The next steps for the decentralization of Mithril networks are:
+- Draft a CIP for leveraging the Cardano network layer and implement mini-protocols that will operate the diffusion of messages in a pubsub topic.
+- Draft a CPS for stating the problem about signer registration.
+- Get some feedback from the community, feel free to contribute!
 
 ## Hydra
 
