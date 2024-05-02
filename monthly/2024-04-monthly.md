@@ -104,7 +104,7 @@ While this refactor represents a breaking change, the hydra-node can still be ut
 
 This month the who-is-who of Cardano builders got lured to Toulouse, France for a two day tech-only conference. It was a great occassion to meet fellow contributors and building bridges (literally) to new projects and their creators.
 
-Two of many notable presentations and how they relate to the Hydra and Mithril projects are detailed below.
+Two of many notable presentations and how they relate to the Hydra and Mithril projects are detailed as contributed by Pi (Sundae Labs) and Sebastian (Cardano Foundation).
 
 ### IBC bridge
 
@@ -136,9 +136,7 @@ This time, the themes we would like to focus on are _open governance_, _use case
 
 ![](./img/2024-04-starmap.jpg)
 
-As one can see from past quarters, opening up the governance of scalability projects is a recurring theme and of highest priority. On the other hand, these proposed work items were mostly shaped and prioritised in private discussions between IOI and PaloIT.
-
-Consequently, we will need to open discussions of what is valuable to build, to gather feedback and ensure individual projects tie into a compelling portfolio across the whole ecosystem.
+As one can see from past quarters, opening up the governance of scalability projects is a recurring theme and of highest priority. Ironically, the proposed work items above were mostly shaped and prioritised in private discussions between IOI and PaloIT. We will need to open discussions of what is valuable to build, to gather feedback and ensure individual projects tie into a compelling and _fundable_ portfolio across the whole ecosystem.
 
 A first glimpse of this already happened at the Buidler Fest where a spontaneous (open space) session on "the future of Hydra and Mithril" spawned great interest and new ideas like
 
@@ -154,19 +152,11 @@ As also listed on the starmap, a logical next step is to create an open working 
 The monthly review meeting for April 2024 was held on 2024-04-30 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-TODO sebastian
+While we saw some demos on Mithril and Hydra projects' progress, the real highlight this month was the Cardano Buidler Fest with its many great talks and discussions - often involving scalability limitations and technology to overcome it. Exciting discussions around zero knowledge primitives, infrastructure projects, and open source likely inspired everyone attending to keep building and improving Cardano.
 
-- some demos, but cardano buidler fest was the real highlight this month
+There is still some uncertainty in how exactly governance of Hydra and Mithril can be made more open, collaborating on consistent high-level plans across multiple projects in the realm of improving Cardano scalability. However, we might have found with [cardano-scaling.org](https://cardano-scaling.org) a welcoming home not only for Hydra and Mithril, but for contributors and projects from various backgrounds, while first steps of involving the community more actively in a Hydra working group at Intersect are being made.
 
-> Exciting talks and discussions around zero knowledge primitives, infrastructure projects, and open source in general inspired likely everyone attending to keep building and improving Cardano.
-
-- great talks, connections and bridges being built (literally)
-- as can be seen already from the sections contributed above by Pi (SundaeLabs) and Sebastian (CF)
-
-- in the meeting we used the chance to also highlight longer term plans (next couple of months)
-- and to show first steps into creating a Hydra / Cardano Scaling working group
-- Sneak peek of new paper on fresh scalability tech (Ouroboros Leios)
-- conversation on games and great ways to show off Hydra V1 at rare evo - "Can it run doom?" 
+Besides this, the monthly review meeting held some sneak peeks of a new paper on fresh scalability tech (Ouroboros Leios) and fun conversations on games and other great ways to potentially show off a definite Hydra V1 at Rare Evo this summer - "Can it run doom?" 😈.
 
 [slides]: https://docs.google.com/presentation/d/1GwABNDvdFFF7LlgIlycyLsQub0Btd9XvwpgEYPrGQ9I/edit#slide=id.g1f87a7454a5_0_1392
 [recording]: https://drive.google.com/file/d/15wQ3hTWv9qDAxt7mjA1YXGKKutS-nG_k/view
