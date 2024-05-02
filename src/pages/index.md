@@ -1,7 +1,7 @@
-# Cardano Scaling working group
+# Cardano Scaling
 
-Consortium of projects and teams working on the common vision of increasing
-growth and adoption of Cardano by solving scalability problems.
+Collection of projects revolving around the common vision of increasing growth
+and adoption of Cardano by solving scalability problems.
 
 ## Vision
 
@@ -53,7 +53,7 @@ and DeFI on Cardano.
 
 ## Community
 
-Need some help getting started? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #moria channels.
+Want to get involved? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #moria channels.
 
 Some members of this organization are also on Twitter, so follow them for updates on the future of Cardano Scaling!
 
