@@ -1,7 +1,7 @@
 ---
 title: April 2024
 slug: 2024-04
-authors: [ch1bo, quantumplation, cleanerm5, jpraynaud]
+authors: [ch1bo, quantumplation, cleanerm5, jpraynaud, ffakenz]
 tags: [monthly]
 ---
 
@@ -88,6 +88,16 @@ In particular, we need to be testing (ideally proving) that:
  - the head can process transactions throughout (liveness)
 
 Our approach to testing is similar to when we implemented the basic protocol: end-to-end tests ensure overall integration, while property-based mutation tests ensure individual validators work correctly. This time, however, we are also looking at stateful property-based testing of _many_ sequences of transactions (see [this task](https://github.com/input-output-hk/hydra/issues/1390) and [this module](https://github.com/input-output-hk/hydra/blob/feature/incremental-decommit/hydra-node/test/Hydra/Chain/Direct/TxTraceSpec.hs) on the `feature/incremental-decommit` branch).
+
+### Hydra /commit endpoint enhancements
+We are about to release a refactor on the /commit endpoint which provides greater configurability for drafting commit txs, allowing for adjustments to the transaction context, which is crucial for real-world scenarios involving transaction validity checks, required signers, etc.
+
+This refactor changes the endpoint to now accept a "blueprint" tx, CBOR-encoded, along with the UTxO, JSON-encoded.
+The UTxO is used to resolve inputs spent in the transaction, and the "blueprint tx" serves as the foundation for creating the resulting drafted commit tx, retaining anything that complies with the requirements of a valid head commit transaction.
+
+This enhancement was initiated following a discussion led by the MLabs team, as documented [here](https://github.com/input-output-hk/hydra/discussions/1337). The need arose to unblock a [sub-validator](https://github.com/mlabs-haskell/hydra-auction-onchain/blob/95fae061a4a50a635007a7e228443080f8141570/src/HydraAuctionOnchain/Validators/StandingBid.hs#L139-L157) utilized in the hydra-auction for checking spending conditions to move a standing bid to L2. The discussion was promptly converted into an [issue](https://github.com/input-output-hk/hydra/issues/1350) and subsequently added to our roadmap after internal grooming by the Hydra team.
+
+While this refactor represents a breaking change, the hydra-node can still be utilized as before if the provided UTxO is at a public key address. However, to spend from a script UTxO and unlock more complex use-cases, users must provide an additional unsigned transaction that accurately specifies required data, such as redeemers and validity ranges.
 
 ## Cardano Builder Fest
 
