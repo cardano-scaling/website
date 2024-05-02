@@ -90,7 +90,8 @@ In particular, we need to be testing (ideally proving) that:
 Our approach to testing is similar to when we implemented the basic protocol: end-to-end tests ensure overall integration, while property-based mutation tests ensure individual validators work correctly. This time, however, we are also looking at stateful property-based testing of _many_ sequences of transactions (see [this task](https://github.com/input-output-hk/hydra/issues/1390) and [this module](https://github.com/input-output-hk/hydra/blob/feature/incremental-decommit/hydra-node/test/Hydra/Chain/Direct/TxTraceSpec.hs) on the `feature/incremental-decommit` branch).
 
 ### Hydra /commit endpoint enhancements
-We are about to release a refactor on the /commit endpoint which provides greater configurability for drafting commit txs, allowing for adjustments to the transaction context, which is crucial for real-world scenarios involving transaction validity checks, required signers, etc.
+
+We are about to release a refactor on the `/commit` endpoint which provides greater control for drafting commit txs, allowing for adjustments to the transaction context, which is crucial for real-world scenarios involving transaction validity checks, required signers, etc.
 
 This refactor changes the endpoint to now accept a "blueprint" tx, CBOR-encoded, along with the UTxO, JSON-encoded.
 The UTxO is used to resolve inputs spent in the transaction, and the "blueprint tx" serves as the foundation for creating the resulting drafted commit tx, retaining anything that complies with the requirements of a valid head commit transaction.
@@ -99,14 +100,11 @@ This enhancement was initiated following a discussion led by the MLabs team, as 
 
 While this refactor represents a breaking change, the hydra-node can still be utilized as before if the provided UTxO is at a public key address. However, to spend from a script UTxO and unlock more complex use-cases, users must provide an additional unsigned transaction that accurately specifies required data, such as redeemers and validity ranges.
 
-## Cardano Builder Fest
+## Cardano Buidler Fest
 
-TODO sebastian
+This month the who-is-who of Cardano builders got lured to Toulouse, France for a two day tech-only conference. It was a great occassion to meet fellow contributors and building bridges (literally) to new projects and their creators.
 
-- quick recap that many of us attended
-- exciting talks and discussions around zero knowledge, infrastructure projects, open source, building bridges (literally)
-- roadmap session in which we had an open discussion on what could be interesting / important for Hydra & Mithril
-- great feedback received
+Two of many notable presentations and how they relate to the Hydra and Mithril projects are detailed below.
 
 ### IBC bridge
 
@@ -143,7 +141,12 @@ TODO sebastian
 The monthly review meeting for April 2024 was held on 2024-04-30 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
+TODO sebastian
+
 - some demos, but cardano buidler fest was the real highlight this month
+
+> Exciting talks and discussions around zero knowledge primitives, infrastructure projects, and open source in general inspired likely everyone attending to keep building and improving Cardano.
+
 - great talks, connections and bridges being built (literally)
 - as can be seen already from the sections contributed above by Pi (SundaeLabs) and Sebastian (CF)
 
