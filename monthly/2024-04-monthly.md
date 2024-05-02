@@ -40,15 +40,33 @@ TODO jp
 [Issues and pull requests closed in
 April](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-03-31..2024-04-30)
 
-TODO sebastian: update this
-![The roadmap with features and ideas](./img/2024-03-hydra-roadmap.jpg)
+This month, the [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7) received updates to reflect an upcoming `0.17.0` release, which will include several API updates and two notable features:
+
+- [Revise `POST /commit` endpoint interface #1350](https://github.com/input-output-hk/hydra/issues/1350) and
+- [Use versioned handshake when connecting hydra-nodes #1010](https://github.com/input-output-hk/hydra/issues/1010)
+
+The latter was distilled out of the much broader and long-standing [Hydra node software, scripts & protocol updates #191](https://github.com/input-output-hk/hydra/issues/191) as it was the last actionable piece of the included scenarios on how to handle change. Having this will make the `hydra-node` detect incompatible network protocols and improve robustness of the node implementation.
+
+![The roadmap with features and ideas](./img/2024-04-hydra-roadmap.jpg)
 <small><center>The latest roadmap with features and ideas</center></small>
 
-TODO sebastian: write out notable updates and link [roadmap](https://github.com/orgs/input-output-hk/projects/21/views/7)
+Besides feature ideas which are to be discussed and refined in the upcoming weeks, our focus lies on the two major features of incremental commits and decommits are currently being worked on by the team.
 
-### Why is incremental commits/decommits hard? 
+### Why are incremental commits hard?
 
-TODO sebastian
+Both, [Incremental decommit #1057](https://github.com/input-output-hk/hydra/issues/1057) and [Incremental commit #199](https://github.com/input-output-hk/hydra/issues/199) turned out to be non-trivial and are in progres still.
+
+While the plan is clear by now (see issue comments for a history), changes to the protocol are substantial and can be considered literally Hydra Head V2 (but any change to the scripts is a major change). Currently, the off-chain workflow is mostly implemented end-to-end, but the on-chain part is still in the works and requires a lot more testing.
+
+As these features will allow to update the `Open` state on-chain, rollbacks and interleavings of so-called `increment`, `decrement` and the `close` transactions need to be considered. This is a complex problem that requires a lot of testing and validation to ensure that the protocol is secure and correct.
+
+In particular, we need to be testing (ideally proving) that:
+
+ - funds already commited / not yet decommitted are always returned (completeness)
+ - funds are never returned twice (soundness)
+ - the head can process transactions throughout (liveness)
+
+Our approach to testing is similar to when we implemented the basic protocol: end-to-end tests ensure overall integration, while property-based mutation tests ensure individual validators work correctly. This time, however, we are also looking at stateful property-based testing of _many_ sequences of transactions (see [this task](https://github.com/input-output-hk/hydra/issues/1390) and [this module](https://github.com/input-output-hk/hydra/blob/feature/incremental-decommit/hydra-node/test/Hydra/Chain/Direct/TxTraceSpec.hs) on the `feature/incremental-decommit` branch).
 
 ## Cardano Builder Fest
 
@@ -104,4 +122,4 @@ presenting these [slides][slides] and this [recording][recording].
 - conversation on games and great ways to show off Hydra V1 at rare evo - "Can it run doom?" 
 
 [slides]: https://docs.google.com/presentation/d/1GwABNDvdFFF7LlgIlycyLsQub0Btd9XvwpgEYPrGQ9I/edit#slide=id.g1f87a7454a5_0_1392
-[recording]: https://
+[recording]: https://drive.google.com/file/d/15wQ3hTWv9qDAxt7mjA1YXGKKutS-nG_k/view
