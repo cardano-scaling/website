@@ -9,12 +9,11 @@ This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects sin
 
 ## Logo design work
 
-Throughout the last month we were looking into refreshing the logos for both Hydra, Mithril and also create a dedicated one for common workstream of scaling cardano. Having a logo for the latter in particular is important as we hope to unite and learn from multiple projects trying to improve scalability of Cardano.
+Throughout March and April we were looking into refreshing the logos for both Hydra and Mithril, but also create a dedicated one for common workstream of scaling cardano. Having a logo for the latter in particular is important as we hope to unite and involve multiple projects trying to improve scalability of Cardano.
 
-TODO sebastian (confirm with Alex first)
+![](img/2024-04-logo-drafts.png)<small><center>Latest logo drafts for Hydra, Mithril and Cardano Scaling work group</center></small>
 
-- add some logo draft previews
-- ask for feedback
+Above you see the latest drafts for the logos created by our designer Alexander Wende. What do you think? 🔈 Let us know through any of our communication channels like Discord or Twitter. 
 
 ## Mithril
 
