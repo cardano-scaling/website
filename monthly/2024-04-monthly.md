@@ -130,11 +130,24 @@ We also spoke about our longer term plans, such as changes to the ledger to acco
 
 ## Starmap update
 
-TODO sebastian
+Every now and then, roughly quarterly, we like to take a step back from individual project roadmaps and think on an even higher level of what should be the priorities for the next couple months.
 
-- Give an update on the high level (priorities) as we did some quarterly planning
-- Segway / connect with open governance / buidler fest:
-  - Need to open this discussion up further and gather feedback like we did get on the cardano builder fest 
+This time, the themes we would like to focus on are _open governance_, _use cases and adoption_, as well as _measure and visualize_. Across Hydra and Mithril we believe the following items, which ideally are backed by technical features on individual roadmaps, are suitable next steps:
+
+![](./img/2024-04-starmap.jpg)
+
+As one can see from past quarters, opening up the governance of scalability projects is a recurring theme and of highest priority. On the other hand, these proposed work items were mostly shaped and prioritised in private discussions between IOI and PaloIT.
+
+Consequently, we will need to open discussions of what is valuable to build, to gather feedback and ensure individual projects tie into a compelling portfolio across the whole ecosystem.
+
+A first glimpse of this already happened at the Buidler Fest where a spontaneous (open space) session on "the future of Hydra and Mithril" spawned great interest and new ideas like
+
+- Shallow node would be interesting
+- Once per epoch Mithril-signed ledger state
+- BLS accumulators for Hydra partial fanout; also relevant for Mithril?
+- The need for another audit of latest Hydra Head protocol
+
+As also listed on the starmap, a logical next step is to create an open working group with interested experts from the Cardano community. A working group to discuss whether and how a Hydra Tail protocol should be built out? What it would entail (pun intended)? Built by whom? How would it relate to Gummiworm, Cosmex, Subbit, zkFold, ... which should maybe prioritised by the Cardano community instead?
 
 ## Conclusion
 
