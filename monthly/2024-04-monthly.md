@@ -9,18 +9,18 @@ This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects sin
 
 ## Logo design work
 
-Throughout March and April we were looking into refreshing the logos for both Hydra and Mithril, but also create a dedicated one for common workstream of scaling cardano. Having a logo for the latter in particular is important as we hope to unite and involve multiple projects trying to improve scalability of Cardano.
+During the months of March and April, we focused on refreshing the logos of Hydra and Mithril. We also created a separate logo for the shared workstream aimed at scaling Cardano. It's crucial to have a logo for this workstream as it will help bring various projects together to enhance the scalability of Cardano.
 
 ![](img/2024-04-logo-drafts.png)<small><center>Latest logo drafts for Hydra, Mithril and Cardano Scaling work group</center></small>
 
-Above you see the latest drafts for the logos created by our designer Alexander Wende. What do you think? 🔈 Let us know through any of our communication channels like Discord or Twitter. 
+Above, you can see the latest logo drafts created by our designer, Alexander Wende. Let us know your thoughts through any of our communication channels like Discord or Twitter. 
 
 ## Mithril
 
 [Issues and pull requests closed in
 April](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-03-31..2024-04-30)
 
-As a part of our strategy to increase the participation in the Mithril protocol we have been reaching out to SPO's who don't yet run a Mithril signer, providing them with the support they need to set up and run their signer. We appreciate the SPO's such as Cardano Foundation who took the step in joining the protocol. As of epoch 481, the number of stake pools registered in the Mithril protocol as signers has reached 258 representing ~5 billion ADA which is ~22% of the Cardano's active stake.
+As a part of our strategy to increase the participation in the Mithril protocol we have been reaching out to SPO's who don't yet run a Mithril signer, providing them with the support they need to set up and run their signer. We appreciate the SPO's such as Cardano Foundation who took the step in joining the protocol. As of epoch 481, the number of stake pools registered in the Mithril protocol as signers has reached 258. This represents approximately 5 billion ADA, which is approximately 22% of Cardano's active stake.
 
 ![](img/2024-04-mithril-participation.png)
 
@@ -102,7 +102,7 @@ While this refactor represents a breaking change, the hydra-node can still be ut
 
 ## Cardano Buidler Fest
 
-This month the who-is-who of Cardano builders got lured to Toulouse, France for a two day tech-only conference. It was a great occassion to meet fellow contributors and building bridges (literally) to new projects and their creators.
+This month the who-is-who of Cardano builders got lured to Toulouse, France for a two-day tech-only conference. It was a great occasion to meet fellow contributors and build bridges (literally) to new projects and their creators.
 
 Two of many notable presentations and how they relate to the Hydra and Mithril projects are detailed as contributed by Pi (Sundae Labs) and Sebastian (Cardano Foundation).
 
