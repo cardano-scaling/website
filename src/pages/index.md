@@ -53,7 +53,7 @@ and DeFI on Cardano.
 
 ## Community
 
-Want to get involved? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #moria channels.
+Want to get involved? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #ask-mithril channels.
 
 Some members of this organization are also on Twitter, so follow them for updates on the future of Cardano Scaling!
 
