@@ -93,9 +93,26 @@ TODO sasha
 
 ### Hydra-related catalyst proposals
 
-TODO sebastian
-- introduce: 30+ catalyst proposals in fund12 mention "hydra"; some of them directly inspired by Hydra and solve similar challenges, some quite different but also aiming to improve scalability of transaction processing (as side-chains); some are focusing on payments only and refreshingly simple
-- highlight a few (especially the ones we interacted with)
+Catalyst Fund12 is in full swing and there over 30 proposals this round that mention "hydra" in way or another. While some of them are directly inspired by Hydra and solve similar challenges, some are also aiming to improve scalability of transaction processing but approach it quite differently (rollups and side-chains), and yet other proposals are focusing on scaling payment transactions only and refreshingly simple.
+
+After a quick screening we also interacted with some of the proposal authors this month to answer some questions around Hydra, discuss similarities, and of course how we can learn from or help each other:
+
+##### Use cases
+
+- [Wine Supply Chain Tracking and Reporting System](https://cardano.ideascale.com/c/idea/121983): Great use case which requires seamless integration of recording data as transactions off-chain, while resulting states and tokens should be available from the Cardano layer 1. The team is already building a proof of concept using Hydra and this proposal is about maturing this into an MVP.
+- [Ikigai + MLABS - Grabbit / Hydra auctions](https://cardano.ideascale.com/c/idea/123388): Running auctions in Hydra heads is an all-time favorite use case where bids can be done fast & cheap on the layer 2, but the ultimate purchase of the auction lot happens seamlessly on the Cardano layer 1. This proposal in particular will leverage incremental commits & decommits to enable full-backed auctions on the layer 2.
+
+#### Using / extending hydra
+
+- [Hydra-Enabled Micropayments System](https://cardano.ideascale.com/c/idea/120893): The same team behind the wine supply chain tracking system wants to also provide a decentralized payment system that offers great Point-of-Sales experience using Hydra at its core. While they aim to use Hydra Head as a core component, this would also be a great use case for the more payment focused variants in the long-run (see below).
+- [Open-source Hydra Head L2 Web based Explorer and API](https://cardano.ideascale.com/c/idea/123375): Improving the visibility of what's going on in a Hydra Head is a great idea. Besides exploring what heads are available on the network, this would make transactions _inside_ a head more visible and is very much related to [this idea](https://github.com/input-output-hk/hydra/issues/183) on our roadmap.
+- [Cardano Layer 2: Hydrozoa protocol for lightweight and flexible Hydra Heads for Cardano](https://cardano.ideascale.com/c/idea/123560): An exciting re-interpretation of the core Hydra Head protocol and ambitious simplifications of roadmap features like [directly open heads](https://github.com/input-output-hk/hydra/issues/1329), [incremental de](https://github.com/input-output-hk/hydra/issues/1057)-/[commits](https://github.com/input-output-hk/hydra/issues/199) and [optimistic head closure](https://github.com/input-output-hk/hydra/issues/198). This was also [discussed in the past](https://github.com/input-output-hk/hydra/discussions/850) with core contributors and we would love to explore how those protocol variants can find their way into the upstream Hydra Head protocol.
+
+#### Alternative scaling approaches
+
+- [Subbit.xyz : Cardano's featherweight L2](https://cardano.ideascale.com/c/idea/122085): Refreshingly simple take on how to process payments off-chain. Very much inspired by lightning payment channels and maybe even Chaumean eCash systems. Having payment channels that work in such a simple and flexible way is exciting and could be a great basis for any payment channel networks, i.e. Cardano Lightning
+- [µgraph: Instant, Untraceable Payments in Cardano](https://cardano.ideascale.com/c/idea/122901): Ambitious, but promising, take on what the _Hydra tail_ could be: That is, an asymmetric construction which benefits individual users by using zero-knowledge proofs to ensure correct operation of the node.
+- [Anastasia Labs Cardano Layer2 - Midgard](https://cardano.ideascale.com/c/idea/122254): A layer 2 construction that also aims to use the Cardano ledger isomorphically like Hydra Head, but ran by a constrained validator set and using a different consensus to enable a more side-chain like experience. We always wondered what you would get if you run a Hydra Head with a non-total consensus and checkpointing state on the layer 1!
 
 ## Technical working groups
 
