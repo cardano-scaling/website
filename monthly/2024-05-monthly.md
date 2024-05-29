@@ -1,7 +1,7 @@
 ---
 title: May 2024
 slug: 2024-05
-authors: [ch1bo]
+authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
@@ -26,9 +26,23 @@ TODO
   - any releases?
   - notable updates?
 
-### Transaction signing on testing-mainnet
+### Transaction certification
 
-TODO
+We have kept working on the implementation of the Cardano transactions certification with Mithril and we have achieved a new milestone with running the certification in a test network (aka `testing-mainnet`) which operates on the Cardano `mainnet`. 
+
+This allowed us to refine our roadmap with clear objectives before the MVP can be released:
+- Keep working on the low latency implementation of the certification.
+- Optimize the aggregator prover route to reach the minimum throughput.
+- Optimize the signer footprint to limit the impact on the SPO infrastructure.
+- Optimize the warmup of the signer and aggregator to avoid network instability/disruption when MVP is released.
+
+![](img/2024-05--mithril-cardano-tx-roadmap.jpg)
+
+A first optimization of the prover route has been implemented and drastically imporved the performances: by implementing resource pooling on the Merkle tree that signs the transactions by block range, we have been able to achieve a **x100** factor on the throughput.
+
+![](img/2024-05--mithril-cardano-tx-performance-prover.png)
+
+We have also implemented a pruning mechanism on the signer which keeps only the transactions needed to compute the upcoming signatures: this has lead to reducing the storage requirements from **32GB**` to **100MB**.
 
 ## Hydra
 
