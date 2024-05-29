@@ -145,9 +145,11 @@ If you read this far you might want to join us? Signal interest on by [opening a
 The monthly review meeting for May 2024 was held on 2024-05-28 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-- short month, great to see demos and progress on both projects still
-- business as usual, but exciting times with fund12 coming in strong
-- making Hydra and Mithril less IOG-driven, but more community owned projects through working groups and Intersect; maybe the right way, maybe not (and catalyst proposals is the way?); we fill find out
+May was a short month because of the public holidays and some people being off, but we still made good progress on both projects. The new dashboards for Mithril will visualize existing participation and surely garner more interest in the protocol. We are also excited about the progress on the Cardano transactions certification with Mithril, especially as multiple projects building bridges or layer 2s are keeping a close eye on this feature.
+
+While we are busy on the Hydra side wrapping our head around incremental decommits and ensuring they are correctly implemented through transaction trace testing, we are also excited about the upcoming Catalyst Fund12 proposals and the discussions coming along with it as others are also looking into building similar, yet different scaling solutions and tackle the same challenges.
+
+We are also making progress on making Hydra and Mithril less IOG-driven, but more community-owned through working groups and Intersect. We are excited to see how this will turn out.
 
 [slides]: https://docs.google.com/presentation/d/1ByOgQt6gEjOY9Wd-xOMzeSy4lfQmMn39KEtSB-VisVw/edit#slide=id.g21194f9c145_0_5
 [recording]: https://drive.google.com/file/d/1Y_xa9JjQ62m98m5MC27NDbsSjVjspnsA/view
