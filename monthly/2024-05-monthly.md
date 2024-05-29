@@ -116,14 +116,29 @@ After a quick screening we also interacted with some of the proposal authors thi
 
 ## Technical working groups
 
-TODO sebastian + jp?
- - age of voltaire gives rise to community alliances and member based organisations
- - governance of core cardano projects needs to open up
- - current strategy: form technical working groups to discuss project roadmaps and high-level backlog (link to last month) - both Mithril and Hydra!
- 
- - Specifically for the hydra working group:
-    - drafted a charter and first agenda items (links)
-    - next: outreach, find interested members, start somewhere
+As the age of voltaire is unfolding, it gives rise to community alliances and member based organisations. At the same time, popular belief is that the governance of core cardano projects needs to open up and decisions on what goes in or not on a roadmap of core infrastructure need to be transparent.
+
+The current plan by Intersect and its members to deal with this, is to establish
+technical working groups that work in an open an transparent way on roadmaps and
+high-level backlog items. Very much as we are already doing here (see also last
+months [starmap update](http://localhost:3000/monthly/2024-04#starmap-update)
+section), but with a more concrete democratic approach on ratifying a roadmap.
+As it stands, roadmaps for both projects, Hydra and Mithril are envisaged to be
+governed that way.
+
+Specifically for the hydra working group, first steps had been taken this month
+by drafting a barebones charter and brainstormed first agenda items to inspire
+candidate members and get first sessions going as we gather interested
+stakeholders. The charter and any future outputs of the working group will be
+hosted [`cardano-scaling/wg-hydra`](https://github.com/cardano-scaling/wg-hydra) and we
+also [registered the working group at
+Intersect](https://intersect.gitbook.io/intersect-working-groups/technical-working-groups/hydra).
+
+:::info
+
+If you read this far you might want to join us? Signal interest on by [opening an issue](https://github.com/cardano-scaling/wg-hydra/issues/new?template=sign_me_up.yml) or reach out on `#ask-hydra` on the [IOG Discord](https://discord.com/invite/Qq5vNTg9PT) or `#wg-hydra` on the Intersect Discord (as soon as it exists).
+
+:::
 
 ## Conclusion
 
