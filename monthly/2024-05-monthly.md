@@ -13,7 +13,6 @@ This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects sin
 May](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-04-30..2024-05-30)
 
 TODO
-  - participation dashboard
   - general protocol status
 
 TODO similar summary using new dashboard?
@@ -21,14 +20,14 @@ TODO similar summary using new dashboard?
 
 ![](img/2024-04-mithril-participation.png)
 
-We have released the new Mithril distribution [`2418.1`](https://github.com/input-output-hk/mithril/releases/tag/2418.1). This release includes several critical updates and enhancements:
+We have released the new Mithril distribution [`2418.1`](https://github.com/input-output-hk/mithril/releases/tag/2418.1). This distribution includes several critical updates and enhancements:
 - A **breaking change** is introduced in **Mithril client / Mithril client CLI**:
   - The certificate chain structure has been modified to remove coupling with immutable file number.
   - The client **must be updated** to verify certificate chain.
 - We have switched the **memory allocator** to `jemallocator` on the signer and the aggregator to avoid memory fragmentation.
 - We have enabled the BLST `portable` feature by default in order to benefit from **runtime check** of intel ADX instruction set.
 
-Also, we have started the process of removing the deprecated `snapshot` command from the client which is superseded by the `cardano-db` command. This **change will be effective** with the release of the next Mithril distribution 
+Also, we have started the process of removing the deprecated `snapshot` command from the client which is superseded by the `cardano-db` command. This **change will be effective** with the release of the next Mithril distribution.
 
 ### Transaction certification
 
@@ -36,17 +35,17 @@ We have kept working on the implementation of the Cardano transactions certifica
 
 This allowed us to refine our roadmap with clear objectives before the MVP can be released:
 - Keep working on the low latency implementation of the certification.
-- Optimize the aggregator prover route to reach the minimum throughput.
+- Optimize the aggregator prover route to reach good throughput.
 - Optimize the signer footprint to limit the impact on the SPO infrastructure.
-- Optimize the warmup of the signer and aggregator to avoid network instability/disruption when MVP is released.
+- Optimize the warmup of the signer and aggregator to avoid network instability/disruption once the MVP is released.
 
 ![](img/2024-05--mithril-cardano-tx-roadmap.jpg)
 
-A first optimization of the prover route has been implemented and drastically imporved the performances: by implementing resource pooling on the Merkle tree that signs the transactions by block range, we have been able to achieve a **x100** factor on the throughput.
+A first optimization of the prover route has been implemented and drastically improved the performances: by implementing resource pooling on the Merkle tree that signs the transactions by block range, we have been able to achieve a **x100** factor on the throughput.
 
 ![](img/2024-05--mithril-cardano-tx-performance-prover.png)
 
-We have also implemented a pruning mechanism on the signer which keeps only the transactions needed to compute the upcoming signatures: this has lead to reducing the storage requirements from **32GB**` to **100MB**.
+We have also implemented a pruning mechanism on the signer which keeps only the transactions needed to compute the upcoming signatures: this has lead to reducing the storage requirements from **32GB** to **100MB**.
 
 ### In/Out SPOs dashboard
 
@@ -56,7 +55,9 @@ We have added a new [page](https://mithril.network/explorer/registrations-in-out
 
 ### Protocol Insights dashboard
 
-A new [Mithril Protocol Insights Dashbord](https://lookerstudio.google.com/u/1/reporting/8b05ea4b-6a43-45ea-aef2-237906ec7a42/paage/kem0D) has been released. It gives access to metrics such as: the number of SPOs and total stake involved, the daily number of Cardano database restorations and the running signer versions breakdown. Feel free to request some new metrics on the dashboard!
+A new [Mithril Protocol Insights Dashbord](https://lookerstudio.google.com/u/1/reporting/8b05ea4b-6a43-45ea-aef2-237906ec7a42/paage/kem0D) has been released. It gives access to metrics such as the number of SPOs and total stake involved, the daily number of Cardano database restorations and the running signer versions breakdown. 
+
+Feel free to request some new metrics on the dashboard!
 
 ![](img/2024-05--mithril-protocol-insights-dashboard.png)
 
