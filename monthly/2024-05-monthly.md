@@ -22,9 +22,14 @@ TODO similar summary using new dashboard?
 
 ![](img/2024-04-mithril-participation.png)
 
-TODO
-  - any releases?
-  - notable updates?
+We have released the new Mithril distribution [`2418.1`](https://github.com/input-output-hk/mithril/releases/tag/2418.1). This release includes several critical updates and enhancements:
+- A **breaking change** is introduced in **Mithril client / Mithril client CLI**:
+  - The certificate chain structure has been modified to remove coupling with immutable file number.
+  - The client **must be updated** to verify certificate chain.
+- We have switched the **memory allocator** to `jemallocator` on the signer and the aggregator to avoid memory fragmentation.
+- We have enabled the BLST `portable` feature by default in order to benefit from **runtime check** of intel ADX instruction set.
+
+Also, we have started the process of removing the deprecated `snapshot` command from the client which is superseded by the `cardano-db` command. This **change will be effective** with the release of the next Mithril distribution 
 
 ### Transaction certification
 
