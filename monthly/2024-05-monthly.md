@@ -13,7 +13,6 @@ This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects sin
 May](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-04-30..2024-05-30)
 
 TODO
-  - in/out SPOs dashboard
   - participation dashboard
   - general protocol status
 
@@ -48,6 +47,12 @@ A first optimization of the prover route has been implemented and drastically im
 ![](img/2024-05--mithril-cardano-tx-performance-prover.png)
 
 We have also implemented a pruning mechanism on the signer which keeps only the transactions needed to compute the upcoming signatures: this has lead to reducing the storage requirements from **32GB**` to **100MB**.
+
+### In/Out SPOs dashboard
+
+We have added a new [page](https://mithril.network/explorer/registrations-in-out?aggregator=https%3A%2F%2Faggregator.release-mainnet.api.mithril.network%2Faggregator) on the Mithril explorer which lists the newly registered and recently de-registered signers from the Mithril protocol.
+
+![](img/2024-05--mithril-explorer-in-out-spos.png)
 
 ## Hydra
 
