@@ -84,12 +84,33 @@ TODO dan
 
 ### Transaction trace testing
 
-TODO sasha
- - introduce using incremental decommits scope
- - how to ensure certain properties about the on-chain code
- - find a link to mutation testing (past and still important technique)
- - give example for one property that can be better ensured using tx trace testing 
- - short paragraph about how it is done (stateful property based testing where performing actions = constructing, validating and observing transactions)
+In the process of implementing incremental decommits feature we constantly
+thought about how to prove to ourselves that we covered all potential scenarios
+in our test suite. For example what happens if we request a decommit, have a
+signed snapshot but never post a decommit transaction? Or how do we handle
+close and fanout with decommit utxo in the snapshot? There are various
+scenarios we are interested in testing and we quickly realized that we would
+need to test at different levels in order to get a coverage we expect,
+especially for our on-chain code. 
+
+Our mutation test suite was also very helpful in testing our on-chain code
+produces expected errors when manipulating the transaction to make it invalid
+but this framework is testing individual transactions and we had a need to test
+if multiple transactions in sequence produce valid results.
+
+We decided to utilize quickcheck-dynamic once again to model simple snapshots
+which are used to construct Hydra transactions. Our hope was that if the model
+is simple enough we will be able to reason about it without looking into many
+details and decide if particular utxo/snapshot should be valid in the current
+transaction context or not. Our `Action` in the quickcheck-dynamic world
+contain snapshots which are then used to constuct different transactions,
+evaluate and observe them. Our model keeps the extra information we need to
+evaluate these transactions and all snapshots are signed by everybody to keep
+things simple.
+
+This test suite already exposed some bugs we had and enabled us to reason about
+our code using a simpler model without burdening us with real world details
+which are more involved and harder to reason about.
 
 ### Hydra-related catalyst proposals
 
