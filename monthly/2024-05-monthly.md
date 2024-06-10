@@ -125,11 +125,8 @@ The current strategy devised by Intersect and its members to address this involv
 months [starmap update](http://localhost:3000/monthly/2024-04#starmap-update)
 section), but with a more concrete democratic approach to ratifying a roadmap. Presently, roadmaps for both Hydra and Mithril projects are expected to be governed in this manner.
 
-Specifically for the hydra working group, first steps had been taken this month
-by drafting a barebones charter and brainstormed first agenda items to inspire
-candidate members and get first sessions going as we gather interested
-stakeholders. The charter and any future outputs of the working group will be
-hosted [`cardano-scaling/wg-hydra`](https://github.com/cardano-scaling/wg-hydra) and we
+Specifically for the Hydra working group, initial steps were taken this month by drafting a barebones charter and brainstorming first agenda items to engage potential members and initiate initial sessions as we gather interested stakeholders. The charter and any future outputs of the working group will be
+hosted on [`cardano-scaling/wg-hydra`](https://github.com/cardano-scaling/wg-hydra) and we
 also [registered the working group at
 Intersect](https://intersect.gitbook.io/intersect-working-groups/technical-working-groups/hydra).
 
