@@ -9,7 +9,7 @@ This is the first joint report of the 🐲 Hydra and 🛡 Mithril projects, whic
 
 Previously, both teams had been releasing progress updates in different formats and intervals within their respective repositories:
 
-- Hydra [monthly reports](https://hydra.family/head-protocol/monthly)
+- Hydra [monthly reports](/monthly)
 - Mithril [dev blog](https://mithril.network/doc/dev-blog/)
 
 Both sites are created from the individual project repositories. However, it is not ideal to keep 'procedural' documents as part of the code base, since it requires special handling when building versioned, published documentation. For example, [this workflow](https://github.com/input-output-hk/hydra/blob/fad12fd7d967e5e8af4d8b832396e68bd8510e9a/.github/workflows/publish-docs.yaml#L87-L92) in the Hydra project which publishes to https://hydra.family required several attempts to work around how Docusaurus websites are built. Consequently, we introduced a [dedicated repository](https://github.com/cardano-scaling/website) that builds into a [website](https://cardano-scaling.org). This not only helps keep the original product repositories clean of inherently dated information, but also serves as a new home for joint reports, announcements, or occasional articles.
