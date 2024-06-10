@@ -37,10 +37,7 @@ only slightly updated this month and already saw one more feature completed:
   of a Hydra head. As it is a very basic one, we moved the item from an
   idea to a feature and started work on it.
 
-- Added a new feature item to add Hydra as a tool to developer platforms within
-  our agenda of [promoting Hydra as an open-source
-  platform](https://hydra.family/head-protocol/monthly/2023-01#themes-for-2023)
-  for scalability on Cardano.
+- Added a new feature item to add Hydra as a tool to developer platforms within our agenda of [promoting Hydra as an open-source platform](/monthly/2023-01#themes-for-2023) for scalability on Cardano.
 
 - Already completed a first feature for 0.11.0 and considering whether to release it as
   early as possible with latest advances.

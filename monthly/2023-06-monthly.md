@@ -172,7 +172,7 @@ month.
 
 The project yielded multiple github issues containing ideas and sparked great
 discussions on improving Hydra like [reported last
-month](https://hydra.family/head-protocol/monthly/2023-05#hydrozoa-850). It is
+month](/monthly/2023-05#hydrozoa-850). It is
 also the first project which demonstrates how to move smart contracts from the
 layer 1 (L1) to the layer 2 (L2)! Overall it is a great example of establishing
 crucial state on L1 and achieving scalability through Hydra as L2.
