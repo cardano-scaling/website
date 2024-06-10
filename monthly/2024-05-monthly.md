@@ -5,20 +5,11 @@ authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
-This is a monthly report of progress on 🐲 Hydra and 🛡 Mithril projects since April 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month, the meeting was held on 2024-05-28, using these [slides][slides] and [you can see the recording here][recording].
+This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects since April 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month the meeting was held on 2024-05-28 using these [slides][slides] and [you can see the recording here][recording].
 
 ## Mithril
 
-[Issues and pull requests closed in
-May](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-04-30..2024-05-30)
-
-TODO
-  - general protocol status
-
-TODO similar summary using new dashboard?
-> As a part of our strategy to increase the participation in the Mithril protocol we have been reaching out to SPO's who don't yet run a Mithril signer, providing them with the support they need to set up and run their signer. We appreciate the SPO's such as Cardano Foundation who took the step in joining the protocol. As of epoch 481, the number of stake pools registered in the Mithril protocol as signers has reached 258. This represents approximately 5 billion ADA, which is approximately 22% of Cardano's active stake.
-
-![](img/2024-04-mithril-participation.png)
+[Issues and pull requests closed in May](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-04-30..2024-05-30)
 
 We have released the new Mithril distribution [`2418.1`](https://github.com/input-output-hk/mithril/releases/tag/2418.1). This distribution includes several critical updates and enhancements:
 - A **breaking change** introduced in the **Mithril client / Mithril client CLI**:
@@ -67,23 +58,19 @@ Feel free to request some new metrics on the dashboard!
 [Issues and pull requests closed in
 May](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-04-30..2024-05-30)
 
+This month, Hydra version `0.17.0` was released which includes
+- breaking changes of the `/commit` endpoint, yielding full flexibility when committing from scripts (see [this how-to](https://hydra.family/head-protocol/docs/how-to/commit-blueprint) for details)
+- new `GET /snapshot/utxo` HTTP endpoint
+- detecting network protocol mismatches
 
-TODO
-  - release `0.17.0` summary
-  - roadmap update
+- [Full release notes](https://github.com/input-output-hk/hydra/releases/tag/0.17.0) and a list of [delivered features](https://github.com/input-output-hk/hydra/milestone/18?closed=1)
+
+Besides corresponding features being released through `0.17.0`, the roadmap did not change much this month. Current focus is on incremental decommits and commits, while we also wait for the `Conway` hard-fork to happen before we can switch the L2 ledger also to `Conway` (see [March report](/monthly/2024-03#conway-support) for more details). 
 
 ![The roadmap with features and ideas](./img/2024-05-hydra-roadmap.jpg)
 <small><center>The latest roadmap with features and ideas</center></small>
 
-### Horizon haskell
-
-TODO dan
- - introduce as an on-going workflow improvement
- - why is this important for our users? for us?
- - how is this different than the status quo?
-
 ### Transaction trace testing
-
 
 In the process of implementing the incremental decommits feature, we constantly considered how to ensure our test suite covered all potential scenarios. For example, what happens if we request a decommit, have a signed snapshot, but never post a decommit transaction? Or how do we handle close and fanout with decommit UTXO in the snapshot? There are various scenarios we are interested in testing, and we quickly realized that we would need to test at different levels to achieve the coverage we expect, especially for our on-chain code.
 
