@@ -49,11 +49,34 @@ and DeFI on Cardano.
          and applications running on Cardano in a trustless way.
      </td>
   </tr>
+  <tr>
+     <td>
+         <img width="100" src="https://raw.githubusercontent.com/cardano-scaling/alba/main/docs/src/logo.svg" />
+     </td>
+     <td>
+         <a href="https://github.com/cardano-scaling/alba">ALBA</a> is
+         a novel cryptographic type of <em>proof of knowledge</em> that allows a prover to convince a verifier
+         they know a large set of elements verifying some predicate by providing a much smaller subset. It is 
+         useful to build <em>certificates</em> from large number of individual elements, like signatures or votes, 
+         assuming a significant majority of honest items.
+     </td>
+  </tr>
+   <tr>
+     <td>
+         <img width="100" src="https://raw.githubusercontent.com/input-output-hk/ouroboros-leios/main/site/static/img/wave-logo.svg" />
+     </td>
+     <td>
+         <a href="https://github.com/input-output-hk/ouroboros-leios">Leios</a> is
+         an extension to Ouroboros Praos, the protocol powering Cardano, that dramatically increases the throughput of 
+         the network. It is currently in its <em>R&D</em> phase with the goal of producing a detailed specification for 
+         implementors.
+     </td>
+  </tr>
 </table>
 
 ## Community
 
-Want to get involved? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #ask-mithril channels.
+Need some help getting started? We are on [IOG Technical Community's Discord](https://discord.gg/Qq5vNTg9PT) on the #ask-hydra and #ask-mithril channels.
 
 Some members of this organization are also on Twitter, so follow them for updates on the future of Cardano Scaling!
 
@@ -62,5 +85,7 @@ Some members of this organization are also on Twitter, so follow them for update
 
 ## Disclaimer
 
-- The logo is still a draft and was created by Alexander Wende.
+- Logo created by Alexander Wende
+
 - This organization is in a **drafting stage** and we are currently evaluating whether moving repositories, project organization and communication into this organization makes sense.
+
