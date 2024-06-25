@@ -9,7 +9,7 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ## Mithril
 
-[Issues and pull requests closed in May](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
+[Issues and pull requests closed in June](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
 
 TODO JP
 
@@ -24,7 +24,7 @@ TODO JP
 ## Hydra
 
 [Issues and pull requests closed in
-May](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
+June](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
 
 TODO Franco
 
