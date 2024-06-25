@@ -11,15 +11,47 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 [Issues and pull requests closed in June](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
 
-TODO JP
+We have released the new Mithril distribution [`2423.0`](https://github.com/input-output-hk/mithril/releases/tag/2423.0). This distribution includes several critical updates and enhancements:
+- A **BREAKING** changes in **Mithril client CLI**:
+  - The deprecated `snapshot` command has been **removed**. 
+  - It has been superseded by the `cardano-db` command.
+- Bug fixes and optimizations.
+
+We have also created the [Mithril client CLI 'snapshot' command is removed](https://mithril.network/doc/dev-blog/2024/06/12/client-cli-removed-command) developer blog post to announce the removal of the client CLI command.
+
+Additionally, we have released a draft version of the [Mithril Threat Model](https://mithril.network/doc/mithril/threat-model). We expect to receive external feedback and contributions before we can consider it final.
 
 ### Transaction certification
 
-TODO JP
+We have kept working on the implementation of the Cardano transactions certification with Mithril and we have made good progress with the developments: 
+- The transactions are now retrieved with the Chain Sync mini-protocol with the [`Pallas`](https://github.com/txpipe/pallas) library.
+- The performances of the prover route of the aggregator have been significantly improved.
+
+![](img/2024-06-mithril-cardano-tx-roadmap.jpg)
+
+#### Low latency certification
+
+The transactions are imported with the native Chain Sync mini-protocol of the Cardano node. This has been possible with the use of Pallas library which fully supports this mini-protocol. This allowed us to retrieve the transactions much closer to the tip of the chain and at more frequent intervals. In order to do so, we have also enhanced the transaction importer to handle rollbacks of the chain: some blocks previously recorded can be discarded at a further time with an increased probability when getting closer to the tip of the chain.
+
+We are currently in the process of calibrating the parameters of the system (depth from the tip and certification pace) before we can activate it on the `mainnet`.
+
+#### Increased Prover Performances
+
+We have identified some bottleenecks in the computations of the merkelized proof we compute for transaction membership of the transaction set as well as in the databse access. These bottlenecks have been fixed whcih allowed us to reach new order of magnitude in terms of performance of the prover route: it is now able to deliver consistently **10,000** transaction hashes certification per second.
+
+![](img/2024-06-mithril-cardano-tx-prover-throughput.png)
 
 ### Mithril/Cardano integration
 
-TODO JP
+We have been working with the Cardano networking team on the design of a closer integration of Mithril into Cardano. In particular, we have focused our efforts on decentralizing the signature diffusion from the Mithril signers to the Mithril aggregators based on the Cardano network layer. 
+
+Here is our current roadmap:
+- Assessing Cardano network bandwidth capacity for supporting Mithril signature diffusion.
+- Designing a node-to-node mini-protocol for signature diffusion.
+- Designing two node-to-client mini-protocols for signature submission and notification.
+- Preparing the submission of a CIP draft to the community.
+
+![](img/2024-06-mithril-cardano-integration.png)
 
 ## Hydra
 
