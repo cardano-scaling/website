@@ -1,7 +1,7 @@
 ---
 title: June 2024
 slug: 2024-06
-authors: [jpraynaud, v0d1ch]
+authors: [jpraynaud, v0d1ch, rezabaram]
 tags: [monthly]
 ---
 
@@ -97,19 +97,19 @@ the following days.
 
 TODO Daniel
 
-## From the community
+## Community
 
 ## Subbit.xyz
 
-TODO Reza
+Algy Wallis presented “Subbit,” an L2 solution focused on subscription-based services, aimed at addressing the complexities of building blockchain products. Subbit is designed to be easier to integrate and manage compared to L1 solutions, reducing latency and transaction fees. The system allows a provider to verify consumer IOU notes, facilitating periodic payments and withdrawals with minimal on-chain interactions. This model mirrors Bitcoin’s Lightning Network and aims to enhance scalability and interoperability for subscription services on Cardano.
 
 ## Hydrozoa
 
-TODO Reza
+George Flerovsky introduced the Hydrazoa proposal, currently in Fund 12 for Catalyst. Hydrazoa aims to enhance the existing Hydra framework by adding dynamic capabilities for incremental commitments and decommits, along with the ability to add or remove participants in state channels while they are still open. The goal is to simplify L1 scripts and lower costs, with fallback mechanisms similar to Hydra’s in case of L2 consensus failure. George highlighted the differences and potential integrations with Hydra, emphasizing a more flexible and simplified approach for state channel management.
 
 ## Technical working groups
 
-TODO Reza
+Reza Baram provided an update on the Hydra Working Group, which had its first meeting to discuss the group’s vision and collaborative processes. The primary goal is to create an environment for sharing knowledge and working towards scaling Cardano, not limited to Hydra alone. The group is currently focused on defining and delivering Hydra version one, prioritizing incremental commits and robustness improvements. Feedback from the community and working group members will be sought to refine and enhance the roadmap and ensure effective scaling solutions for Cardano applications. Hydra WG is open to new members and contributions from the community. More info can be found here: https://github.com/cardano-scaling/wg-hydra.
 
 ## Conclusion
 
