@@ -1,7 +1,7 @@
 ---
 title: June 2024
 slug: 2024-06
-authors: [jpraynaud]
+authors: [jpraynaud, v0d1ch]
 tags: [monthly]
 ---
 
