@@ -116,8 +116,5 @@ TODO Reza
 The monthly review meeting for June 2024 was held on 2024-05-24 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-TODO Reza
-
 [slides]: https://docs.google.com/presentation/d/137n0SQ2tnWCrDfPieT3JSU8MDnJDTKuLE8ISSieRO4U/edit#slide=id.g1f87a7454a5_0_1392
-[recording]: https://drive.google.com/file/d/1Y_xa9JjQ62m98m5MC27NDbsSjVjspnsA/view
-TODO Update recording link / Reza
+[recording]: https://drive.google.com/file/d/1hIn4NWv6YRtwv_7RUGlXP8ObwpPbMNJy/view
