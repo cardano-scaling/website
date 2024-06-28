@@ -93,10 +93,6 @@ Now the rest of the work consists of updating the specification with the
 changes in the implementation and we should be ready to release this feature in
 the following days.
 
-### Hydra formal specification
-
-TODO Daniel
-
 ## Community
 
 ## Subbit.xyz
