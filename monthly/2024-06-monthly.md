@@ -58,7 +58,26 @@ Here is our current roadmap:
 [Issues and pull requests closed in
 June](https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-05-31..2024-06-30)
 
-TODO Franco
+Here is a high-level overview of what the team has worked on over the last month:
+- Increment Decommits
+We continued our work on increment decommits, focusing on investigating adversarial attacks on the head script contract.
+- Specification Update
+We updated our [specification](https://github.com/input-output-hk/hydra/pull/1479) with the latest changes following our exploration of adversarial attacks. These updates aim to enhance the security of the protocol.
+- Agda Specification for Hydra Protocol
+Work has begun on writing an Agda specification for the Hydra protocol. You can follow the progress [here](https://github.com/cardano-scaling/hydra-formal-specification).
+- Incremental Commit
+We discussed various options for the incremental commit work. This includes potential designs for a hydra-ledger to improve system efficiency and security.
+- Node Compatibility
+The node has been successfully updated and is now compatible with cardano-node version 8.11-pre.
+- Website
+We updated our website tutorials, and documentation to enhance expressivity and ease of use.
+- Committing Internal Wallet UTXOs
+Breaking changes to the `hydra-node` API `/commit` endpoint [#1463](https://github.com/input-output-hk/hydra/pull/1463) to remove the check that prevented committing UTxOs from an internal `hydra-node` wallet.
+
+We haven't planned how our next release will look like, so our roadmap did not change much. Our current focus is on incremental decommits and commits, and having our protocol specified in Agda.
+
+![The roadmap with features and ideas](./img/2024-06-hydra-roadmap.png)
+<small><center>The latest roadmap with features and ideas</center></small>
 
 ### Incremental decommit
 
