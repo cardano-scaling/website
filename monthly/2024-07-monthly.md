@@ -11,9 +11,26 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 [Issues and pull requests closed in July](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-06-30..2024-07-31)
 
-TODO
-- mithril releases and notable updates
-- roadmap snapshot and/or protocol status?
+### Distributions
+
+#### 2423.0
+
+We have released the new Mithril distribution [`2428.0`](https://github.com/input-output-hk/mithril/releases/tag/2428.0). This distribution includes several critical updates and enhancements:
+- Support for **Cardano node** `9.0.0`.
+- Database cleanup and optimization once per epoch.
+- Bug fixes and performance improvements.
+
+#### Future distributions
+
+![](img/2024-07-mithril-distributions.png)
+
+We have planned to release two new distributions in August:
+- `2430` (before the **Chang** hardfork):
+  - Activation of the certification of **Cardano transactions** in the `release-preprod` network.
+  - Support for **Cardano node** `9.1.0` on **all networks**.
+- `2434` (after the **Chang** hardfork):
+  - Activation of the certification of **Cardano transactions** in the `release-mainnet` network.
+
 
 ### Transaction verification in Nami
 
