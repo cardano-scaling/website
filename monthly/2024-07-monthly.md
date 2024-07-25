@@ -31,6 +31,10 @@ We have planned to release two new distributions in August:
 - `2434` (after the **Chang** hardfork):
   - Activation of the certification of **Cardano transactions** in the `release-mainnet` network.
 
+### Protocol status
+
+Here is the status of the Mithril protocol on the Cardano `mainnet`:
+![](img/2024-07-mithril-protocol-status.png)
 
 ### Transaction verification in Nami
 
