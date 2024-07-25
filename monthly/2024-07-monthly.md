@@ -1,7 +1,7 @@
 ---
 title: July 2024
 slug: 2024-07
-authors: [ch1bo]
+authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
@@ -61,8 +61,16 @@ We have kept working on the implementation of the Cardano transaction certificat
 
 ### Decentralized Message Queue CIP
 
-TODO
-- give updates on latest ideas about CIP for signature diffusion
+We have kept working with the Cardano networking team to design a mechanism to implement a decentralized message queue which can be used in particular to decentralize the signature diffusion from Mithril signers to Mithril aggregators based on the Cardano network layer. The idea is to create a separate process for the decentralized message queue implementation:
+
+- New dedicated process (aka "Mithril network node") which will be based on Ouroboros network stack.
+- Bring a more efficient handling of resources consumptions (network and CPU) and avoid impact on the Cardano node performance of availability.
+- Have a better security (as there will be no impact on the Cardano node).
+- Both nodes will have a different release pace.
+- Both nodes will be bundled in the Cardano node distribution release.
+- A hard fork for SPO registration of the port of their Mithril network node is likely to be needed.
+
+![](img/2024-07-mithril-cardano-decentralized-message-queue.jpg)
 
 ## Hydra
 
