@@ -44,6 +44,21 @@ TODO
 - serving certificates through blockfrost?
 - include video (hosted on youtube, loom, ipfs?)
 
+### Transaction certification
+
+We have kept working on the implementation of the Cardano transaction certification with Mithril and we are currently working on the rollout of the feature to production:
+
+- We are finalizing the minimization of the signer footprint on the SPO infrastructure.
+- We are preparing for activating the feature in the `release-preprod` network with the following release.
+- We are preparing thorough documentation about the mechanism used to certify the transactions
+- We have selected final parameters for signing the transactions:
+  - `100` blocks from the tip of the chain (`~30 minutes`).
+  - `30` blocks between snapshots certifying the transactions (`~10 minutes`).
+  - With these parameters, we can consider the transactions final with very high probability.
+  - These parameters are hot parameters that can be adjusted without requiring a new distribution
+
+![](img/2024-07-mithril-cardano-tx-roadmap.jpg)
+
 ### Decentralized Message Queue CIP
 
 TODO
