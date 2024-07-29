@@ -76,9 +76,9 @@ We have kept working with the Cardano networking team to design a mechanism to i
 
 [Issues and pull requests closed in July](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-06-30..2024-07-31)
 
+
 ![The roadmap with features and ideas](./img/2024-07-hydra-roadmap.jpg)
 <small><center>The latest roadmap with features and ideas</center></small>
-
 Notable updates on our roadmap this month are:
 - Completed incremental decommits, to be released separately as `0.18.0` after some remaining cleanup tasks and documentation updates
 - Release `0.19.0` will be incremental decommits and, depending on the hard-fork date of Cardano mainnet, switching to Conway on the Hydra L2 ledger (see [March 2024](./2024-03#conway-support) for more details)
@@ -90,9 +90,26 @@ Notable updates on our roadmap this month are:
 
 ### Incremental decommits completed
 
-TODO 
-- include video https://drive.google.com/drive/u/0/folders/1YespG5uangc9b9nKda9DZK6hZ0dni3SZ
-- recap on cleanup / corner cases resolved this month 
+This month we finally finished the implementation of the [Incremental decommit #1057](https://github.com/cardano-scaling/hydra/issues/1057) feature.
+
+As one can tell from the feature description on Github, the number of comments
+and linked pull requests, this was by far not a trivial change.
+
+Last month we wrote about why versioning the `open` state on-chain is needed and
+that we needed to change the specification and implemention. After doing that in
+[hydra#1473](https://github.com/cardano-scaling/hydra/issues/1473) and in
+[hydra#1474](https://github.com/cardano-scaling/hydra/issues/1474), a thorough
+review and requiring tests for all changes (compared to `master`) in
+[hydra#1483](https://github.com/cardano-scaling/hydra/issues/1483) concluded in
+a last cleanup PR, which made the feature consistent in specification,
+implementation and documentation.
+
+In the monthly review meeting we demonstrated the feature and the video below also shows how it works using a [small extension](https://github.com/cardano-scaling/hydra/pull/1517) to the `hydra-tui`:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8gy2JV02TuY?si=5ph1gE5ISre328RP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+<br/>
 
 ### Repository moved
 
