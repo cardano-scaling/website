@@ -78,8 +78,9 @@ We have kept working with the Cardano networking team to design a mechanism to i
 
 
 ![The roadmap with features and ideas](./img/2024-07-hydra-roadmap.jpg)
-<small><center>The latest roadmap with features and ideas</center></small>
-Notable updates on our roadmap this month are:
+<small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
+
+Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month are:
 - Completed incremental decommits, to be released separately as `0.18.0` after some remaining cleanup tasks and documentation updates
 - Release `0.19.0` will be incremental decommits and, depending on the hard-fork date of Cardano mainnet, switching to Conway on the Hydra L2 ledger (see [March 2024](./2024-03#conway-support) for more details)
 - Refined scope of "what is Hydra V1" through the Hydra working group
@@ -113,12 +114,19 @@ In the monthly review meeting we demonstrated the feature and the video below al
 
 ### Repository moved
 
-TODO
-- https://github.com/input-output-hk/hydra -> https://github.com/cardano-scaling/hydra
-- Most links redirected
-- New docker images available under ghcr.io/cardano-scaling/hydra-node
-- Roadmap project cannot be moved, copy of roadmap currently being filled 🗺 https://github.com/orgs/cardano-scaling/projects/7/views/1
-- If you encounter broken links, just reach out on Discord or create an issue 🙏 https://github.com/cardano-scaling/hydra/issues/new/choose 
+This month, the Hydra repository was moved to the `cardano-scaling` Github organization: https://github.com/cardano-scaling/hydra.
+
+This allows for a more flexible use and sharing of Github runners between the main repository and for example [hydra-explorer](https://github.com/cardano-scaling/hydra-explorer).
+
+:::info Docker registry changed 🐋
+If you are using docker images of the hydra project, new releases will be available under `ghcr.io/cardano-scaling/hydra-node`
+:::
+
+Most links should be automatically redirected, but if you encounter broken links, just reach out on Discord or create an issue 🙏 https://github.com/cardano-scaling/hydra/issues/new/choose 
+
+:::info New roadmap 🗺 
+Github projects cannot be moved, so a copy of the Hydra roadmap was made and this version is used going forward: https://github.com/orgs/cardano-scaling/projects/7/views/1
+:::
 
 ### Working group updates
 
