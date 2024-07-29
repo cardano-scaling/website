@@ -106,7 +106,7 @@ Reza Baram provided an update on the Hydra working group, which recently had its
 
 ## Conclusion
 
-The monthly review meeting for June 2024 was held on 2024-05-24 via Google Meet,
+The monthly review meeting for June 2024 was held on 2024-06-24 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
 [slides]: https://docs.google.com/presentation/d/137n0SQ2tnWCrDfPieT3JSU8MDnJDTKuLE8ISSieRO4U/edit#slide=id.g1f87a7454a5_0_1392

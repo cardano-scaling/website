@@ -147,13 +147,12 @@ Discussions also revolved around discoverability of Hydra heads, specifically, b
 
 ## Conclusion
 
-The monthly review meeting for June 2024 was held on 2024-05-24 via Google Meet,
+The monthly review meeting for July 2024 was held on 2024-07-22 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-TODO SN summarize feedback received of monthly meeting and write conclusion
-- Great to have blockfrost demonstrate integration of mithril certificates, makes it very clear how light clients can utilize mithril
-- very happy that we finally got a wrap on incremental decommits
-- great feedback from the working group on which features we should build nex and its great to see community interested in Hydra's future
+Most likely due to summer breaks, we have not had many community members joined us on the review meeting this time. It was nontheless great to have Blockfrost demonstrate their experiments in using mithril certificates delivered through Blockfrost in a forked Nami version. This demo really makes it clear how light clients can benefit from Mithril verifiable transactions. 
+
+On the Hydra side, we are very happy that we could finally get incremental decommits merged and ready to be released. While it took some time, this was the first substantial feature that was not really covered by the original Hydra Head paper and proves that the protocol can grow and expand into what users will need. We appreciate all the great input from the Hydra working group on which features we should build next and its exciting to see the community interest in Hydras future.
 
 [slides]: https://docs.google.com/presentation/d/17T18tNIJZPTiEfc2Psb1C6GRxt04hRNj16E5BiAML_I
 [recording]: https://drive.google.com/file/d/1sXYt1MZJtrq1jARha-MGLMWVORvSUjEv
