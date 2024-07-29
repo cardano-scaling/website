@@ -76,11 +76,17 @@ We have kept working with the Cardano networking team to design a mechanism to i
 
 [Issues and pull requests closed in July](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-06-30..2024-07-31)
 
-TODO
-- hydra roadmap notable updates
-
 ![The roadmap with features and ideas](./img/2024-07-hydra-roadmap.jpg)
 <small><center>The latest roadmap with features and ideas</center></small>
+
+Notable updates on our roadmap this month are:
+- Completed incremental decommits, to be released separately as `0.18.0` after some remaining cleanup tasks and documentation updates
+- Release `0.19.0` will be incremental decommits and, depending on the hard-fork date of Cardano mainnet, switching to Conway on the Hydra L2 ledger (see [March 2024](./2024-03#conway-support) for more details)
+- Refined scope of "what is Hydra V1" through the Hydra working group
+  - Added [SDK for wallet integration with Hydra #1509](https://github.com/cardano-scaling/hydra/issues/1509) to provide a better developer experience
+  - Decided to implement [Directly open heads #1329](https://github.com/cardano-scaling/hydra/issues/1329) and [Partial fanout](https://github.com/cardano-scaling/hydra/issues/1468) to overcome our [known issue & limitations](https://hydra.family/head-protocol/docs/known-issues/) and supersede several other 💭 ideas.
+  - Prioritized [Optimistic head closure #198](https://github.com/cardano-scaling/hydra/issues/198) higher based on user feedback.
+  - Declared [React to protocol parameter changes #195](https://github.com/cardano-scaling/hydra/issues/195) as not essential for a V1.
 
 ### Incremental decommits completed
 
