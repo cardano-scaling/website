@@ -130,14 +130,20 @@ Github projects cannot be moved, so a copy of the Hydra roadmap was made and thi
 
 ### Working group updates
 
-TODO SN summarize findings of last two meetings on "What is Hydra Head V1"
+There were two Hydra working group meetings this month and multiple people showed interest in joining. Current member list can be found in the [charter](https://github.com/cardano-scaling/wg-hydra) and meeting notes of all meetings are kept in [the repository](https://github.com/cardano-scaling/wg-hydra/blob/main/meetings) too.
 
-- First work item of the working group https://github.com/cardano-scaling/wg-hydra
-- Gathered valuable feedback from fellow layer 2 architects and Hydra users
-- Goal: common understanding of what must be included in Hydra Head V1
-- Next items:
-  - When/how to audit Hydra Head V1?
-  - CIP on standardizing interfaces to off-chain ledgers
+The working group started work on the first item "What is Hydra Head V1" and
+gathered valuable feedback in discussions between fellow layer 2 architects and
+Hydra users.
+
+Notable inputs were the need for an SDK, wallet integration and the ability to
+operate without a full cardano-node, which got captured in
+[hydra#1509](https://github.com/cardano-scaling/hydra/issues/1509) and
+[hydra#1305](https://github.com/cardano-scaling/hydra/issues/1305) respectively. Even brand new ideas emerged from these discussions like "resumable Hydra heads".
+
+The immediate goal is to achieve a common understanding of what must be included for a Hydra Head V1 and consequently when/how this could be audited?
+
+Discussions also revolved around discoverability of Hydra heads, specifically, but also general interoperability with off-chain ledgers (any layer 2). In that regards, the group is considering to work on a [CPS/CIP](https://github.com/cardano-foundation/CIPs) in the mid term.
 
 ## Conclusion
 
