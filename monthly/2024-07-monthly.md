@@ -151,6 +151,9 @@ The monthly review meeting for June 2024 was held on 2024-05-24 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
 TODO SN summarize feedback received of monthly meeting and write conclusion
+- Great to have blockfrost demonstrate integration of mithril certificates, makes it very clear how light clients can utilize mithril
+- very happy that we finally got a wrap on incremental decommits
+- great feedback from the working group on which features we should build nex and its great to see community interested in Hydra's future
 
 [slides]: https://docs.google.com/presentation/d/17T18tNIJZPTiEfc2Psb1C6GRxt04hRNj16E5BiAML_I
 [recording]: https://drive.google.com/file/d/1sXYt1MZJtrq1jARha-MGLMWVORvSUjEv
