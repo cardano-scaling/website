@@ -5,7 +5,7 @@ authors: [ch1bo, jpraynaud, mmahut]
 tags: [monthly]
 ---
 
-This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects since June 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month the meeting was held on 2024-07-22 using these [slides][slides] and [you can see the recording here][recording].
+This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects since June 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month, the meeting was held on 2024-07-22 using these [slides][slides] and [you can see the recording here][recording].
 
 ## Mithril
 
@@ -48,7 +48,7 @@ As Blockfrost now supports the Mithril endpoints within their API, they have pre
 
 ### Transaction certification
 
-We have kept working on the implementation of the Cardano transaction certification with Mithril and we are currently working on the rollout of the feature to production:
+We have continued working on the implementation of the Cardano transaction certification with Mithril and are currently preparing for the rollout of this feature to production:
 
 - We are finalizing the minimization of the signer footprint on the SPO infrastructure.
 - We are preparing for activating the feature in the `release-preprod` network with the following release.
@@ -63,14 +63,14 @@ We have kept working on the implementation of the Cardano transaction certificat
 
 ### Decentralized Message Queue CIP
 
-We have kept working with the Cardano networking team to design a mechanism to implement a decentralized message queue which can be used in particular to decentralize the signature diffusion from Mithril signers to Mithril aggregators based on the Cardano network layer. The idea is to create a separate process for the decentralized message queue implementation:
+We have been collaborating with the Cardano networking team to design a mechanism for implementing a decentralized message queue to decentralize the signature diffusion from Mithril signers to Mithril aggregators based on the Cardano network layer. The idea is to create a separate process for the decentralized message queue implementation:
 
-- New dedicated process (aka "Mithril network node") which will be based on Ouroboros network stack.
-- Bring a more efficient handling of resources consumptions (network and CPU) and avoid impact on the Cardano node performance of availability.
-- Have a better security (as there will be no impact on the Cardano node).
-- Both nodes will have a different release pace.
-- Both nodes will be bundled in the Cardano node distribution release.
-- A hard fork for SPO registration of the port of their Mithril network node is likely to be needed.
+- A new dedicated process (aka "Mithril network node") based on the Ouroboros network stack
+- More efficient handling of resource consumption (network and CPU) and reduced impact on the Cardano node performance and availability
+- Enhanced security with no impact on the Cardano node
+- Different release pace for both nodes
+- Both nodes will be bundled in the Cardano node distribution release
+- A hard fork for SPO registration of the port of their Mithril network node is likely needed.
 
 ![](img/2024-07-mithril-cardano-decentralized-message-queue.jpg)
 
@@ -95,11 +95,11 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 This month we finally finished the implementation of the [Incremental decommit #1057](https://github.com/cardano-scaling/hydra/issues/1057) feature.
 
-As one can tell from the feature description on GitHub, the number of comments
-and linked pull requests, this was by far not a trivial change.
+As evident from the GitHub feature description, the number of comments
+and linked pull requests, this was a complex change.
 
-Last month we wrote about why versioning the `open` state on-chain is needed and
-that we needed to change the specification and implemention. After doing that in
+Last month, we discussed why versioning the `open` state on-chain is necessary and the 
+subsequent changes to the specification and implementation. After addressing these in
 [hydra#1473](https://github.com/cardano-scaling/hydra/issues/1473) and in
 [hydra#1474](https://github.com/cardano-scaling/hydra/issues/1474), a thorough
 review and requiring tests for all changes (compared to `master`) in
@@ -152,9 +152,9 @@ Discussions also revolved around discoverability of Hydra heads, specifically, b
 The monthly review meeting for July 2024 was held on 2024-07-22 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-Most likely due to summer breaks, we have not had many community members joined us on the review meeting this time. It was nontheless great to have Blockfrost demonstrate their experiments in using mithril certificates delivered through Blockfrost in a forked Nami version. This demo really makes it clear how light clients can benefit from Mithril verifiable transactions.
+Despite the likely impact of summer breaks on attendance, it was great to have Blockfrost demonstrate their experiments using Mithril certificates delivered through Blockfrost in a forked Nami version. This demo clearly illustrates how light clients can benefit from Mithril verifiable transactions.
 
-On the Hydra side, we are very happy that we could finally get incremental decommits merged and ready to be released. While it took some time, this was the first substantial feature that was not really covered by the original Hydra Head paper and proves that the protocol can grow and expand into what users will need. We appreciate all the great input from the Hydra working group on which features we should build next and its exciting to see the community interest in Hydras future.
+On the Hydra side, we are very pleased to have successfully merged and prepared the incremental decommits feature for release. Although this process took some time, it marks the first substantial feature not originally covered by the Hydra head paper, demonstrating the protocol's capacity to grow and meet user needs. We appreciate all the valuable input from the Hydra working group regarding the features we should develop next and are excited to see the growing community interest in Hydra's future.
 
 [slides]: https://docs.google.com/presentation/d/17T18tNIJZPTiEfc2Psb1C6GRxt04hRNj16E5BiAML_I
 [recording]: https://drive.google.com/file/d/1sXYt1MZJtrq1jARha-MGLMWVORvSUjEv
