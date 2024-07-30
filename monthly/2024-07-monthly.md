@@ -95,7 +95,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 This month we finally finished the implementation of the [Incremental decommit #1057](https://github.com/cardano-scaling/hydra/issues/1057) feature.
 
-As one can tell from the feature description on Github, the number of comments
+As one can tell from the feature description on GitHub, the number of comments
 and linked pull requests, this was by far not a trivial change.
 
 Last month we wrote about why versioning the `open` state on-chain is needed and
@@ -116,18 +116,18 @@ In the monthly review meeting we demonstrated the feature and the video below al
 
 ### Repository moved
 
-This month, the Hydra repository was moved to the `cardano-scaling` Github organization: https://github.com/cardano-scaling/hydra.
+This month, the Hydra repository was moved to the `cardano-scaling` GitHub organization: https://github.com/cardano-scaling/hydra.
 
-This allows for a more flexible use and sharing of Github runners between the main repository and for example [hydra-explorer](https://github.com/cardano-scaling/hydra-explorer).
+This allows for a more flexible use and sharing of GitHub runners between the main repository and for example [hydra-explorer](https://github.com/cardano-scaling/hydra-explorer).
 
 :::info Docker registry changed 🐋
 If you are using docker images of the hydra project, new releases will be available under `ghcr.io/cardano-scaling/hydra-node`
 :::
 
-Most links should be automatically redirected, but if you encounter broken links, just reach out on Discord or create an issue 🙏 https://github.com/cardano-scaling/hydra/issues/new/choose 
+Most links should be automatically redirected, but if you encounter broken links, just reach out on Discord or create an issue 🙏 https://github.com/cardano-scaling/hydra/issues/new/choose
 
-:::info New roadmap 🗺 
-Github projects cannot be moved, so a copy of the Hydra roadmap was made and this version is used going forward: https://github.com/orgs/cardano-scaling/projects/7/views/1
+:::info New roadmap 🗺
+GitHub projects cannot be moved, so a copy of the Hydra roadmap was made and this version is used going forward: https://github.com/orgs/cardano-scaling/projects/7/views/1
 :::
 
 ### Working group updates
@@ -152,7 +152,7 @@ Discussions also revolved around discoverability of Hydra heads, specifically, b
 The monthly review meeting for July 2024 was held on 2024-07-22 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-Most likely due to summer breaks, we have not had many community members joined us on the review meeting this time. It was nontheless great to have Blockfrost demonstrate their experiments in using mithril certificates delivered through Blockfrost in a forked Nami version. This demo really makes it clear how light clients can benefit from Mithril verifiable transactions. 
+Most likely due to summer breaks, we have not had many community members joined us on the review meeting this time. It was nontheless great to have Blockfrost demonstrate their experiments in using mithril certificates delivered through Blockfrost in a forked Nami version. This demo really makes it clear how light clients can benefit from Mithril verifiable transactions.
 
 On the Hydra side, we are very happy that we could finally get incremental decommits merged and ready to be released. While it took some time, this was the first substantial feature that was not really covered by the original Hydra Head paper and proves that the protocol can grow and expand into what users will need. We appreciate all the great input from the Hydra working group on which features we should build next and its exciting to see the community interest in Hydras future.
 
