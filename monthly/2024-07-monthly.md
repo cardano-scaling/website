@@ -38,11 +38,13 @@ Here is the status of the Mithril protocol on the Cardano `mainnet`:
 
 ### Transaction verification in Nami
 
-TODO
-- demo created by Blockfrost
-- make status clear; i.e. this is/was only an experiment
-- serving certificates through blockfrost?
-- include video (hosted on youtube, loom, ipfs?)
+As Blockfrost now supports the Mithril endpoints within their API, they have presented an implementation example.
+
+- The demo shows transaction verification within the Nami light wallet (using Blockfrost as its backend).
+- This allows the light wallet user to verify that their transaction is on-chain with the high certainty provided by Mithril security.
+- While it is just an experimental implementation, it might be accepted by the Nami upstream in the future.
+
+![https://ipfs.io/ipfs/bafybeiayaxyr6b442sz22n4ag5hfwjjnym2bwd4rpdzha3stdhrkbhzxye?filename=demo_blockfrost_mithrill_support.mp4](https://ipfs.io/ipfs/bafkreifxrd7pcby47ruutcdvjsv2q6tggfs7dnij2ve2brdzwcucoq6g7e?filename=ezgif-6-c33802f259.gif)
 
 ### Transaction certification
 
