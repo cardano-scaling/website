@@ -1,7 +1,7 @@
 ---
 title: July 2024
 slug: 2024-07
-authors: [ch1bo, jpraynaud]
+authors: [ch1bo, jpraynaud, mmahut]
 tags: [monthly]
 ---
 
