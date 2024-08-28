@@ -31,7 +31,7 @@ TODO @jpraynaud (et al): write about this
 
 TODO @noonio/@ch1bo: collect and provide roadmap update with a few notable points 
 
-![The roadmap with features and ideas](./img/2024-07-hydra-roadmap.jpg)
+![The roadmap with features and ideas](./img/2024-08-hydra-roadmap.jpg)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month are:
