@@ -73,7 +73,13 @@ The original design included an alternative color scheme using <span style={{col
 The monthly review meeting for August 2024 was held on 2024-08-28 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-TODO @ch1bo: write conclusion
+TODO @ch1bo: write conclusion (after other parts and reference)
+- demos from both teams on new features and improved testing 
+- optimizations and test results
+- evidence based engineering
+- hydra doom demo, 100M transactions over couple days, well received
+- new learnings and good feedback from users and use cases
+- roadmaps have not moved much over the last couple months, but more re-orientation likely as plans for 2025 are coming together in the working groups and other Intersect committees
 
 [slides]: https://docs.google.com/presentation/d/106NA1xtpuIcnC86HawBzpxY9VLexzOOxcfPD3dyoAg8
 [recording]: TODO 
