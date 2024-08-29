@@ -11,6 +11,15 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 [Issues and pull requests closed in August](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-07-31..2024-08-31)
 
+### Roadmap
+
+Here is an update on our current roadmap:
+- **Cardano transactions signature/proving MVP** [#1457](https://github.com/input-output-hk/mithril/issues/1457): the feature is finalized and the last step to completion is to release on the `mainnet`.
+- **Cardano Stake Distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is finalized and the last step is to release on `preview`, `preprod` and `mainnet`.
+- **Mithril signature diffusion with Cardano network layer PoC** [#1837](https://github.com/input-output-hk/mithril/issues/1837): the proof-of-concept is completed.
+- **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): we have started implementing the feature with some preliminary works. 
+- **CIP for Mithril signature diffusion through Cardano network** [#1775](https://github.com/input-output-hk/mithril/issues/1775): the draft CIP has been published on the Cardano foundation CIPs repository and is under review.
+
 ### Distributions
 
 #### 2430.0
