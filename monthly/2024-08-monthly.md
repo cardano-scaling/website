@@ -1,7 +1,7 @@
 ---
 title: August 2024
 slug: 2024-08
-authors: [ch1bo, noonio]
+authors: [ch1bo, noonio, jpraynaud]
 tags: [monthly]
 ---
 
@@ -13,7 +13,20 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Distributions
 
-TODO @jpraynaud: any updates on releases?
+#### 2430.0
+
+We have released the new Mithril distribution [`2430.0`](https://github.com/input-output-hk/mithril/releases/tag/2430.0). This distribution includes several critical updates and enhancements:
+- Support for **Cardano node** `9.1.0`.
+- Support for **Cardano transactions** certification in `release-preprod` and `pre-release-preview`.
+- Bug fixes and performance improvements.
+
+#### Future distributions
+
+We have planned to release a new distributions in September after the **Chang** hardfork:
+- `2436`:
+  - Activation of the certification of **Cardano transactions** in the `release-mainnet` network.
+  - Activation of the certification of **Cardano stake distribution** in `pre-release-preview`, `release-preprod` and `release-mainnet`
+
 
 ### Protocol status
 
