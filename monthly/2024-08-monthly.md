@@ -62,7 +62,21 @@ TODO @ffakenz: write about the new network tests with pumba
 
 ### New landing page
 
-TODO @ch1bo/@trym: include screenshot and write about new landing page
+For the Rare Evo event with the public Hydra doom demo (see above), we also figured it would be a good idea to improve the first impression new visitors get from the https://hydra.family website.
+
+Together with the marketing team of IOG, new landing page content and design was put together. Besides mentioning the key features and why the Hydra head protocol is needed, the new landing page also sports an explanation of how Hydra works using the analogy of a cargo plane.
+
+![](img/2024-08-hydra-landing-page.png)
+<small><center>Screenshot of the new landing page</center></small>
+
+The original design included an alternative color scheme using <span style={{color: "#12506C"}}>Teal</span> as the primary accent color and <span style={{color: "#721F41"}}>Plum</span> as the secondary and an example is included below. Do you, dear reader, think a new color scheme would be good or do you like the <span style={{color: "#6874e8"}}>Purple</span> main color as-is? Shoot us a message on twitter or [#ask-hydra on Discord](https://discord.com/invite/Qq5vNTg9PT) with your thoughts.
+
+<details>
+<summary>Alternative color scheme example</summary>
+
+![](img/2024-08-hydra-other-color-scheme.png)
+
+</details>
 
 ## Conclusion
 
