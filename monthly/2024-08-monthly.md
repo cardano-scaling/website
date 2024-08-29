@@ -43,7 +43,13 @@ We have planned to release a new distributions in September after the **Chang** 
 
 ### Cardano stake distribution certification
 
-TODO @jpraynaud (et al): write about this
+We have completed the implementation of the Cardano stake distribution certification with Mithril and are currently preparing for the rollout of this feature to production:
+
+- We have implemented a new type of data certified for the latest snapshot of the Cardano stake distribution done by the Cardano node at the end of each epoch.
+- Under the hood, we use a Merkle tree representation of the stake distribution and sign its Merkle root.
+- The Mithril clients (library, CLI and WASM) have the capability to download and verify a snapshot of the Cardano stake distribution.
+- We are preparing for activating the feature in the `release-preview`, `release-preprod` and `release-mainnet` networks with the release of the next Mithril distribution.
+- We have created some documentation and example code implementation for developers.
 
 ## Hydra
 
