@@ -36,11 +36,9 @@ We have planned to release a new distributions in September after the **Chang** 
   - Activation of the certification of **Cardano transactions** in the `release-mainnet` network.
   - Activation of the certification of **Cardano stake distribution** in `pre-release-preview`, `release-preprod` and `release-mainnet`
 
-
 ### Protocol status
 
-TODO @rezabaram/@jpraynaud: provide an update here (or do a roadmap / epic update?)
-![](img/2024-07-mithril-protocol-status.png)
+![](img/2024-08-mithril-protocol-status.png)
 <small><center>Latest status of the Mithril protocol on Cardano `mainnet`</center></small>
 
 ### Cardano stake distribution certification
