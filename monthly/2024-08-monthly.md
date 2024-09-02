@@ -1,7 +1,7 @@
 ---
 title: August 2024
 slug: 2024-08
-authors: [ch1bo, noonio, jpraynaud]
+authors: [ch1bo, noonio, jpraynaud, v0d1ch, ffakenz]
 tags: [monthly]
 ---
 
