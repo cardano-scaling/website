@@ -78,7 +78,13 @@ The demo was very positively received on social media and seems to have rekindle
 
 ### Network tests with fault injection
 
-TODO @ffakenz: write about the new network tests with pumba
+We have set up a simple yet effective [workflow](https://github.com/cardano-scaling/hydra/blob/master/.github/workflows/network-test.yaml) capable of simulating a Hydra cluster under high transaction loads and packet loss network failures.
+
+With this, we aim to consistently reproduce and resolve issues that are causing the Head to become stuck, as outlined in [#1436](https://github.com/cardano-scaling/hydra/issues/1436).
+
+The workflow specifies a set of high-load scenarios, each of which spins up the same Hydra cluster on `devnet` used during the [getting started](https://hydra.family/head-protocol/docs/getting-started) tutorial, although it's tuned to respond to network fault injections from [Pumba](https://github.com/alexei-led/pumba/tree/master) netem ([reference](https://github.com/alexei-led/pumba/tree/master?tab=readme-ov-file#tc-tool)).
+
+The idea is to allow and encourage everyone to experiment with this workflow and collect summary results, which contain details about the performance within the Head.
 
 ### New landing page
 
