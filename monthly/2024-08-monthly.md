@@ -128,4 +128,4 @@ TODO @ch1bo: write conclusion (after other parts and reference)
 - roadmaps have not moved much over the last couple months, but more re-orientation likely as plans for 2025 are coming together in the working groups and other Intersect committees
 
 [slides]: https://docs.google.com/presentation/d/106NA1xtpuIcnC86HawBzpxY9VLexzOOxcfPD3dyoAg8
-[recording]: TODO
+[recording]: https://drive.google.com/file/d/1Hi9AiI9cmIWXcN5xPTu3gl-KbyW-wm0K
