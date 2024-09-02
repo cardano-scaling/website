@@ -106,26 +106,13 @@ The original design included an alternative color scheme using <span style={{col
 
 </details>
 
-### Hydra - New L2 transactions in presence of decommits bug 
+### Bugfix: L2 transactions during decommits 
 
-- After releasing the decommit feature which allows users to take funds from
-the L2 to L1 while the Head is operating we quickly found a bug. While the
-decommit is pending (funds not yet taken out of the Head) and some user wants
-to create a new L2 transaction, hydra-node would try to re-apply the pending
-decommit to the local ledger state which errors out.
+After releasing the decommit feature which allows users to take funds from the L2 to L1 while the Head is operating we quickly found a bug. While the decommit is pending (funds not yet taken out of the Head) and some user wants to create a new L2 transaction, hydra-node would try to re-apply the pending decommit to the local ledger state which errors out.
 
-- We quickly realized that any pending decommit needs to match with the
-decommit in the new snapshot thus preserved in the next snapshot/s until it is
-observed.
+We quickly realized that any pending decommit needs to match with the decommit in the new snapshot thus preserved in the next snapshot/s until it is observed. Without this fix our whole decommit feature would be very fragile even unusable so we made sure to quickly draft a failing [test](https://github.com/cardano-scaling/hydra/pull/1540/files#diff-3479844ad82c0fd2f7af59c36f930cdb540876b9cf4201d67a41da83688500a9R440) and do a proper fix.
 
-- Without this fix our whole decommit feature would be very fragile even
-unusable so we made sure to quickly draft a failing
-[test](https://github.com/cardano-scaling/hydra/pull/1540/files#diff-3479844ad82c0fd2f7af59c36f930cdb540876b9cf4201d67a41da83688500a9R440)
-and do a proper fix.
-
-- [This](https://github.com/cardano-scaling/hydra/pull/1540) is a pull request
-that fixes this bug and we also demonstrated this fix in one of our monthly
-meetings.
+[This](https://github.com/cardano-scaling/hydra/pull/1540) is a pull request that fixes this bug and we also demonstrated this fix in one of our monthly meetings.
 
 ## Conclusion
 
