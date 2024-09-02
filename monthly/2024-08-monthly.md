@@ -22,8 +22,6 @@ Here is an update on our current roadmap:
 
 ### Distributions
 
-#### 2430.0
-
 We have released the new Mithril distribution [`2430.0`](https://github.com/input-output-hk/mithril/releases/tag/2430.0). This distribution includes several critical updates and enhancements:
 - Support for **Cardano node** `9.1.0`.
 - Support for **Cardano transactions** certification in `release-preprod` and `pre-release-preview`.
@@ -71,9 +69,13 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 ### Hydra Doom
 
 At the Rare Evo event in Las Vegas we show cased the Hydra Doom demo, a technology demonstration of Hydra where users could play the 1993 id software game Doom and for each frame of the game a smart contract transaction was submitted to a Hydra head which recorded game state, user inputs and validated game state transitions (as a proof of concept, using only some minor logic pertaining to the movement of the player and dying in game).
+
 ![At Rare Evo](https://github.com/user-attachments/assets/d897190d-ece6-4fa6-b0f0-ec214a58d0e2)
-People were able to connect remotely via Doom.Hydra.Family or in person on two custom made arcade cabinets we had constructed for the occasion, and each game session contributed 35 transactions per second. In aggreagate we processed 106 million transactions with Hydra during the 78 hours of operation, which is more than the entire history of Cardano main net, and peaked at around 7,200 tps. 
+
+People were able to connect remotely via https://doom.hydra.family or in person on two custom made arcade cabinets we had constructed for the occasion, and each game session contributed 35 transactions per second. In aggregate we processed 106 million transactions with Hydra during the 78 hours of operation, which is more than the entire history of Cardano main net, and peaked at around 7,200 tps. 
+
 ![Last screen shot](https://github.com/user-attachments/assets/f0b1430a-1cdf-4c48-839d-b6d217c8279a)
+
 The demo was very positively received on social media and seems to have rekindled the flames around the Hydra narrative both internally and externally, which hopefully bodes well for both future adoption interest among builders, as well as the prospects of securing funding for the continued development of Hydra from Intersect. 
 
 ### Network tests with fault injection
@@ -82,9 +84,9 @@ We have set up a simple yet effective [workflow](https://github.com/cardano-scal
 
 With this, we aim to consistently reproduce and resolve issues that are causing the Head to become stuck, as outlined in [#1436](https://github.com/cardano-scaling/hydra/issues/1436).
 
-The workflow specifies a set of high-load scenarios, each of which spins up the same Hydra cluster on `devnet` used during the [getting started](https://hydra.family/head-protocol/docs/getting-started) tutorial, although it's tuned to respond to network fault injections from [Pumba](https://github.com/alexei-led/pumba/tree/master) netem ([reference](https://github.com/alexei-led/pumba/tree/master?tab=readme-ov-file#tc-tool)).
+The workflow specifies a set of high-load scenarios, each of which spins up the same Hydra cluster on `devnet` used during the [getting started](https://hydra.family/head-protocol/docs/getting-started) tutorial and injects network faults using [Pumba](https://github.com/alexei-led/pumba).
 
-The idea is to allow and encourage everyone to experiment with this workflow and collect summary results, which contain details about the performance within the Head.
+The idea is to allow and encourage everyone to experiment with this workflow and collect summary results, which contain details about the performance within the Head. The fact that these tests are performed with the `hydra-node` being a "blackbox", it also allows us to explore alternative network stacks as a whole.
 
 ### New landing page
 
