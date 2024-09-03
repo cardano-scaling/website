@@ -17,7 +17,7 @@ Here is an update on our current roadmap:
 - **Cardano transactions signature/proving MVP** [#1457](https://github.com/input-output-hk/mithril/issues/1457): the feature is finalized and the last step to completion is to release on the `mainnet`.
 - **Cardano Stake Distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is finalized and the last step is to release on `preview`, `preprod` and `mainnet`.
 - **Mithril signature diffusion with Cardano network layer PoC** [#1837](https://github.com/input-output-hk/mithril/issues/1837): the proof-of-concept is completed.
-- **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): we have started implementing the feature with some preliminary works. 
+- **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): we have started implementing the feature with some preliminary works.
 - **CIP for Mithril signature diffusion through Cardano network** [#1775](https://github.com/input-output-hk/mithril/issues/1775): the draft CIP has been published on the Cardano foundation CIPs repository and is under review.
 
 ### Distributions
@@ -59,7 +59,7 @@ We have completed the implementation of the Cardano stake distribution certifica
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
 - Incremental decommits, Conway support fixes, and more were released in [0.18.0](https://github.com/cardano-scaling/hydra/releases/tag/0.18.0)
-New landing page, SSL support, and bug fixes around transaction pruning were released in [0.18.1](https://github.com/cardano-scaling/hydra/releases/tag/0.18.1)
+- New landing page, SSL support, and bug fixes around transaction pruning were released in [0.18.1](https://github.com/cardano-scaling/hydra/releases/tag/0.18.1)
 - Incremental commits (coming in a 0.19 release) have pivoted to a deposit-based scheme based on [open discussions](https://github.com/cardano-scaling/hydra/issues/199) (thanks [@GeorgeFlerovsky!](https://github.com/GeorgeFlerovsky))
 - Ready to shift ledger to Conway when hardfork is complete [#1338](https://github.com/cardano-scaling/hydra/pull/1338)
 - Settled on [Partial Fanout](https://github.com/cardano-scaling/hydra/issues/1468) as a good solution to [a few known problems](https://hydra.family/head-protocol/docs/known-issues#head-protocol-limits)
@@ -72,11 +72,11 @@ At the Rare Evo event in Las Vegas, we showcased the Hydra Doom demo, a technolo
 
 ![At Rare Evo](https://github.com/user-attachments/assets/d897190d-ece6-4fa6-b0f0-ec214a58d0e2)
 
-People could connect remotely via https://doom.hydra.family or in person on two custom-made arcade cabinets we had constructed for the occasion. Each game session contributed 35 transactions per second. In aggregate, we processed 106 million transactions with Hydra during the 78 hours of operation, which is more than the entire history of Cardano mainnet. The peak was around 7,200 tps.  
+People could connect remotely via https://doom.hydra.family or in person on two custom-made arcade cabinets we had constructed for the occasion. Each game session contributed 35 transactions per second. In aggregate, we processed 106 million transactions with Hydra during the 78 hours of operation, which is more than the entire history of Cardano mainnet. The peak was around 7,200 tps.
 
 ![Last screen shot](https://github.com/user-attachments/assets/f0b1430a-1cdf-4c48-839d-b6d217c8279a)
 
-The demo was very positively received on social media and seems to have rekindled the flames around the Hydra narrative both internally and externally, which hopefully bodes well for both future adoption interest among builders, as well as the prospects of securing funding for the continued development of Hydra from Intersect. 
+The demo was very positively received on social media and seems to have rekindled the flames around the Hydra narrative both internally and externally, which hopefully bodes well for both future adoption interest among builders, as well as the prospects of securing funding for the continued development of Hydra from Intersect.
 
 ### Network tests with fault injection
 
@@ -106,7 +106,7 @@ The original design included an alternative color scheme using <span style={{col
 
 </details>
 
-### Bug fix: layer 2 transactions during decommits 
+### Bug fix: layer 2 transactions during decommits
 
 After releasing the decommit feature that enables users to transfer funds from layer 2 to layer 1 while the head is operational, we quickly identified a bug. When a decommit is pending ( funds have not yet been withdrawn from the head) and a user attempts to create a new layer 2 transaction, the hydra-node attempts to re-apply the pending decommit to the local ledger state, resulting in an error.
 
