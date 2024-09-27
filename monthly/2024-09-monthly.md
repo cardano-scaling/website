@@ -86,8 +86,13 @@ Here is an overall architecture for the DMQ node:
 ![The roadmap with features and ideas](./img/2024-09-hydra-roadmap.jpeg)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
-Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month are:
-- TODO
+Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
+- [0.19.0](https://github.com/cardano-scaling/hydra/releases/tag/0.19.0) with ledger in Conway while remaining compatible with Babbage transactions [#1608](https://github.com/cardano-scaling/hydra/pull/1608)
+- Completed the Hydra "Head-In-Head" Spike [#1590](https://github.com/cardano-scaling/hydra/issues/1590)
+- Investigated Raft for consenus networking [#1591](https://github.com/cardano-scaling/hydra/issues/1591)
+- Added "HeadId" into the "Greetings" message [#1557](https://github.com/cardano-scaling/hydra/issues/1557)
+- Implemented initial suite of network-resiliance tests [#1532](https://github.com/cardano-scaling/hydra/issues/1532)
+- Changed network semantics to broadcast to everyone [#1624](https://github.com/cardano-scaling/hydra/pull/1624)
 
 ### Spike: Head-in-Head
 
