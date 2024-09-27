@@ -56,7 +56,7 @@ We have published these posts:
 
 ### Decentralized Message Queue for Cardano
 
-We have kept working on the design of the **Decentralized Message Queue** for Cardano which is proposed in the draft [CIP](https://github.com/cardano-foundation/CIPs/pull/876). 
+We have kept working on the design of the **Decentralized Message Queue** for Cardano which is proposed in the draft [CIP](https://github.com/cardano-foundation/CIPs/pull/876).
 
 This Decentralized Message Queue, aka **DMQ**, will:
 - Leverage the Cardano network layer.
@@ -83,15 +83,13 @@ Here is an overall architecture for the DMQ node:
 
 [Issues and pull requests closed in September](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-09-01..2024-09-30)
 
-TODO: update
-
-![The roadmap with features and ideas](./img/2024-08-hydra-roadmap.jpg)
+![The roadmap with features and ideas](./img/2024-09-hydra-roadmap.jpeg)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month are:
 - TODO
 
-### Spike: Head-in-Head 
+### Spike: Head-in-Head
 
 TODO: @ch1bo
 
