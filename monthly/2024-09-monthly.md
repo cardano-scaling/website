@@ -1,7 +1,7 @@
 ---
 title: September 2024
 slug: 2024-09
-authors: [ch1bo]
+authors: [ch1bo, jpraynaud]
 tags: [monthly]
 ---
 
