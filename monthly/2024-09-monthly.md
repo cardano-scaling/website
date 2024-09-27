@@ -54,7 +54,30 @@ We have published these posts:
 ![](img/2024-09-mithril-protocol-status.png)
 <small><center>Latest status of the Mithril protocol on Cardano `mainnet`</center></small>
 
-### TODO Mithril Topic 1
+### Decentralized Message Queue for Cardano
+
+We have kept working on the design of the **Decentralized Message Queue** for Cardano which is proposed in the draft [CIP](https://github.com/cardano-foundation/CIPs/pull/876). 
+
+This Decentralized Message Queue, aka **DMQ**, will:
+- Leverage the Cardano network layer.
+- Be used by Mithril at first to support the decentralized signatures diffusion from signers to aggregators.
+- Be versatile enough to be used by future Cardano protocols (each of which runs a different topic in the DMQ).
+
+Under the hood, the DMQ will be operated by a "side" node, the DMQ node, which will run a separate peer-to-peer network powered by the Ouroboros network stack:
+- It will run as an external process which exposes a Unix socket to support node-to-client mini-protocols.
+- It will implement node-to-client and node-to-node mini-protocols to allow for message local submission, local notification and peer-to-peer submission.
+- It will retrieve the Cardano stake distribution from its local Cardano node in order to authenticate incoming messages.
+- It will retrieve other peers information of the peer-to-peer network from its local Cardano node (this topic is being investigated: either with a ledger hard-fork, or by redirecting connections to the DMQ node, or by leveraging SRV record in the SPOs' DNS).
+- Each topic of the message queue will run a different DMQ node instantiated with a specific configuration.
+
+There exist producers and consumers for the DMQ topic running on some DMQ nodes. In the case of Mithril:
+- The Mithril signers will be the message (Mithril individual signatures) producers.
+- The Mithril aggregators will be the message (Mithril individual signatures) consumers.
+
+Here is an overall architecture for the DMQ node:
+
+![](img/2024-09-mithril-dmq-architecture.jpg)
+<small><center>DMQ node architecture</center></small>
 
 ## Hydra
 
