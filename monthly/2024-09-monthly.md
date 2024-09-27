@@ -35,9 +35,7 @@ We have released the new Mithril distribution [`2437.1`](https://github.com/inpu
 
 ### Protocol status
 
-TODO: update
-
-![](img/2024-08-mithril-protocol-status.png)
+![](img/2024-09-mithril-protocol-status.png)
 <small><center>Latest status of the Mithril protocol on Cardano `mainnet`</center></small>
 
 ### TODO Mithril Topic 1
