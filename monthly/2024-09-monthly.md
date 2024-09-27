@@ -22,6 +22,17 @@ Here is an update on our current roadmap:
 ![](img/2024-09-mithril-features-distributions.png)
 <small><center>Features Activation & Distributions Schedule for Mithril</center></small>
 
+### Distributions
+
+We have released the new Mithril distribution [`2437.1`](https://github.com/input-output-hk/mithril/releases/tag/2437.1). This distribution includes several critical updates and enhancements:
+- **BREAKING** changes in **Mithril client WASM**:
+  - Implementation of seamless transition from **unstable** to **stable** features.
+  - A new `unstable` option in the client allows the usage of unstable features.
+  - The previous `client.unstable` implementation is not supported anymore and must be replaced with `client`.
+- Stable support for **Cardano transactions** certification in signer and aggregator.
+- Stable support for **Cardano stake distribution** certification in signer and aggregator.
+- Bug fixes and performance improvements.
+
 ### Protocol status
 
 TODO: update
