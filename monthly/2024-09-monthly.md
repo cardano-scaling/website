@@ -33,6 +33,16 @@ We have released the new Mithril distribution [`2437.1`](https://github.com/inpu
 - Stable support for **Cardano stake distribution** certification in signer and aggregator.
 - Bug fixes and performance improvements.
 
+#### Future distributions
+
+We plan to release new distributions in October:
+- `2440`:
+  - Stable clients for **Cardano transactions** certification
+  - Activation of the certification of **Cardano stake distribution** in `pre-release-preview`, `release-preprod`, and `release-mainnet`.
+  - Stable support for new `Pythagoras` Mithril era
+- `2443`:
+  - Stable clients for **Cardano stake distribution** certification
+
 ### Dev blog
 
 We have published these posts:
