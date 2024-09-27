@@ -33,6 +33,12 @@ We have released the new Mithril distribution [`2437.1`](https://github.com/inpu
 - Stable support for **Cardano stake distribution** certification in signer and aggregator.
 - Bug fixes and performance improvements.
 
+### Dev blog
+
+We have published these posts:
+- [Mithril client WASM breaking change](https://mithril.network/doc/dev-blog/2024/09/24/client-wasm-unstable-breaking-change)
+- [Certification of Cardano transactions](https://mithril.network/doc/dev-blog/2024/07/30/cardano-transaction-certification) (Updated)
+
 ### Protocol status
 
 ![](img/2024-09-mithril-protocol-status.png)
