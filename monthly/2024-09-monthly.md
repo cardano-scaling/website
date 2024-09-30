@@ -96,7 +96,16 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 ### Spike: Head-in-Head
 
-TODO: @ch1bo
+When a Hydra head is opened, a part of the underlying ledger state gets locked up and made available off-chain to a small group of participants. While this is already quite a "small world" to process transactions (which makes it fast & cheap), we encountered use cases where it would make sense to even open further heads with different/even smaller groups of participants on parts of the L2 state into L3 heads.
+
+One of these use cases is the Hydra Doom demonstration we [showed at Rare Evo last month](./2024-08#hydra-doom). For example, individual multi-player game sessions require low network latency from regionally closely located machines. If those machines now run a game session head that would, in turn, lock funds and game state from a slower, global tournament head instance, we are talking about Hydra heads in heads.
+
+This construction has a **lot of open questions about liveness**: what happens to the L3 head if the L2 head stops processing transactions? This pessimistic case can always happen in an optimistic protocol and needs to be dealt with, but not optimized for. Despite of this and other unknowns, we spent some time this month to explore whether its even possible in spike issue [#1590](https://github.com/cardano-scaling/hydra/issues/1590).
+
+Technically, this means that a `hydra-node` talks to another `hydra-node` as its "chain backend", interprets snapshots of the L2 head as blocks, observing transactions to open or close the head, while also submitting its state transitioning transactions to the underlying L2 ledger. The spike issue contains more details and how-to instructions to reproduce the findings, while the following issues demonstrates this prototypical `--inception` mode:
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y_Pw3MVooxg?si=6M2irHZgwPLiSQAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
 
 ### Spike: Raft-based networking
 
