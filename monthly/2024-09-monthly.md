@@ -1,7 +1,7 @@
 ---
 title: September 2024
 slug: 2024-09
-authors: [ch1bo, jpraynaud]
+authors: [ch1bo, noonio, jpraynaud]
 tags: [monthly]
 ---
 
@@ -100,7 +100,16 @@ TODO: @ch1bo
 
 ### Spike: Raft-based networking
 
-TODO: @ch1bo
+As reported last month, we created a new test suite about resilience of our network stack in [#1532](https://github.com/cardano-scaling/hydra/issues/1532). With this in place, we can now explore various means to reach our goal of a crash-tolerant network layer.
+
+When we stumbled over this [fairly old research paper](https://arxiv.org/pdf/1707.01873) that explored various consensus protocols used in blockchain space, it reminds us of the correspondence between consensus and broadcasts:
+> the form of consensus relevant for blockchain is technically known as atomic broadcast
+
+Furthermore, it listed at least one of these early, permissioned blockchains that achieved crash-tolerance of `t < n/2` simply by using [etcd](https://etcd.io/) with its [Raft](https://raft.github.io/) consensus algorithm off-the-shelf. This motivated us to explore this avenue of maybe replacing our hand-rolled network stack too with this (arguably overkill) alternative in an experiment [#1591](https://github.com/cardano-scaling/hydra/issues/1591) and see how it fares.
+
+The github issue contains all the details, but it turns out that is maybe not as exotic of an idea as we thought at first! The approach of implementing `broadcast` functionality as `put` requests to the `etcd` cluster works well when paired with an outbound, persisted buffer that handles failing writes while disconnected (or only connected to a minority). That, plus the `revision` mechanism of `etcd` and a last known revision on disk allows us to implement a `hydra-node` that is fully resilient to crashes and faulty network connections as can be seen in these [runs of our fault injection tests](https://github.com/cardano-scaling/hydra/actions/runs/11067586032).
+
+Even performance of this early prototype is matching or exceeding our current implementation (when multi-threading performance is available). For example: using a low powered github-hosted container we see average confirmation times on the three node benchmark decrease `20ms -> 100ms`, while on desktop machine with 8+ cores the same benchmark improves `100ms -> 50ms`. As the starting numbers of the released version also vary wildly between machines, these results are only usable relatively.
 
 ## Conclusion
 
