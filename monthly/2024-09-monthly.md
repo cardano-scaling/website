@@ -120,6 +120,26 @@ The github issue contains all the details, but it turns out that is maybe not as
 
 Even performance of this early prototype is matching or exceeding our current implementation (when multi-threading performance is available). For example: using a low powered github-hosted container we see average confirmation times on the three node benchmark decrease `20ms -> 100ms`, while on desktop machine with 8+ cores the same benchmark improves `100ms -> 50ms`. As the starting numbers of the released version also vary wildly between machines, these results are only usable relatively.
 
+
+### Incremental Commits 
+
+Incremental commits feature development is ongoing and we demonstrated the user
+workflow we envisioned on the monthly meeting. 
+
+Notably users will first need to lock their UTxO in the Hydra deposit script
+and this output would be consumed by the increment transaction once we have a
+signed snapshot on L2. This would make the specified UTxO be part of the Head
+UTxO state on L2 eventually. In case of any problems any hydra-node would be
+able to post a recover transaction which would unlock the UTxO. 
+
+There are hydra-node API endpoints for depositing/recovering which provide
+convenient way to build and post these transactions and we tried to have a nice
+UX for these user actions.
+
+Next steps involve implementing complete on-chain security together with the
+documentation/tutorials so that our users know how to use this new feature
+since this has been a feature request for many builders on Hydra.
+
 ## Conclusion
 
 The monthly review meeting for September 2024 was held on 2024-09-25 via Google Meet,
