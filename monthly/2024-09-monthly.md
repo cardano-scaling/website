@@ -107,6 +107,35 @@ Technically, this means that a `hydra-node` talks to another `hydra-node` as its
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_Pw3MVooxg?si=6M2irHZgwPLiSQAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>
 
+### Hydra 🤝 Blockfrost: chain backend concept
+
+As outlined in [#1305](https://github.com/cardano-scaling/hydra/issues/1305), we believe it would be beneficial to run the `hydra-node` in a more lightweight mode, without requiring the full `cardano-node`. This feature is particularly relevant when considering the use of Hydra with the pay-per-use Blockfrost API.
+
+To complete this component, the Blockfrost chain layer must be capable of:
+- Following the chain
+- Submitting Hydra transactions
+- Handling relevant internal wallet queries for the `hydra-node`
+
+As a first step, we’ve developed:
+- A Hydra chain observer that operates in Blockfrost mode (though not yet integrated into the `hydra-node`)
+- A variant of the `hydra-explorer` tailored to the Blockfrost-enabled Hydra chain observer
+
+We utilized a straightforward roll-forward approach via the Blockfrost [HTTP API](https://docs.blockfrost.io/), relying on the following key API calls:
+- *GET /blocks/{hash}*
+  - *confirmations*: Number of block confirmations
+  - *next_block_hash*: (nullable) Hash of the next block
+- *GET /blocks/{hash}/txs*
+- *GET /txs/{hash}/cbor*
+> Basically, we continuously fetch specific blocks by their hash, using the number of confirmations as an indicator of the block's safety (minimizing the likelihood of a rollback). From there, we roll forward using the reference to the next block hash.
+
+While this mechanism might appear simplistic, it proves highly effective for most use cases, aside from scenarios involving exchanges.
+
+To further optimize the performance of this new chain component, we’ve raised two new issues on the Blockfrost side to support our work:
+- [#209](https://github.com/blockfrost/blockfrost-backend-ryo/issues/209): Add an endpoint to fetch all transaction CBORs in a block, reducing the number of API calls needed to retrieve Hydra head observations from block transactions.
+- [#67](https://github.com/blockfrost/blockfrost-haskell/issues/67): Implement concurrent fetching to fully leverage parallel requests and enhance performance.
+
+Moving forward, our next objective is to enable the `hydra-node` to publish Hydra scripts via Blockfrost, as outlined in [#1668](https://github.com/cardano-scaling/hydra/issues/1668).
+
 ### Spike: Raft-based networking
 
 As reported last month, we created a new test suite about resilience of our network stack in [#1532](https://github.com/cardano-scaling/hydra/issues/1532). With this in place, we can now explore various means to reach our goal of a crash-tolerant network layer.
