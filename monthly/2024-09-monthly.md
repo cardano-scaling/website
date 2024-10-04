@@ -120,7 +120,7 @@ As an initial step, we have developed:
 - A Hydra chain observer that operates in Blockfrost mode (although it has not yet been integrated into the `hydra-node`)
 - A variant of the `hydra-explorer` tailored to the Blockfrost-enabled Hydra chain observer
 
-We utilized a straightforward roll-forward approach via the Blockfrost [HTTP API](https://docs.blockfrost.io/), relying on the following key API calls:
+To achieve this, we have used a straightforward roll-forward approach via the Blockfrost [HTTP API](https://docs.blockfrost.io/), relying on the following key API calls:
 - *GET /blocks/{hash}*
   - *confirmations*: Number of block confirmations
   - *next_block_hash*: (nullable) Hash of the next block
