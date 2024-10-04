@@ -13,9 +13,9 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Roadmap
 
-Here is an update on our current roadmap:
+Here’s the latest on our roadmap:
 - **Cardano transactions signature/proving MVP** [#1457](https://github.com/input-output-hk/mithril/issues/1457): the feature is pending activation on the `mainnet`.
-- **Cardano Stake Distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is pending activation on `preview`, `preprod` and `mainnet`.
+- **Cardano stake distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is pending activation on `preview`, `preprod` and `mainnet`.
 - **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): we are finalizing the implementation the feature.
 - **CIP for Mithril signature diffusion through Cardano network** [#1775](https://github.com/input-output-hk/mithril/issues/1775): the draft CIP is under review.
 
@@ -24,9 +24,9 @@ Here is an update on our current roadmap:
 
 ### Distributions
 
-We have released the new Mithril distribution [`2437.1`](https://github.com/input-output-hk/mithril/releases/tag/2437.1). This distribution includes several critical updates and enhancements:
-- **BREAKING** changes in **Mithril client WASM**:
-  - Implementation of seamless transition from **unstable** to **stable** features.
+We released Mithril distribution [`2437.1`](https://github.com/input-output-hk/mithril/releases/tag/2437.1), which includes:
+- **Breaking changes** in the **Mithril client WASM**:
+ - Seamless transition from **unstable** to **stable** features
   - A new `unstable` option in the client allows the usage of unstable features.
   - The previous `client.unstable` implementation is not supported anymore and must be replaced with `client`.
 - Stable support for **Cardano transactions** certification in signer and aggregator.
@@ -56,14 +56,14 @@ We have published these posts:
 
 ### Decentralized Message Queue for Cardano
 
-We have kept working on the design of the **Decentralized Message Queue** for Cardano which is proposed in the draft [CIP](https://github.com/cardano-foundation/CIPs/pull/876).
+We continued working on the **decentralized message queue** (DMQ) for Cardano, as proposed in this [CIP draft](https://github.com/cardano-foundation/CIPs/pull/876). 
 
-This Decentralized Message Queue, aka **DMQ**, will:
+The DMQ is designed to:
 - Leverage the Cardano network layer.
-- Be used by Mithril at first to support the decentralized signatures diffusion from signers to aggregators.
-- Be versatile enough to be used by future Cardano protocols (each of which runs a different topic in the DMQ).
+- Initially be used by Mithril for the diffusion of signatures from signers to aggregators
+- Be adaptable for future Cardano protocols, each operating on a different DMQ topic.
 
-Under the hood, the DMQ will be operated by a "side" node, the DMQ node, which will run a separate peer-to-peer network powered by the Ouroboros network stack:
+The DMQ will be operated by a 'side' node, known as the DMQ node, which will run a separate peer-to-peer network powered by the Ouroboros network stack. Here are some key technical details:
 - It will run as an external process which exposes a Unix socket to support node-to-client mini-protocols.
 - It will implement node-to-client and node-to-node mini-protocols to allow for message local submission, local notification and peer-to-peer submission.
 - It will retrieve the Cardano stake distribution from its local Cardano node in order to authenticate incoming messages.
@@ -74,7 +74,7 @@ There exist producers and consumers for the DMQ topic running on some DMQ nodes.
 - The Mithril signers will be the message (Mithril individual signatures) producers.
 - The Mithril aggregators will be the message (Mithril individual signatures) consumers.
 
-Here is an overall architecture for the DMQ node:
+Producers and consumers for the DMQ topic run on various DMQ nodes:
 
 ![](img/2024-09-mithril-dmq-architecture.jpg)
 <small><center>DMQ node architecture</center></small>
