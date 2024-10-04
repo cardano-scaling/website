@@ -56,7 +56,7 @@ We have published these posts:
 
 ### Decentralized Message Queue for Cardano
 
-We continued working on the **decentralized message queue** (DMQ) for Cardano, as proposed in this [CIP draft](https://github.com/cardano-foundation/CIPs/pull/876). 
+We continued working on the **decentralized message queue** (DMQ) for Cardano, as proposed in this [CIP draft](https://github.com/cardano-foundation/CIPs/pull/876).
 
 The DMQ is designed to:
 - Leverage the Cardano network layer.
@@ -102,21 +102,21 @@ One of these use cases is the Hydra Doom demonstration we [showed at Rare Evo la
 
 This construction has a **lot of open questions about liveness**: what happens to the L3 head if the L2 head stops processing transactions? This pessimistic case can always happen in an optimistic protocol and needs to be dealt with, but not optimized for. Despite of this and other unknowns, we spent some time this month to explore whether its even possible in spike issue [#1590](https://github.com/cardano-scaling/hydra/issues/1590).
 
-Technically, this means that a `hydra-node` talks to another `hydra-node` as its "chain backend", interprets snapshots of the L2 head as blocks, observing transactions to open or close the head, while also submitting its state transitioning transactions to the underlying L2 ledger. The spike issue contains more details and how-to instructions to reproduce the findings, while the following issues demonstrates this prototypical `--inception` mode:
+Technically, this means that a `hydra-node` talks to another `hydra-node` as its 'chain backend', interprets snapshots of the L2 head as blocks, observing transactions to open or close the head, while also submitting its state transitioning transactions to the underlying L2 ledger. The spike issue contains more details and how-to instructions to reproduce the findings, while the following issues demonstrate this prototypical `--inception` mode:
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_Pw3MVooxg?si=6M2irHZgwPLiSQAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>
 
 ### Hydra 🤝 Blockfrost: chain backend concept
 
-As outlined in [#1305](https://github.com/cardano-scaling/hydra/issues/1305), we believe it would be beneficial to run the `hydra-node` in a more lightweight mode, without requiring the full `cardano-node`. This feature is particularly relevant when considering the use of Hydra with the pay-per-use Blockfrost API.
+As outlined in [#1305](https://github.com/cardano-scaling/hydra/issues/1305), we are considering an option to run the `hydra-node` in a more lightweight mode, without requiring the full `cardano-node`. This feature is particularly relevant when considering the use of Hydra with the pay-per-use Blockfrost API.
 
 To complete this component, the Blockfrost chain layer must be capable of:
 - Following the chain
 - Submitting Hydra transactions
 - Handling relevant internal wallet queries for the `hydra-node`
 
-As a first step, we’ve developed:
+As an initial step, we have developed:
 - A Hydra chain observer that operates in Blockfrost mode (though not yet integrated into the `hydra-node`)
 - A variant of the `hydra-explorer` tailored to the Blockfrost-enabled Hydra chain observer
 
@@ -150,16 +150,16 @@ The github issue contains all the details, but it turns out that is maybe not as
 Even performance of this early prototype is matching or exceeding our current implementation (when multi-threading performance is available). For example: using a low powered github-hosted container we see average confirmation times on the three node benchmark decrease `20ms -> 100ms`, while on desktop machine with 8+ cores the same benchmark improves `100ms -> 50ms`. As the starting numbers of the released version also vary wildly between machines, these results are only usable relatively.
 
 
-### Incremental Commits 
+### Incremental Commits
 
 Incremental commits feature development is ongoing and we demonstrated the user
-workflow we envisioned on the monthly meeting. 
+workflow we envisioned on the monthly meeting.
 
 Notably users will first need to lock their UTxO in the Hydra deposit script
 and this output would be consumed by the increment transaction once we have a
 signed snapshot on L2. This would make the specified UTxO be part of the Head
 UTxO state on L2 eventually. In case of any problems any hydra-node would be
-able to post a recover transaction which would unlock the UTxO. 
+able to post a recover transaction which would unlock the UTxO.
 
 There are hydra-node API endpoints for depositing/recovering which provide
 convenient way to build and post these transactions and we tried to have a nice
