@@ -117,7 +117,7 @@ To complete this component, the Blockfrost chain layer must be capable of:
 - Handling relevant internal wallet queries for the `hydra-node`
 
 As an initial step, we have developed:
-- A Hydra chain observer that operates in Blockfrost mode (though not yet integrated into the `hydra-node`)
+- A Hydra chain observer that operates in Blockfrost mode (although it has not yet been integrated into the `hydra-node`)
 - A variant of the `hydra-explorer` tailored to the Blockfrost-enabled Hydra chain observer
 
 We utilized a straightforward roll-forward approach via the Blockfrost [HTTP API](https://docs.blockfrost.io/), relying on the following key API calls:
