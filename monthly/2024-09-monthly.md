@@ -138,7 +138,7 @@ Moving forward, our next objective is to enable the `hydra-node` to publish Hydr
 
 ### Spike: Raft-based networking
 
-As reported last month, we created a new test suite about resilience of our network stack in [#1532](https://github.com/cardano-scaling/hydra/issues/1532). With this in place, we can now explore various means to reach our goal of a crash-tolerant network layer.
+Last month, we developed a new test suite [#1532](https://github.com/cardano-scaling/hydra/issues/1532) to assess the resilience of our network stack. Now that this is in place, we can start exploring different approaches to achieve our goal of a crash-tolerant network layer.
 
 When we stumbled over this [fairly old research paper](https://arxiv.org/pdf/1707.01873) that explored various consensus protocols used in blockchain space, it reminds us of the correspondence between consensus and broadcasts:
 > the form of consensus relevant for blockchain is technically known as atomic broadcast
