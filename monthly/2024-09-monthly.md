@@ -1,7 +1,7 @@
 ---
 title: September 2024
 slug: 2024-09
-authors: [ch1bo, noonio, jpraynaud]
+authors: [ch1bo, noonio, jpraynaud, v0d1ch, ffakenz]
 tags: [monthly]
 ---
 
@@ -98,7 +98,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 When a Hydra head is opened, a part of the underlying ledger state gets locked up and made available off-chain to a small group of participants. While this is already quite a "small world" to process transactions (which makes it fast & cheap), we encountered use cases where it would make sense to even open further heads with different/even smaller groups of participants on parts of the L2 state into L3 heads.
 
-One of these use cases is the Hydra Doom demonstration we [showed at Rare Evo last month](./2024-08#hydra-doom). For example, individual multi-player game sessions require low network latency from regionally closely located machines. If those machines now run a game session head that would, in turn, lock funds and game state from a slower, global tournament head instance, we are talking about Hydra heads in heads.
+One of these use cases is the Hydra Doom demonstration we [showed at Rare Evo last month](/monthly/2024-08#hydra-doom). For example, individual multi-player game sessions require low network latency from regionally closely located machines. If those machines now run a game session head that would, in turn, lock funds and game state from a slower, global tournament head instance, we are talking about Hydra heads in heads.
 
 This construction has a **lot of open questions about liveness**: what happens to the L3 head if the L2 head stops processing transactions? This pessimistic case can always happen in an optimistic protocol and needs to be dealt with, but not optimized for. Despite of this and other unknowns, we spent some time this month to explore whether its even possible in spike issue [#1590](https://github.com/cardano-scaling/hydra/issues/1590).
 
@@ -121,11 +121,11 @@ As an initial step, we have developed:
 - A variant of the `hydra-explorer` tailored to the Blockfrost-enabled Hydra chain observer
 
 To achieve this, we have used a straightforward roll-forward approach via the Blockfrost [HTTP API](https://docs.blockfrost.io/), relying on the following key API calls:
-- *GET /blocks/{hash}*
+- `GET /blocks/{hash}`
   - *confirmations*: Number of block confirmations
   - *next_block_hash*: (nullable) Hash of the next block
-- *GET /blocks/{hash}/txs*
-- *GET /txs/{hash}/cbor*
+- `GET /blocks/{hash}/txs`
+- `GET /txs/{hash}/cbor`
 > Basically, we continuously fetch specific blocks by their hash, using the number of confirmations as an indicator of the block's safety (minimizing the likelihood of a rollback). From there, we roll forward using the reference to the next block hash.
 
 While this mechanism might appear simplistic, it proves highly effective for most use cases, aside from scenarios involving exchanges.
