@@ -26,7 +26,7 @@ Here’s the latest on our roadmap:
 
 We released Mithril distribution [`2437.1`](https://github.com/input-output-hk/mithril/releases/tag/2437.1), which includes:
 - **Breaking changes** in the **Mithril client WASM**:
- - Seamless transition from **unstable** to **stable** features
+  - Seamless transition from **unstable** to **stable** features
   - A new `unstable` option in the client allows using unstable features
   - The previous `client.unstable` implementation is not supported anymore and must be replaced with `client`
 - Stable support for **Cardano transaction** certification in signer and aggregator
