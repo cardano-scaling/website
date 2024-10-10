@@ -160,12 +160,10 @@ The hydra-node API includes endpoints for depositing and recovering UTXOs, provi
 Next steps involve implementing comprehensive on-chain security, along with documentation and tutorials, to ensure our users understand how to use this new feature.
 This is essential since many builders on Hydra have requested this feature.
 
-## Conclusion
+## Links
 
 The monthly review meeting for September 2024 was held on 2024-09-25 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
-
-TODO: write
 
 [slides]: https://docs.google.com/presentation/d/1-_IFTibG1woAhVZohJh9gcZUO-YJyJqhH2sHv4PbJgc
 [recording]: https://drive.google.com/file/d/1jygDX-AGNGIGU7pq4ljEDuG39KVkInlJ
