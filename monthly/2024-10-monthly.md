@@ -89,7 +89,7 @@ TODO: add
 
 ### Aiken for Commit validator
 
-TODO: add
+We began porting our validators to Aiken, starting with the `Commit` validator. This resulted in saving of over 1Kb to the valdator script and increases the maximum number of head participants from 6 to 9.
 
 ### SnapshotConfirmed has the full Tx
 
