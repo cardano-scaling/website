@@ -54,9 +54,15 @@ We have published the following post:
 
 ### Decentralized Signature Orchestration
 
-TODO: add
+In order to get multiple aggreagators running on the same Mithril network, we need to **decentralize the signature orchestration** and make it happen independently on all the signers and aggregators.
 
-### Aggregator Usage Metrics and Grafana Dashboard
+We have implemented the feature which is now deployed on the `mainnet` with the signer released with the distribution [`2442.0`](https://github.com/input-output-hk/mithril/releases/tag/2442.0):
+
+- The signer and aggregator nodes are able to compute independently the beacon which determines the messages to sign and certify.
+- The aggregator does not advertise the pending certificates anymore (the pending certificate is deprecated. It is temporarily kept alive for legacy signer nodes and until sufficient adoption of the new version is reached).
+- The aggregator buffers the individual signatures received from signers until it has computed the associated beacon, and it will try to aggregate them thereafter.
+
+### Aggregator usage metrics and Grafana dashboard
 
 We have been working a new Prometheus endpoint for the aggregator which provides detailed insights about the production of artifacts and certificates, the events received from the signers, and the artifacts and proofs served to the clients. The feature can be easily activated with some configuration parameters.
 
