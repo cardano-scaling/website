@@ -42,11 +42,9 @@ We plan to release new distributions in November:
 
 ### Dev blog
 
-TODO: update
+We have published the following post:
 
-We have published the following posts:
-
-- [Mithril client WASM breaking change](https://mithril.network/doc/dev-blog/2024/09/24/client-wasm-unstable-breaking-change)
+- [Certification of Cardano stake distribution](https://mithril.network/doc/dev-blog/2024/10/15/cardano-stake-distribution-certification)
 - [Certification of Cardano transactions](https://mithril.network/doc/dev-blog/2024/07/30/cardano-transaction-certification) (Updated).
 
 ### Protocol status
