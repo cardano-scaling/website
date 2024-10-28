@@ -13,16 +13,14 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Roadmap
 
-TODO: update
-
 Here’s the latest on our roadmap:
 
-- **Cardano transactions signature/proving MVP** [#1457](https://github.com/input-output-hk/mithril/issues/1457): the feature is pending activation on `mainnet`
-- **Cardano stake distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is pending activation on `preview`, `preprod` and `mainnet`
-- **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): feature implementation is being finalized
-- **CIP for Mithril signature diffusion through the Cardano network** [#1775](https://github.com/input-output-hk/mithril/issues/1775): the draft CIP is in review.
+- **Cardano transactions signature/proving MVP** [#1457](https://github.com/input-output-hk/mithril/issues/1457): the feature has been activated on `mainnet`
+- **Cardano stake distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature has been activated on `preview`, `preprod` and is pending activation on `mainnet`
+- **Decentralization of signature orchestration** [#1777](https://github.com/input-output-hk/mithril/issues/1777): the feature has been activated on `preview`, `preprod` and `mainnet`
+- **CIP for Mithril signature diffusion through the Cardano network** [#1775](https://github.com/input-output-hk/mithril/issues/1775): the draft CIP has received the number **CIP-0137** is at final review stage.
 
-![](img/2024-09-mithril-features-distributions.png)
+![](img/2024-10-mithril-features-distributions.png)
 <small><center>Feature activation and distribution schedule for Mithril</center></small>
 
 ### Distributions
