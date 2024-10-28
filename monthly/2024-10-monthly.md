@@ -1,7 +1,7 @@
 ---
 title: October 2024
 slug: 2024-10
-authors: [jpraynaud]
+authors: [jpraynaud, noonio]
 tags: [monthly]
 ---
 
@@ -95,10 +95,6 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 TODO: add
 
 ### Aiken for Commit validator
-
-TODO: add
-
-### Using Aiken - experience report
 
 TODO: add
 
