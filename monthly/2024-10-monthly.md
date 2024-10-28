@@ -49,9 +49,7 @@ We have published the following post:
 
 ### Protocol status
 
-TODO: update
-
-![](img/2024-09-mithril-protocol-status.png)
+![](img/2024-10-mithril-protocol-status.png)
 <small><center>The latest status of the Mithril protocol on Cardano `mainnet`</center></small>
 
 ### Decentralized Signature Orchestration
