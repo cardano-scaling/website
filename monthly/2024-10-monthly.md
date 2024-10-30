@@ -81,7 +81,11 @@ Additionally, we created a Grafana template to easily set up a dashboard for thi
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
 
-TODO
+- Added the raw CBOR datum in transaction outputs [#1543](https://github.com/cardano-scaling/hydra/issues/1543)
+- Used Aiken for commit validator [#1680](https://github.com/cardano-scaling/hydra/pull/1680)
+- Updated to cardano-api 9.4 [#1706](https://github.com/cardano-scaling/hydra/pull/1706)
+- Implemented the off-chain user journey for incremental commits [#1522](https://github.com/cardano-scaling/hydra/issues/1522)
+- Added blockfrost mode to hydra-chain-observer [#1631](https://github.com/cardano-scaling/hydra/pull/1631)
 
 ### Argentina
 
@@ -138,11 +142,6 @@ index 1bea9e96fe7..326c69c39bc 100644
        console.log("Irrelevant message", msg);
    }
 ```
-
-
-### Working group updates
-
-TODO: add
 
 ## Links
 
