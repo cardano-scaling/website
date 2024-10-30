@@ -84,7 +84,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 - Added the raw CBOR datum in transaction outputs [#1543](https://github.com/cardano-scaling/hydra/issues/1543)
 - Used Aiken for commit validator [#1680](https://github.com/cardano-scaling/hydra/pull/1680)
 - Updated to cardano-api 9.4 [#1706](https://github.com/cardano-scaling/hydra/pull/1706)
-- Implemented the off-chain user journey for incremental commits [#1522](https://github.com/cardano-scaling/hydra/issues/1522)
+- Implemented the off-chain user journey for incremental commits [#1522](https://github.com/cardano-scaling/hydra/issues/1522) and making good progress on the on-chain validators
 - Added blockfrost mode to hydra-chain-observer [#1631](https://github.com/cardano-scaling/hydra/pull/1631)
 
 ### Argentina
