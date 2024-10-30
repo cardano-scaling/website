@@ -1,7 +1,7 @@
 ---
 title: October 2024
 slug: 2024-10
-authors: [jpraynaud, noonio]
+authors: [jpraynaud, noonio, locallycompact]
 tags: [monthly]
 ---
 
