@@ -93,7 +93,52 @@ We began porting our validators to Aiken, starting with the `Commit` validator. 
 
 ### SnapshotConfirmed has the full Tx
 
-TODO: add
+The `SnapshotConfirmed` event now has the full transaction information; so
+this makes it much easier to build an app that watches for confirmed
+transactions and responds appropriately. For example, here is the change
+required in [Hydraw](http://hydraw.hydra.family/):
+
+```diff
+diff --git a/hydraw/static/bundle.js b/hydraw/static/bundle.js
+index 1bea9e96fe7..326c69c39bc 100644
+--- a/hydraw/static/bundle.js
++++ b/hydraw/static/bundle.js
+@@ -13,19 +13,20 @@ let n = 0
+ client.addEventListener("message", e => {
+   const msg = JSON.parse(e.data);
+   switch (msg.tag) {
+-    case "TxValid":
+-      // TODO: Should only draw pixels on SnapshotConfirmed
+-      const cborHex = msg.transaction.cborHex;
+-      console.log("New transaction cborHex seen", cborHex);
+-      const transaction = cbor.decodeFirstSync(cborHex);
+-      const auxiliaryData = transaction[3]
+-      if (auxiliaryData !== undefined && auxiliaryData !== null) {
+-        console.log("Transaction has auxiliary data", auxiliaryData);
+-        const aux = auxiliaryData.value;
+-        const [x, y, r, g, b] = (aux.get(0) || aux.get(1)).get(metadataLabel);
+-        n += delay;
+-        setTimeout(() => drawPixel(x, y, [r, g, b]), n);
+-      }
++    case "SnapshotConfirmed":
++      msg.snapshot.confirmed.forEach( (tx, _) => {
++        const cborHex = tx.cborHex;
++        console.log("New confirmed transaction cborHex seen", cborHex);
++        const transaction = cbor.decodeFirstSync(cborHex);
++        const auxiliaryData = transaction[3]
++        if (auxiliaryData !== undefined && auxiliaryData !== null) {
++          console.log("Transaction has auxiliary data", auxiliaryData);
++          const aux = auxiliaryData.value;
++          const [x, y, r, g, b] = (aux.get(0) || aux.get(1)).get(metadataLabel);
++          n += delay;
++          setTimeout(() => drawPixel(x, y, [r, g, b]), n);
++        }
++      })
+     default:
+       console.log("Irrelevant message", msg);
+   }
+```
+
 
 ### Working group updates
 
