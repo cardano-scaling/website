@@ -97,8 +97,8 @@ We began porting our validators to Aiken, starting with the `Commit` validator. 
 
 ### SnapshotConfirmed has the full Tx
 
-The `SnapshotConfirmed` event now has the full transaction information; so
-this makes it much easier to build an app that watches for confirmed
+The `SnapshotConfirmed` event now has the full transaction information,
+which makes it much easier to build an app that watches for confirmed
 transactions and responds appropriately. For example, here is the change
 required in [Hydraw](http://hydraw.hydra.family/):
 
