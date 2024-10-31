@@ -65,12 +65,12 @@ We have implemented and deployed this feature on`mainnet` with the signer releas
 
 ### Aggregator usage metrics and Grafana dashboard
 
-We have been working a new Prometheus endpoint for the aggregator which provides detailed insights about the production of artifacts and certificates, the events received from the signers, and the artifacts and proofs served to the clients. The feature can be easily activated with some configuration parameters.
+We have been working on a new Prometheus endpoint for the aggregator, which provides detailed insights about the production of artifacts and certificates, the events received from the signers, and the artifacts and proofs served to the clients. The feature can be easily activated with some configuration parameters.
 
 Additionally, we created a Grafana template to easily set up a dashboard for this Prometheus endpoint.
 
 ![](img/2024-10-mithril-prometheus-metrics.png)
-<small><center>The aggregator Grafan dahsboard</center></small>
+<small><center>The aggregator Grafana dahsboard</center></small>
 
 ## Hydra
 
