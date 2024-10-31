@@ -28,9 +28,9 @@ Here’s the latest on our roadmap:
 
 We released Mithril distribution [`2442.0`](https://github.com/input-output-hk/mithril/releases/tag/2442.0), which includes:
 
-- Stable support for **decentralized signature orchestration**.
-- Stable support for **Cardano transaction client library, CLI and WASM**.
-- Stable support for new **Pythagoras** Mithril era.
+- Stable support for **decentralized signature orchestration**
+- Stable support for **Cardano transaction client library, CLI, and WASM**
+- Stable support for new **Pythagoras** Mithril era
 - Bug fixes and performance improvements.
 
 #### Future distributions
