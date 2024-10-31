@@ -53,15 +53,15 @@ We have published the following posts:
 ![](img/2024-10-mithril-protocol-status.png)
 <small><center>The latest status of the Mithril protocol on Cardano `mainnet`</center></small>
 
-### Decentralized Signature Orchestration
+### Decentralized signature orchestration
 
-In order to get multiple aggreagators running on the same Mithril network, we need to **decentralize the signature orchestration** and make it happen independently on all the signers and aggregators.
+To enable multiple aggregators on the same Mithril network, the **signature orchestration** must be decentralized to run independently across all signers and aggregators.
 
-We have implemented the feature which is now deployed on the `mainnet` with the signer released with the distribution [`2442.0`](https://github.com/input-output-hk/mithril/releases/tag/2442.0):
+We have implemented and deployed this feature on`mainnet` with the signer released in [`2442.0`](https://github.com/input-output-hk/mithril/releases/tag/2442.0) distribution:
 
-- The signer and aggregator nodes are able to compute independently the beacon which determines the messages to sign and certify.
-- The aggregator does not advertise the pending certificates anymore (the pending certificate is deprecated. It is temporarily kept alive for legacy signer nodes and until sufficient adoption of the new version is reached).
-- The aggregator buffers the individual signatures received from signers until it has computed the associated beacon, and it will try to aggregate them thereafter.
+- The signer and aggregator nodes can independently compute the beacon, which determines the messages to sign and certify
+- The aggregator no longer advertises the pending certificates; the pending certificate is deprecated and temporarily kept alive for legacy signer nodes until sufficient adoption of the new version is reached
+- The aggregator buffers the individual signatures received from signers until it has computed the associated beacon and will try to aggregate them thereafter.
 
 ### Aggregator usage metrics and Grafana dashboard
 
