@@ -38,8 +38,8 @@ We released Mithril distribution [`2442.0`](https://github.com/input-output-hk/m
 We plan to release new distributions in November:
 
 - `2444`:
-  - Stable clients for **Cardano stake distribution** certification.
-  - Stable support for Prometheus metrics endpoint in aggregator.
+  - Stable clients for **Cardano stake distribution** certification
+  - Stable support for Prometheus metrics endpoint in the aggregator.
 
 ### Dev blog
 
