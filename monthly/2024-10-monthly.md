@@ -91,9 +91,9 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 IOG attended a local satellite Cardano Summit event, as well as Tech Expo – a multichain Web3-focused event – in Argentina on October 18 and 19. During both events, the Hydra Doom demo was showcased on-site, using locally built cabinets and a new setup with a computer as an on-site server, connecting laptops to aggregate stats from multiple sessions. Many attendees had the chance to play and enjoy the demo, with our very own Tamara Haasen displaying true grit and remarkable skill! Notable attendees included ICP, Polkadot, OKX, ByBit, and the founder of Render Network. Overall, it was a fantastic event and a great opportunity to connect with Argentinian builders. Now it’s time to prepare for the next leg of the Hydra Doom adventure and gear up for a return visit soon!
 
-### Aiken for Commit validator
+### Aiken for commit validator
 
-We began porting our validators to Aiken, starting with the `Commit` validator. This resulted in saving of over 1Kb to the valdator script and increases the maximum number of head participants from 6 to 9.
+We began porting our validators to Aiken, starting with the `Commit` validator. This resulted in a saving of over 1Kb to the validator script and increased the maximum number of head participants from 6 to 9.
 
 ### SnapshotConfirmed has the full Tx
 
