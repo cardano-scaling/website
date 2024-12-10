@@ -22,24 +22,22 @@ Here’s the latest on our roadmap:
 
 ### Distributions
 
-TODO: Update
+We released Mithril distribution [`2445.0`](https://github.com/input-output-hk/mithril/releases/tag/2445.0), which includes:
 
-We released Mithril distribution [`2442.0`](https://github.com/input-output-hk/mithril/releases/tag/2442.0), which includes:
-
-- Stable support for **decentralized signature orchestration**
-- Stable support for **Cardano transaction client library, CLI, and WASM**
-- Stable support for new **Pythagoras** Mithril era
+- 🔥 **Breaking changes in Mithril client library, CLI, and WASM** with removal of deprecated beacon in Mithril certificates.
+- Stable support for **Cardano node** `10.1.2` in the signer and the aggregator.
+- Stable support for **Cardano stake distribution client library, CLI and WASM**.
+- Stable support for **Prometheus metrics** endpoint in aggregator.
 - Bug fixes and performance improvements.
 
 #### Future distributions
 
-TODO: Update
+We plan to release new distributions in December:
 
-We plan to release new distributions in November:
-
-- `2444`:
-  - Stable clients for **Cardano stake distribution** certification
-  - Stable support for Prometheus metrics endpoint in the aggregator.
+- `2450`:
+  - Availability of NodeJS and bundler targets in the Mithril client WASM npm package.
+  - Stable support for **Cardano node** `10.1.3` in the signer and the aggregator.
+  - Execution rights of pre-built binaries in the GitHub releases.
 
 ### Dev blog
 
