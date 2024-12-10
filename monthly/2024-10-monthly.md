@@ -5,7 +5,7 @@ authors: [jpraynaud, noonio, locallycompact]
 tags: [monthly]
 ---
 
-This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects since August 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month, the meeting was held on 2024-10-23 using these [slides][slides] and [you can see the recording here][recording].
+This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects since September 2024. This document serves as a preparation for and a written summary of the monthly stakeholder review meeting, which is announced on our Discord channels and held on Google Meet. This month, the meeting was held on 2024-10-23 using these [slides][slides] and [you can see the recording here][recording].
 
 ## Mithril
 
