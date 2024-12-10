@@ -60,7 +60,7 @@ The Protocol Insights Dashboard is a valuable tool for monitoring the network an
 - Software metrics
 
 ![](img/2024-11-mithril-protocol-dashboard.gif)
-<small><center>The new Mithril Protocol Insights Dashbaord on the Cardano `mainnet`</center></small>
+<small><center>The new Mithril Protocol Insights Dashboard on the Cardano `mainnet`</center></small>
 
 ### One line installer for Mithril binaries
 
@@ -86,7 +86,10 @@ We have created a new version of the **npm package for the Mithril client WASM**
 
 ### New Explorer Status
 
-TODO: Update
+We have enhanced the Mithril Explorer with a new status section that provides some key metrics and insights about the Mithril network. This new section is currently available on testing networks and will be generally available with the release of the next distribution `2550`.
+
+![](img/2024-11-mithril-explorer-status.png)
+<small><center>The new staus section of the Mithril Explorer</center></small>
 
 ### Nightly and backward compatibility workflows
 
