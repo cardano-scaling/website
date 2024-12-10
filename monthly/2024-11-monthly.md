@@ -49,10 +49,18 @@ We have published the following posts:
 
 ### Protocol Insights Dashboard v2
 
-TODO: Update
+We have created a new version of the Mithril Protocol Insights Dashboard, which is now available [here](https://lookerstudio.google.com/s/mbL23-8gibI). It provides a comprehensive view of the Mithril network and its performance metrics.
 
-![](img/2024-10-mithril-protocol-status.png)
-<small><center>The latest status of the Mithril protocol on Cardano `mainnet`</center></small>
+The Protocol Insights Dashboard is a valuable tool for monitoring the network and understanding its behavior:
+
+- Participation metrics
+- Usage metrics
+- Health metrics
+- Artifacts metrics
+- Software metrics
+
+![](img/2024-11-mithril-protocol-dashboard.gif)
+<small><center>The new Mithril Protocol Insights Dashbaord on the Cardano `mainnet`</center></small>
 
 ### One line installer for Mithril binaries
 
