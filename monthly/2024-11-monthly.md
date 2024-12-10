@@ -64,7 +64,21 @@ The Protocol Insights Dashboard is a valuable tool for monitoring the network an
 
 ### One line installer for Mithril binaries
 
-TODO: Update
+In order to facilitate the installation and update of Mithril binaries, we have created a one line installer that downloads and installs the Mithril binaries for you. This installer is available for Linux and MacOS, and for the Mithril signer, Mithril aggregator, and Mithril CLI.
+
+Here is an example command to download the **latest Mithril signer** binary in the current directory:
+
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/input-output-hk/mithril/refs/heads/main/mithril-install.sh | sh -s -- -c mithril-signer -d latest -p $(pwd)
+```
+
+Which will download the latest signer binary for the correct platform and architecture (if available) in the current directory:
+
+```shell
+Fetching release information from https://api.github.com/repos/input-output-hk/mithril/releases/latest...
+Downloading mithril-signer to latest from https://github.com/input-output-hk/mithril/releases/download/2445.0/mithril-2445.0-linux-x64.tar.gz...
+Congrats! mithril-signer has been upgraded to 0.2.209+67dc6e4 from distribution latest and installed at ./home/user!
+```
 
 ### Client NPM package compatible with NodeJS
 
