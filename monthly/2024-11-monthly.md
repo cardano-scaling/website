@@ -89,11 +89,14 @@ We have created a new version of the **npm package for the Mithril client WASM**
 We have enhanced the Mithril Explorer with a new status section that provides some key metrics and insights about the Mithril network. This new section is currently available on testing networks and will be generally available with the release of the next distribution `2550`.
 
 ![](img/2024-11-mithril-explorer-status.png)
-<small><center>The new staus section of the Mithril Explorer</center></small>
+<small><center>The new status section of the Mithril Explorer</center></small>
 
 ### Nightly and backward compatibility workflows
 
-TODO: Update
+In order to provide more reliable and consistent releases, we have implemented nightly and backward compatibility workflows. The nightly workflow builds the Mithril Docker images every night. It also runs the backward compatibility workflow which checks the compatibility of the Mithril distribution to be released with the previous versions and creates a summary of the changes.
+
+![](img/2024-11-mithril-backward-compatibility.png)
+<small><center>The backward compatibility summary created by the workflow</center></small>
 
 ## Hydra
 
