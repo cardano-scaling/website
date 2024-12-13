@@ -1,7 +1,7 @@
 ---
 title: November 2024
-slug: 2024-10
-authors: [jpraynaud]
+slug: 2024-11
+authors: [jpraynaud, noonio]
 tags: [monthly]
 ---
 
@@ -100,55 +100,37 @@ In order to provide more reliable and consistent releases, we have implemented n
 
 ## Hydra
 
-TODO: Update
-
 [Issues and pull requests closed in November](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-11-01..2024-11-30)
 
-![The roadmap with features and ideas](./img/2024-10-hydra-roadmap.png)
+![The roadmap with features and ideas](./img/2024-11-hydra-roadmap.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
 
-- Added the raw CBOR datum in transaction outputs [#1543](https://github.com/cardano-scaling/hydra/issues/1543)
-- Used Aiken for commit validator [#1680](https://github.com/cardano-scaling/hydra/pull/1680)
-- Updated to `cardano-api` 9.4 [#1706](https://github.com/cardano-scaling/hydra/pull/1706)
-- Implemented the off-chain user journey for incremental commits [#1522](https://github.com/cardano-scaling/hydra/issues/1522) and made good progress on the on-chain validators
-- Added Blockfrost mode to the hydra-chain-observer [#1631](https://github.com/cardano-scaling/hydra/pull/1631).
-
-### Hydra maintenance
-
-TODO: Update
+- Progress on incremental commits [#199](https://github.com/cardano-scaling/hydra/issues/199)
+- Hydra + Midnight support [#1727](https://github.com/cardano-scaling/hydra/issues/1727)
+- Continued support of Hydra Doom, especially around the tournament!
 
 ### Hydra Doom
 
 TODO: Update
 
+@Trymyrt
+
 ### Incremental commits
 
 TODO: Update
 
+@v0d1ch
+
 ### Hydra + Midnight
 
-TODO: Update
-
-### Hydra working-group updates
-
-TODO: Update
-
-### Hydra roadmap update
-
-TODO: Update
+- Working
 
 ## Links
-
-TODO: Update the recording link
 
 The monthly review meeting for October 2024 was held on 2024-10-23 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-[slides]: https://docs.google.com/presentation/d/1erEcuVNtYsCecJEX-QVXVtxzQMl8G6EVQbs98KPjxmI
-[recording]: https://drive.google.com/file/d/1ZM2Pcxw3U1OwHHLCC7b9EK3h-YqfG3zI/view
-
-```
-
-```
+[slides]: https://docs.google.com/presentation/d/1erEcuVNtYsCecJEX-QVXVtxzQMl8G6EVQbs98KPjxmI/edit?usp=sharing
+[recording]: https://drive.google.com/file/d/1a9UOldEuNSg19GB2CXUbNIHITJodZOqr/view?usp=drive_link
