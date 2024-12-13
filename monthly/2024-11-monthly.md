@@ -100,6 +100,10 @@ In order to provide more reliable and consistent releases, we have implemented n
 
 ## Hydra
 
+We continued our work on incremental commits, as well as starting work on
+supporting multiple versions in the hydra explorer, and moving the
+hydra-explorer out of the monorepo.
+
 [Issues and pull requests closed in November](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-11-01..2024-11-30)
 
 ![The roadmap with features and ideas](./img/2024-11-hydra-roadmap.png)
@@ -111,6 +115,14 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 - Hydra + Midnight support [#1727](https://github.com/cardano-scaling/hydra/issues/1727)
 - Continued support of Hydra Doom, especially around the tournament!
 
+### Hydra Explorer
+
+The hydra-explorer has been [moved out to it's own
+repo](https://github.com/cardano-scaling/hydra-explorer/pull/5), with
+indepdenent deployment. Because of this, we now need to support multiple
+versions of the hydra-node in the explorer, which we are [working on
+presently](https://github.com/cardano-scaling/hydra/issues/1282).
+
 ### Hydra Doom
 
 TODO: Update
@@ -121,15 +133,19 @@ TODO: Update
 
 TODO: Update
 
-@v0d1ch
+@v0d1ch, @ffakenz
 
 ### Hydra + Midnight
 
-- Working
+We've been working with the Midnight team to investigate how Hydra may fit
+with their goals. As part of this work, we're working on a version of hydra
+with a custom ledger, so support arbitrary builtin operations that validators
+may require. [This is on-going.](https://github.com/cardano-scaling/hydra/issues/1727)
+
 
 ## Links
 
-The monthly review meeting for October 2024 was held on 2024-10-23 via Google Meet,
+The monthly review meeting for November 2024 was held on 2024-12-09 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
 [slides]: https://docs.google.com/presentation/d/1erEcuVNtYsCecJEX-QVXVtxzQMl8G6EVQbs98KPjxmI/edit?usp=sharing
