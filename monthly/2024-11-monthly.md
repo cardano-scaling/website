@@ -1,7 +1,7 @@
 ---
 title: November 2024
 slug: 2024-11
-authors: [jpraynaud, noonio]
+authors: [jpraynaud, noonio, v0d1ch]
 tags: [monthly]
 ---
 
@@ -131,9 +131,12 @@ TODO: Update
 
 ### Incremental commits
 
-TODO: Update
-
-@v0d1ch, @ffakenz
+Incremental commits feature is almost ready to be released. As the final step
+we would like to present this feature to the community members so that any
+interested builders gives it a test-drive. Our hope is to provide the best UX
+and make sure there are no bugs so what is left is to improve upon the
+documentation and testing as well as reflecting these protocol changes in our
+specification.
 
 ### Hydra + Midnight
 
