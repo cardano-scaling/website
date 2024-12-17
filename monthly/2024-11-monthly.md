@@ -125,9 +125,13 @@ presently](https://github.com/cardano-scaling/hydra/issues/1282).
 
 ### Hydra Doom
 
-TODO: Update
+Following on the success of Hydra Doom both at Rare Evo and as an activation at various events both organized by IO and others(!), the Hydra Doom project has taken a new step up in a major way and launched a tournament with 100,000 USDM on the line, intended to be distributed automatically to the winners based on the outcome of the game as measured in the Hydra Heads used for the finale.
+In the process of launching the tournament, we passed a few milestones and were able to push Hydra to its' very limits in many ways, both on the performance on each individual Hydra head being able to support a multi-player game where each frame of everyone's game sessions submitted smart contract transactions. At the peak (on December 3rd), we passed 1.04 million transactions per second, and within the 24 hour period we left it running we ended up processing more than 15.5 Billion transactions in total. This was reached with a combination of real player traffic all over the world, and with artificial load in the shape of bots running the game and thus contributing transactions to more than 14,000 Hydra heads.
+More work remains to be done, but an impressive milestone was reached and the reception has been over all positive.
 
-@Trymyrt
+https://github.com/user-attachments/assets/c9546d61-212b-490f-88b8-a3b15229aa15
+
+
 
 ### Incremental commits
 
