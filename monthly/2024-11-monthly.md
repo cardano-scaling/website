@@ -64,7 +64,7 @@ The Protocol Insights Dashboard is a valuable tool for monitoring the network an
 
 ### One line installer for Mithril binaries
 
-In order to facilitate the installation and update of Mithril binaries, we have created a one line installer that downloads and installs the Mithril binaries for you. This installer is available for Linux and MacOS, and for the Mithril signer, Mithril aggregator, and Mithril CLI.
+To facilitate the installation and updating of Mithril binaries, we have created a one line installer that downloads and installs the Mithril binaries and supports Linux and macOS. It is available for the Mithril signer, Mithril aggregator, and Mithril CLI.
 
 Here is an example command to download the **latest Mithril signer** binary in the current directory:
 
