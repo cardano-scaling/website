@@ -16,9 +16,9 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 Here’s the latest on our roadmap:
 
 - **Cardano stake distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature is pending activation on `mainnet`
-- **Protocol usage metrics/statistics** [#2028](https://github.com/input-output-hk/mithril/issues/2028): the feature is completed and has been released in November.
-- **Explore Signer Registration Solutions** [#2029](https://github.com/input-output-hk/mithril/issues/2029): we are exploring the signer registration options and preparing a document summarizing them.
-- **Cardano Database Incremental Snapshots PoC** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have started working on a proof of concept for incremental snapshots of the Cardano database.
+- **Protocol usage metrics/statistics** [#2028](https://github.com/input-output-hk/mithril/issues/2028): the feature is completed and has been released in November
+- **Explore signer registration solutions** [#2029](https://github.com/input-output-hk/mithril/issues/2029): we are exploring the signer registration options and preparing a document summarizing them
+- **Cardano database incremental snapshots PoC** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have started working on a proof of concept for incremental snapshots of the Cardano database.
 
 ### Distributions
 
