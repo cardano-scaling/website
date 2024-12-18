@@ -115,11 +115,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 ### Hydra Explorer
 
-The hydra-explorer has been [moved out to it's own
-repo](https://github.com/cardano-scaling/hydra-explorer/pull/5), with
-indepdenent deployment. Because of this, we now need to support multiple
-versions of the hydra-node in the explorer, which we are [working on
-presently](https://github.com/cardano-scaling/hydra/issues/1282).
+The hydra-explorer has been [moved to its own repository](https://github.com/cardano-scaling/hydra-explorer/pull/5) with independent deployment. As a result, supporting multiple versions of the `hydra-node` in the explorer is now necessary, and we are [currently working on it](https://github.com/cardano-scaling/hydra/issues/1282).
 
 ### Hydra Doom
 
