@@ -72,7 +72,7 @@ Here is an example command to download the **latest Mithril signer** binary in t
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/input-output-hk/mithril/refs/heads/main/mithril-install.sh | sh -s -- -c mithril-signer -d latest -p $(pwd)
 ```
 
-Which will download the latest signer binary for the correct platform and architecture (if available) in the current directory:
+This will download the latest signer binary for the correct platform and architecture (if available) in the current directory:
 
 ```shell
 Fetching release information from https://api.github.com/repos/input-output-hk/mithril/releases/latest...
