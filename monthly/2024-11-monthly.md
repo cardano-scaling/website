@@ -35,9 +35,9 @@ We released Mithril distribution [`2445.0`](https://github.com/input-output-hk/m
 We plan to release new distributions in December:
 
 - `2450`:
-  - Availability of NodeJS and bundler targets in the Mithril client WASM npm package.
-  - Stable support for **Cardano node** `10.1.3` in the signer and the aggregator.
-  - Execution rights of pre-built binaries in the GitHub releases.
+  - Availability of NodeJS and bundler targets in the Mithril client WASM npm package
+  - Stable support for **Cardano node** `10.1.3` in the signer and the aggregator
+  - Execution rights of pre-built binaries in GitHub releases.
 
 ### Dev blog
 
