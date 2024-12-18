@@ -57,7 +57,7 @@ The Protocol Insights Dashboard is a valuable tool for monitoring the network an
 - Usage metrics
 - Health metrics
 - Artifacts metrics
-- Software metrics
+- Software metrics.
 
 ![](img/2024-11-mithril-protocol-dashboard.gif)
 <small><center>The new Mithril Protocol Insights Dashboard on the Cardano `mainnet`</center></small>
