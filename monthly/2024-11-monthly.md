@@ -84,12 +84,12 @@ Congrats! mithril-signer has been upgraded to 0.2.209+67dc6e4 from distribution 
 
 We have created a new version of the **npm package for the Mithril client WASM**, which is now compatible with NodeJS and bundler targets. This feature was requested by the community and will be released in the next `2550` distribution.
 
-### New Explorer Status
+### New explorer status
 
-We have enhanced the Mithril Explorer with a new status section that provides some key metrics and insights about the Mithril network. This new section is currently available on testing networks and will be generally available with the release of the next distribution `2550`.
+We have enhanced the Mithril Explorer with a new status section that provides some key metrics and insights about the Mithril network. This new section is currently available on testing networks and will be generally available with the release of the next `2550` distribution.
 
 ![](img/2024-11-mithril-explorer-status.png)
-<small><center>The new status section of the Mithril Explorer</center></small>
+<small><center>The new Mithril Explorer status section</center></small>
 
 ### Nightly and backward compatibility workflows
 
