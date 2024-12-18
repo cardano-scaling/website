@@ -24,10 +24,10 @@ Here’s the latest on our roadmap:
 
 We released Mithril distribution [`2445.0`](https://github.com/input-output-hk/mithril/releases/tag/2445.0), which includes:
 
-- 🔥 **Breaking changes in Mithril client library, CLI, and WASM** with removal of deprecated beacon in Mithril certificates.
-- Stable support for **Cardano node** `10.1.2` in the signer and the aggregator.
-- Stable support for **Cardano stake distribution client library, CLI and WASM**.
-- Stable support for **Prometheus metrics** endpoint in aggregator.
+- 🔥 **Breaking changes in the Mithril client library, CLI, and WASM** with the removal of deprecated beacon in Mithril certificates
+- Stable support for **Cardano node** `10.1.2` in the signer and the aggregator
+- Stable support for **Cardano stake distribution client library, CLI, and WASM**
+- Stable support for the **Prometheus metrics** endpoint in the aggregator
 - Bug fixes and performance improvements.
 
 #### Future distributions
