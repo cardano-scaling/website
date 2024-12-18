@@ -131,12 +131,7 @@ https://github.com/user-attachments/assets/c9546d61-212b-490f-88b8-a3b15229aa15
 
 ### Incremental commits
 
-Incremental commits feature is almost ready to be released. As the final step
-we would like to present this feature to the community members so that any
-interested builders gives it a test-drive. Our hope is to provide the best UX
-and make sure there are no bugs so what is left is to improve upon the
-documentation and testing as well as reflecting these protocol changes in our
-specification.
+The incremental commits feature is nearly ready for release. As a final step, we invite community members to test-drive this feature. The goal is to ensure the best user experience and identify potential bugs. The remaining tasks include improving documentation and testing and updating the protocol specification to reflect these changes.
 
 ### Hydra + Midnight
 
