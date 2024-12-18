@@ -93,7 +93,7 @@ We have enhanced the Mithril Explorer with a new status section that provides so
 
 ### Nightly and backward compatibility workflows
 
-In order to provide more reliable and consistent releases, we have implemented nightly and backward compatibility workflows. The nightly workflow builds the Mithril Docker images every night. It also runs the backward compatibility workflow which checks the compatibility of the Mithril distribution to be released with the previous versions and creates a summary of the changes.
+We have implemented nightly and backward compatibility workflows to ensure more reliable and consistent releases. The nightly workflow builds Mithril Docker images every night and runs the backward compatibility workflow, which checks the compatibility of the upcoming Mithril distribution with previous versions, summarizing the changes.
 
 ![](img/2024-11-mithril-backward-compatibility.png)
 <small><center>The backward compatibility summary created by the workflow</center></small>
