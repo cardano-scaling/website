@@ -100,9 +100,7 @@ We have implemented nightly and backward compatibility workflows to ensure more 
 
 ## Hydra
 
-We continued our work on incremental commits, as well as starting work on
-supporting multiple versions in the hydra explorer, and moving the
-hydra-explorer out of the monorepo.
+We continued working on incremental commits, began supporting multiple versions in the Hydra Explorer, and started moving the `hydra-explorer` out of the monorepo.
 
 [Issues and pull requests closed in November](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2024-11-01..2024-11-30)
 
