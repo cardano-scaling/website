@@ -140,10 +140,7 @@ specification.
 
 ### Hydra + Midnight
 
-We've been working with the Midnight team to investigate how Hydra may fit
-with their goals. As part of this work, we're working on a version of hydra
-with a custom ledger, so support arbitrary builtin operations that validators
-may require. [This is on-going.](https://github.com/cardano-scaling/hydra/issues/1727)
+We’ve been collaborating with the Midnight team to explore how Hydra can align with their goals. As part of this effort, we’re developing a version of Hydra with a custom ledger to support arbitrary built-in operations that validators may need. [This work is ongoing.](https://github.com/cardano-scaling/hydra/issues/1727)
 
 
 ## Links
