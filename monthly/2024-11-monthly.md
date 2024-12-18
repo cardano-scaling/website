@@ -82,7 +82,7 @@ Congrats! mithril-signer has been upgraded to 0.2.209+67dc6e4 from distribution 
 
 ### Client NPM package compatible with NodeJS
 
-We have created a new version of the **npm package for the Mithril client WASM**, which is now compatible with NodeJS and bundler targets. This is feature that was requested by the community and which will be released in the next distribution `2550`.
+We have created a new version of the **npm package for the Mithril client WASM**, which is now compatible with NodeJS and bundler targets. This feature was requested by the community and will be released in the next `2550` distribution.
 
 ### New Explorer Status
 
