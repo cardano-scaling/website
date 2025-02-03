@@ -59,7 +59,10 @@ The incremental certification will provide the following benefits:
 
 ### Website new structure
 
-TODO: Update
+We have restructured the main sections of the website:
+
+- the [**User manual**](https://mithril.network/doc/manual/welcome) section has been restructured to make the content more accessible and provide entries for each user profile
+- the [**About Mithril**](https://mithril.network/doc/mithril/intro) section has been restructured to provide information for beginner and advanced user audiences.
 
 ### Signer participation
 
