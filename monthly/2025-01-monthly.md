@@ -83,7 +83,14 @@ We have worked on a plan to reach the full participation of SPOs in the Mithril 
 
 ### Protocol status
 
-TODO: Update
+The protocol has operated smoothly on the `release-mainnet` network, with the following metrics:
+
+- **Registered stakes**: `4.9B₳` (`25%` of the Cardano network)
+- **Registered SPOs**: `250` (`9%` of the Cardano network)
+- **Full Cardano database restorations**: `600` restorations
+- **Signer software adoption**: `94%` of the SPOs are running a recent version (one of the last 3 releases).
+
+More information is available at the [**Mithril Protocol Insights Dashboard**](https://lookerstudio.google.com/s/mbL23-8gibI).
 
 ## Hydra
 
