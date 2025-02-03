@@ -36,13 +36,10 @@ In february the following events are planned:
 
 ### Dev blog
 
-TODO: Update
-
 We have published the following posts:
 
-- [One line installer for Mithril binaries](https://mithril.network/doc/dev-blog/2024/11/25/one-line-binaries-installer)
-- [New Protocol Insights Dashboard released](https://mithril.network/doc/dev-blog/2024/11/18/new-protocol-insights-dashboard)
-- [Mithril aggregator Prometheus endpoint is available](https://mithril.network/doc/dev-blog/2024/11/07/mithril-aggregator-prometheus-endpoint).
+- [Era switch to Pythagoras](https://mithril.network/doc/dev-blog/2024/12/17/era-switch-pythagoras)
+- [Distribution `2450` is now available](https://mithril.network/doc/dev-blog/2024/12/17/distribution-2450)
 
 ### Incremental Cardano DB certification
 
