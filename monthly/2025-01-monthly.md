@@ -43,7 +43,19 @@ We have published the following posts:
 
 ### Incremental Cardano DB certification
 
-TODO: Update
+We have worked on the signature and the artifact production processes of the incremental Cardano DB certification. The features are now deployed on the developer networks and are being tested.
+
+The incremental certification will provide the following benefits:
+
+- Faster certification of the Cardano DB on the aggregator
+- Capability to restore a partial Cardano database instead of the full one (by providing the range of missing immutable files)
+- Capability to support an evolutive range of artifact storages, and in particular decentralized storages (e.g. IPFS or Bittorrent).
+
+![Design of the incremental certification of the Cardano database](./img/2025-01-mithril-cardano-db-incremental-certification.jpg)
+<small><center>Design of the incremental certification of the Cardano database</center></small>
+
+![Signature and verification of the Cardano database](./img/2025-01-mithril-cardano-db-incremental-signature-verification.jpg)
+<small><center>Signature and verification of the Cardano database</center></small>
 
 ### Website new structure
 
