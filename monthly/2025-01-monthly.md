@@ -64,9 +64,22 @@ We have restructured the main sections of the website:
 - the [**User manual**](https://mithril.network/doc/manual/welcome) section has been restructured to make the content more accessible and provide entries for each user profile
 - the [**About Mithril**](https://mithril.network/doc/mithril/intro) section has been restructured to provide information for beginner and advanced user audiences.
 
-### Signer participation
+### SPO participation
 
-TODO: Update
+We have worked on a plan to reach the full participation of SPOs in the Mithril network, which is essential for the security of the protocol:
+
+- **Phase 0: Guild Operators’ scripts adjustment**
+  - Install Mithril by default (currently opt-in)
+- **Phase 1: Node integration**
+  - Bundle Mithril with Cardano Node
+  - Seamless integration
+  - Opt-out option
+- **Phase 2: Centralized Incentive Mechanism**
+  - Centralized reward distribution
+  - Treasury funded via external funds
+- **Phase 3: On-chain Incentive Mechanism**
+  - On-chain reward distribution mechanism
+  - Treasury funded through revenues.
 
 ### Protocol status
 
