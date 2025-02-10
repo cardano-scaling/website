@@ -39,7 +39,7 @@ In February, the following events are planned:
 We have published the following posts:
 
 - [Era switch to Pythagoras](https://mithril.network/doc/dev-blog/2024/12/17/era-switch-pythagoras)
-- [Distribution `2450` is now available](https://mithril.network/doc/dev-blog/2024/12/17/distribution-2450)
+- [Distribution `2450` is now available](https://mithril.network/doc/dev-blog/2024/12/17/distribution-2450).
 
 ### Incremental Cardano DB certification
 
