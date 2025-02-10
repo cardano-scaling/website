@@ -70,14 +70,14 @@ We have worked on a plan to reach the full participation of SPOs in the Mithril 
 
 - **Phase 0: Guild Operators’ scripts adjustment**
   - Install Mithril by default (currently opt-in)
-- **Phase 1: Node integration**
-  - Bundle Mithril with Cardano Node
+- **Phase 1: node integration**
+  - Bundle Mithril with the Cardano node
   - Seamless integration
   - Opt-out option
-- **Phase 2: Centralized Incentive Mechanism**
+- **Phase 2: centralized incentive mechanism**
   - Centralized reward distribution
   - Treasury funded via external funds
-- **Phase 3: On-chain Incentive Mechanism**
+- **Phase 3: on-chain incentive mechanism**
   - On-chain reward distribution mechanism
   - Treasury funded through revenues.
 
