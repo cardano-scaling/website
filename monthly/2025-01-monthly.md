@@ -23,14 +23,14 @@ Below are the latest updates on our roadmap:
 
 We released Mithril distribution [`2450.0`](https://github.com/input-output-hk/mithril/releases/tag/2450.0), which includes:
 
-- 🔥 **Breaking changes in the Mithril client library, CLI, and WASM** with the removal of deprecated `network` field from the internal `CardanoDbBeacon` in Mithril certificates
+- 🔥 **Breaking changes in the Mithril client library, CLI, and WASM** with the removal of the deprecated `network` field from the internal `CardanoDbBeacon` in Mithril certificates
 - Stable support for **Cardano node** `10.1.3` in the signer and the aggregator
-- Stable support for one line shell installation script of the Mithril nodes pre-built binaries
+- Stable support for one line shell installation script of the Mithril nodes' pre-built binaries
 - Bug fixes and performance improvements.
 
-In february the following events are planned:
+In February, the following events are planned:
 
-- Switch to the **Pythagoras** era on the `release-mainnet` network (at transition to epoch `539`)
+- Switch to the **Pythagoras** era on the `release-mainnet` network (at the transition to epoch `539`)
 - Re-genesis of the certificate chain of the `release-mainnet` network (at the end of epoch `539`)
 - Release of a new distribution at epoch `540`.
 
