@@ -123,7 +123,7 @@ Using these tokens, the winners could redeem their prize money from smart contra
 
 ### Incremental commits
 
-The incremental commits feature has been released version 0.20.0. We invite community members to test-drive this feature. The goal is to ensure the best user experience and identify potential bugs.
+The incremental commits feature has been released in version 0.20.0. We invite community members to test-drive this feature. The goal is to ensure the best user experience and identify potential bugs.
 
 ### Hydra + custom ledger experiment
 
