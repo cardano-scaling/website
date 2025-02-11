@@ -127,7 +127,7 @@ The incremental commits feature has been released in version 0.20.0. We invite c
 
 ### Hydra + custom ledger experiment
 
-We've verified that we can run a Hydra Head with a [customised L2
+We have verified that we can run a Hydra head with a [customized layer 2
 ledger](https://github.com/cardano-scaling/hydra/issues/1727). [We merged a
 test](https://github.com/cardano-scaling/hydra/pull/1796) that can be used for
 future interested parties to test this with their own forks.
