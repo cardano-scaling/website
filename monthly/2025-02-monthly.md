@@ -51,21 +51,14 @@ We have published the following posts:
 
 ### Incremental Cardano DB certification
 
-TODO: Update
+We have worked on the implementation of the client library, CLI and WASM to support the incremental Cardano DB certification. This allows the Mithril client to restore a partial Cardano database instead of the full one (by providing a range of immutable files):
 
-We have worked on the signature and artifact production processes of the incremental Cardano DB certification. The features are now deployed on the developer networks and are being tested.
+- Restoration up to a given immutable file
+- Restoration from a given immutable file
+- Restoration for a range of immutable files
+- Full restoration of all the immutable files.
 
-The incremental certification will provide the following benefits:
-
-- Faster certification of the Cardano DB on the aggregator
-- Capability to restore a partial Cardano database instead of the full one (by providing a range of missing immutable files)
-- Capability to support an evolutive range of artifact storages, particularly decentralized storages (eg, IPFS or BitTorrent).
-
-![Design of the incremental certification of the Cardano database](./img/2025-01-mithril-cardano-db-incremental-certification.jpg)
-<small><center>Design of the incremental certification of the Cardano database</center></small>
-
-![Signature and verification of the Cardano database](./img/2025-01-mithril-cardano-db-incremental-signature-verification.jpg)
-<small><center>Signature and verification of the Cardano database</center></small>
+We will keep working on stabilizing and optimizing the feature to make it ready for production.
 
 ### Website new 'Mithril certification' section
 
