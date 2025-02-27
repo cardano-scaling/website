@@ -20,20 +20,24 @@ Below are the latest updates on our roadmap:
 
 ### Distributions
 
-TODO: Update
+We released Mithril distribution [`2506.0`](https://github.com/input-output-hk/mithril/releases/tag/2506.0), which includes:
 
-We released Mithril distribution [`2450.0`](https://github.com/input-output-hk/mithril/releases/tag/2450.0), which includes:
-
-- 🔥 **Breaking changes in the Mithril client library, CLI, and WASM** with the removal of the deprecated `network` field from the internal `CardanoDbBeacon` in Mithril certificates
-- Stable support for **Cardano node** `10.1.3` in the signer and the aggregator
-- Stable support for one line shell installation script of the Mithril nodes' pre-built binaries
+- ⚠️ **Security**:
+  - This distribution embeds a fix for the **Mithril certificate chain could be manipulated by an adversarial signer** security advisory [GHSA-724h-fpm5-4qvr](https://github.com/input-output-hk/mithril/security/advisories/GHSA-724h-fpm5-4qvr)
+  - All users running a **client library, client CLI or client WASM** are **strongly encouraged** to update them to the latest version.
+- Stable support for **Cardano node** `10.1.4` in the signer and the aggregator
+- Dropped support for `Thales` era in the signer and the aggregator
+- Stable support for traffic compression in signer, aggregator and client
 - Bug fixes and performance improvements.
 
-In February, the following events are planned:
+In February, the following events have taken place:
 
-- Switch to the **Pythagoras** era on the `release-mainnet` network (at the transition to epoch `539`)
-- Re-genesis of the certificate chain of the `release-mainnet` network (at the end of epoch `539`)
-- Release of a new distribution at epoch `540`.
+- Switch to the **Pythagoras** era on the `release-mainnet` network (which occured at transition to epoch `539`)
+- Re-genesis of the certificate chain of the `release-mainnet` network (which occured at the end of epoch `539`)
+
+In March, the following events are planned:
+
+- Release of a new distribution
 
 ### Dev blog
 
