@@ -13,13 +13,10 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Roadmap
 
-TODO: Update
-
 Below are the latest updates on our roadmap:
 
-- **Cardano stake distribution certification** [#955](https://github.com/input-output-hk/mithril/issues/955): the feature has been activated on `mainnet`
-- **Cardano database incremental snapshots MVP** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have kept working on the MVP for incremental snapshots of the Cardano database
-- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): the **User manual** and **About Mithril** sections have been restructured. The redesign is in progress.
+- **Cardano database incremental snapshots MVP** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have started the optimization and production readiness phase on the MVP for incremental snapshots of the Cardano database
+- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): the **Mithril certification** section has been created. The redesign of the home page is in progress.
 
 ### Distributions
 
