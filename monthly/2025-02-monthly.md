@@ -41,12 +41,13 @@ In March, the following events are planned:
 
 ### Dev blog
 
-TODO: Update
-
 We have published the following posts:
 
-- [Era switch to Pythagoras](https://mithril.network/doc/dev-blog/2024/12/17/era-switch-pythagoras)
-- [Distribution `2450` is now available](https://mithril.network/doc/dev-blog/2024/12/17/distribution-2450).
+- [Minimum required `glibc` version bump](https://mithril.network/doc/dev-blog/2025/02/04/glibc-minimum-requirement-change)
+- [Distribution `2506` is now available](https://mithril.network/doc/dev-blog/2025/02/14/distribution-2506)
+- [Mithril certificate chain security advisory](https://mithril.network/doc/dev-blog/2025/02/14/client-security-advisory)
+- [Decommissioning the `testing‑sanchonet` network](https://mithril.network/doc/dev-blog/2025/02/18/testing-sanchonet-decommission)
+- [Ending support for macOS x64 pre-built binaries](https://mithril.network/doc/dev-blog/2025/02/18/end-of-support-macos-x64).
 
 ### Incremental Cardano DB certification
 
