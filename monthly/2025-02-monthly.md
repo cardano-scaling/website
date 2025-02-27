@@ -77,14 +77,12 @@ The section includes:
 
 ### Protocol status
 
-TODO: Update
-
 The protocol has operated smoothly on the `release-mainnet` network with the following metrics:
 
-- **Registered stake**: `4.9B₳` (`25%` of the Cardano network)
-- **Registered SPOs**: `250` (`9%` of the Cardano network)
-- **Full Cardano database restorations**: `600` restorations
-- **Signer software adoption**: `94%` of the SPOs are running a recent version (one of the last three releases).
+- **Registered stake**: `4.7B₳` (`22%` of the Cardano network)
+- **Registered SPOs**: `248` (`9%` of the Cardano network)
+- **Full Cardano database restorations**: `325` restorations
+- **Signer software adoption**: `99.9%` of the SPOs are running a recent version (one of the last three releases).
 
 More information is available at the [**Mithril protocol insights dashboard**](https://lookerstudio.google.com/s/mbL23-8gibI).
 
