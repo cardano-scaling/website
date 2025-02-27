@@ -62,12 +62,18 @@ We will keep working on stabilizing and optimizing the feature to make it ready 
 
 ### Website new 'Mithril certification' section
 
-TODO: Update
+We have created a new section on the website to provide a better understanding of the Mithril certification process which is accessible [here](https://mithril.network/doc/mithril/advanced/mithril-certification/).
 
-We have restructured the main sections of the website:
+The section includes:
 
-- the [**User manual**](https://mithril.network/doc/manual/welcome) section has been restructured to make the content more accessible and provide entries for each user profile
-- the [**About Mithril**](https://mithril.network/doc/mithril/intro) section has been restructured to provide information for beginner and advanced user audiences.
+- **Mithril certification**: an overview of the Mithril certification process
+- **Cardano transactions**: a detailed description of the Cardano transactions certification process
+- **Cardano stake distribution**: a detailed description of the Cardano stake distribution certification process
+- **Cardano node database**: a detailed description of the Cardano database certification process
+- **Cardano node database v2**: a detailed description of the upcoming incremental Cardano database certification process.
+
+![Mithril certification section on the documentation website](./img/2025-02-mithril-certification-website.png)
+<small><center>The Cardano transactions certification page on the new 'Mithril certification' section</center></small>
 
 ### Protocol status
 
