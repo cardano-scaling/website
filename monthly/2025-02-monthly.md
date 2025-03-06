@@ -82,48 +82,50 @@ The protocol has operated smoothly on the `release-mainnet` network with the fol
 - **Registered stake**: `4.7B₳` (`22%` of the Cardano network)
 - **Registered SPOs**: `248` (`9%` of the Cardano network)
 - **Full Cardano database restorations**: `325` restorations
+![Mithril certification section on the documentation website](./img/2025-02-mithril-certification-website.png)
 - **Signer software adoption**: `99.9%` of the SPOs are running a recent version (one of the last three releases).
 
 More information is available at the [**Mithril protocol insights dashboard**](https://lookerstudio.google.com/s/mbL23-8gibI).
 
 ## Hydra
 
-TODO: Update
-
 We've released incremental commits in version
 [0.20.0](https://github.com/cardano-scaling/hydra/releases/tag/0.20.0).
 
 [Issues and pull requests closed in January](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-01-01..2025-01-31)
 
-![The roadmap with features and ideas](./img/2025-01-hydra-roadmap.png)
+![The roadmap with features and ideas](./img/2025-02-hydra-roadmap.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
 Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
 
-- Released incremental commits [#199](https://github.com/cardano-scaling/hydra/issues/199)
-- Verifyed custom-ledger support [#1727](https://github.com/cardano-scaling/hydra/issues/1727)
-- Full transaction in `SnapshotConfirmed` [#1685](https://github.com/cardano-scaling/hydra/pull/1685)
-- Raw CBOR datum in transaction outputs [#1543](https://github.com/cardano-scaling/hydra/issues/1543)
+- Multiple-version support in [Hydra Explorer](http://explorer.hydra.family/)
+- etcd-based networking [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
+- Progress on bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618)
 
 ### Multiple versions in Hydra explorer
 
-TODO: Update
+Starting from 0.19.1 (a backport) we now list all known versions of Hydra on
+the explorer.
+
+![Multiple versions in Hydra](./img/2025-02-hydra-roadmap.png)
 
 ### Etcd-based networking
 
-TODO: Update
+A breaking change in command line arguments and system requirements (see
+release notes), presently unreleased but on the `master` branch, this is a
+solid improvement on our old networking architecture which we believe we
+result in far more stability (i.e. less stuck heads!) than before! Please try
+it out :)
 
 ### Bounded memory for hydra-node
 
-TODO: Update
+@sasha
 
 ## Links
-
-TODO: Update link of recording
-TODO: Share the slides to everyone with the link
 
 The monthly review meeting for February 2025 was held on 2025-02-26 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-[slides]: https://docs.google.com/presentation/d/13f3H5QXzagiOB5JIy-7k2eZtsVWHGIo3bnWqMtRtyj0
-[recording]: https://drive.google.com/file/d/1Hq2rYVB6xR-RNP5U0P_n2s8pAUbS2A_G/view?usp=drive_link
+[slides]: https://docs.google.com/presentation/d/13f3H5QXzagiOB5JIy-7k2eZtsVWHGIo3bnWqMtRtyj0/edit
+[recording]: https://drive.google.com/file/d/1WltowNB2APEM-gkS-7JAbYK57MeCkHqL/view
