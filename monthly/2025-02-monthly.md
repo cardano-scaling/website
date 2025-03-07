@@ -85,7 +85,7 @@ The protocol has operated smoothly on the `release-mainnet` network with the fol
 - **Full Cardano database restorations**: `325` restorations
 - **Signer software adoption**: `99.9%` of the SPOs are running a recent version (one of the last three releases).
 
-More information is available at the [**Mithril protocol insights dashboard**](https://lookerstudio.google.com/s/mbL23-8gibI).
+You can find more information on the [Mithril protocol insights dashboard](https://lookerstudio.google.com/s/mbL23-8gibI).
 
 ## Hydra
 
