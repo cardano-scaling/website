@@ -34,7 +34,7 @@ We released Mithril distribution [`2506.0`](https://github.com/input-output-hk/m
 In February, the following events have taken place:
 
 - Switch to the **Pythagoras** era on the `release-mainnet` network (which occured at transition to epoch `539`)
-- Re-genesis of the certificate chain of the `release-mainnet` network (which occured at the end of epoch `539`)
+- Re-genesis of the certificate chain of the `release-mainnet` network (which occurred at the end of epoch `539`).
 
 In March, the following events are planned:
 
