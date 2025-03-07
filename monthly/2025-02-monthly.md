@@ -111,11 +111,7 @@ Starting from version 0.19.1 (a backport), we now list all known versions of Hyd
 
 ### Etcd-based networking
 
-A breaking change in command line arguments and system requirements (see
-release notes), presently unreleased but on the `master` branch, this is a
-solid improvement on our old networking architecture which we believe we
-result in far more stability (i.e. less stuck heads!) than before! Please try
-it out :)
+A breaking change in command-line arguments and system requirements (see release notes) is currently unreleased but available on the `master` branch. This update significantly improves the networking architecture, leading to greater stability (ie, fewer stuck heads!). Please try it out!
 
 ### Bounded memory for hydra-node
 
