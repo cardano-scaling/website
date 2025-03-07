@@ -119,7 +119,11 @@ it out :)
 
 ### Bounded memory for hydra-node
 
-@sasha
+In combination with the etcd-based networking, we've been [working on bounding
+the memory](https://github.com/cardano-scaling/hydra/pull/1860) of the
+hydra-node by switching to an event-streaming model, instead of loading and
+keeping all events in memory. This should allow for the long-term running of
+hydra nodes. This work remains in progress.
 
 ## Links
 
