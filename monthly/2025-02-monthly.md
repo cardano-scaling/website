@@ -25,7 +25,7 @@ We released Mithril distribution [`2506.0`](https://github.com/input-output-hk/m
 
 - ⚠️ **Security**:
   - This distribution embeds a fix for the **Mithril certificate chain could be manipulated by an adversarial signer** security advisory [GHSA-724h-fpm5-4qvr](https://github.com/input-output-hk/mithril/security/advisories/GHSA-724h-fpm5-4qvr)
-  - All users running a **client library, client CLI or client WASM** are **strongly encouraged** to update them to the latest version.
+  - All users running a **client library, client CLI or client WASM** are **strongly encouraged** to update them to the latest version
 - Stable support for **Cardano node** `10.1.4` in the signer and the aggregator
 - Dropped support for `Thales` era in the signer and the aggregator
 - Stable support for traffic compression in signer, aggregator and client
