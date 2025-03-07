@@ -89,7 +89,7 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 ## Hydra
 
-We've released incremental commits in version
+We have released incremental commits in version
 [0.20.0](https://github.com/cardano-scaling/hydra/releases/tag/0.20.0).
 
 [Issues and pull requests closed in January](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-01-01..2025-01-31)
