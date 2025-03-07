@@ -101,7 +101,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 
 - Multiple-version support in [Hydra Explorer](http://explorer.hydra.family/)
 - etcd-based networking [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
-- Progress on bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618)
+- Progress on bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618).
 
 ### Multiple versions in Hydra explorer
 
