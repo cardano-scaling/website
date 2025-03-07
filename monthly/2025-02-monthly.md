@@ -63,7 +63,7 @@ We will keep working on stabilizing and optimizing the feature to make it ready 
 
 ### Website new 'Mithril certification' section
 
-We have created a new section on the website to provide a better understanding of the Mithril certification process which is accessible [here](https://mithril.network/doc/mithril/advanced/mithril-certification/).
+We have created a new section on the website to provide a better understanding of the Mithril certification process. You can find it on the [Mithril certification page](https://mithril.network/doc/mithril/advanced/mithril-certification/).
 
 The section includes:
 
