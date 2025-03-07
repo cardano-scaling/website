@@ -61,7 +61,7 @@ We have worked on the implementation of the client library, CLI and WASM to supp
 
 We will keep working on stabilizing and optimizing the feature to make it ready for production.
 
-### Website new 'Mithril certification' section
+### New 'Mithril certification' section on the website
 
 We have created a new section on the website to provide a better understanding of the Mithril certification process. You can find it on the [Mithril certification page](https://mithril.network/doc/mithril/advanced/mithril-certification/).
 
