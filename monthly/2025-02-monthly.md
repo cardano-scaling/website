@@ -106,7 +106,6 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 ### Multiple versions in Hydra explorer
 
 Starting from version 0.19.1 (a backport), we now list all known versions of Hydra on the explorer.
-the explorer.
 
 ![Multiple versions in Hydra](./img/2025-02-hydra-roadmap.png)
 
