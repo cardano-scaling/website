@@ -97,7 +97,7 @@ We have released incremental commits in version
 ![The roadmap with features and ideas](./img/2025-02-hydra-roadmap.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
 
-Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) this month include:
+This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) updates include:
 
 - Multiple-version support in [Hydra Explorer](http://explorer.hydra.family/)
 - etcd-based networking [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
