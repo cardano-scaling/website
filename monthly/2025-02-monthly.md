@@ -127,7 +127,7 @@ hydra nodes. This work remains in progress.
 
 ## Links
 
-The monthly review meeting for February 2025 was held on 2025-02-26 via Google Meet,
+The monthly review meeting for February 2025 took place on February 26, 2025, via Google Meet.
 presenting these [slides][slides] and this [recording][recording].
 
 [slides]: https://docs.google.com/presentation/d/13f3H5QXzagiOB5JIy-7k2eZtsVWHGIo3bnWqMtRtyj0/edit
