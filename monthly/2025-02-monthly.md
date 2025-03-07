@@ -9,7 +9,8 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ## Mithril
 
-[Issues and pull requests closed in January](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-02-01..2025-02-28)
+[Issues and pull requests closed in February](https://github.com/input-output-hk/mithril/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-02-01..2025-02-28)
+
 
 ### Roadmap
 
