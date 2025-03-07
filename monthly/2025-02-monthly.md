@@ -52,7 +52,7 @@ We have published the following posts:
 
 ### Incremental Cardano DB certification
 
-We have worked on the implementation of the client library, CLI and WASM to support the incremental Cardano DB certification. This allows the Mithril client to restore a partial Cardano database instead of the full one (by providing a range of immutable files):
+We have worked on the implementation of the client library, CLI and WASM to support the incremental Cardano DB certification. This feature allows the Mithril client to restore a partial Cardano database rather than the full one, by providing a range of immutable files:
 
 - Restoration up to a given immutable file
 - Restoration from a given immutable file
