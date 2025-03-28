@@ -38,8 +38,6 @@ In April, the following events are planned:
 
 ### Dev blog
 
-TODO: Update
-
 We have published the following post:
 
 - [Distribution `2513` is now available](https://mithril.network/doc/dev-blog/2025/03/28/distribution-2513)
