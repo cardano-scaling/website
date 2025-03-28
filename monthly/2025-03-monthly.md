@@ -44,20 +44,16 @@ We have published the following post:
 
 ### Signer registration with multiple aggregators
 
-TODO: Update
+We have explored different solutions to allow multiple aggregators to run on the same Mithirl network. This is a complex problem which requires to have consensus on the signer registration with enough signers and aggregators so that at least the quorum on signature can be found. Today the signer registration is supported by the aggregator which stores the signer registration payloads and distribute them back to the signers couple of epochs later: the process is centralized (the aggregator is a single point of failure) and may be subject to censorship by the aggregator (not distributing some signer registration payloads), but there is not trust assumption on the aggregator as all the protagonist of the protocol will verify on their own the cryptographic proofs included in the payloads.
 
-We have created a new section on the website to provide a better understanding of the Mithril certification process. You can find it on the [Mithril certification page](https://mithril.network/doc/mithril/advanced/mithril-certification/).
+Overall, we have identified three possible solutions:
 
-The section includes:
+1. **Extending the centralized approach to multiple aggregators**: the slave aggregators pulls the signer registration payloads at every epoch change from the master aggregator, and they reject any signer registration that would be made to their API directly. This is the simplest solution (we have implemented it as a prototype) and it unlocks the decentralization of the signature diffusions
+2. **Use the Cardano chain**: the aggregators would create a transaction to store their Mithril keys on chain at the beginning of the epoch. This solution is full decentralized, but it is more complex on the operational side: it would require that all the SPOs have a hot wallet on their machines to support the creation of the transactions (which adds cost and maintenance). This is probably the more natural solution for the future and we will keep exploring it
+3. **Use the DMQ**: the DMQ (Decentralized Message Queue as described in the [CIP-0137](https://github.com/cardano-scaling/CIPs/tree/master/CIP-0137)) is authenticated which means that we can detect adversary signers which would equivocate their signer registration (i.e. send different payloads to different peers on the network to create a split of the network and thus prevent reaching the quorum needed to create a Mithril multi-signature). Any peer on the network that would receive two different payloads from the same signer would create a proof of equivocation and broadcast it on the network. Upon reception of a valid equivocation proof, the other peers of the network would discard the registration from the adversary and reach an agreement on the signer registration. This solution would be fully decentralized and would not incur any cost for the SPOs. It is at a very early stage of exploration and we will keep working on it.
 
-- **Mithril certification**: an overview of the Mithril certification process
-- **Cardano transactions**: a detailed description of the Cardano transactions certification process
-- **Cardano stake distribution**: a detailed description of the Cardano stake distribution certification process
-- **Cardano node database**: a detailed description of the Cardano database certification process
-- **Cardano node database v2**: a detailed description of the upcoming incremental Cardano database certification process.
-
-![Mithril certification section on the documentation website](./img/2025-02-mithril-certification-website.png)
-<small><center>The Cardano transactions certification page on the new 'Mithril certification' section</center></small>
+[![The proposed signer registrations](./img/2025-03-mithril-signer-registration.jpg)](./img/2025-03-mithril-signer-registration.jpg)
+<small><center>The proposed signer registrations</center></small>
 
 ### Protocol status
 
