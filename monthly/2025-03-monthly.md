@@ -13,12 +13,11 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Roadmap
 
-TODO: Update
-
 Below are the latest updates on our roadmap:
 
-- **Cardano database incremental snapshots MVP** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have started the optimization and production readiness phase on the MVP for incremental snapshots of the Cardano database
-- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): the **Mithril certification** section has been created. Home page redesign is in progress.
+- **Cardano database incremental snapshots MVP** [#2047](https://github.com/input-output-hk/mithril/issues/2047): we have completed the implementation of the MVP for incremental snapshots of the Cardano database. We plan to start relasing it on test networks next month
+- **Multiple aggregators on a Mithril Network PoC** [#2238](https://github.com/input-output-hk/mithril/issues/2238): we have completed the implementation of the PoC for multiple aggregators on a Mithril Network. We are currently working on adapting the infrastructure to support this feature in selected test networks
+- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): the Home page redesign is in progress.
 
 ### Distributions
 
