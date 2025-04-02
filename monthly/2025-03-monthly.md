@@ -68,37 +68,36 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 ## Hydra
 
-TODO: Update
-
-We have released incremental commits in version
-[0.20.0](https://github.com/cardano-scaling/hydra/releases/tag/0.20.0).
-
 [Issues and pull requests closed in March](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-03-01..2025-03-31)
 
-![The roadmap with features and ideas](./img/2025-02-hydra-roadmap.png)
-<small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) with features and ideas</center></small>
+![The roadmap with features and ideas](./img/2025-03-hydra-roadmap.png)
+<small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
 
-This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/1) updates include:
+This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
 
-- Multiple-version support in [Hydra Explorer](http://explorer.hydra.family/)
-- etcd-based networking [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
-- Progress on bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618).
+- Bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618).
+- Side-load of fully-signed snapshot [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
+- Etcd control via environment variables [#1883](https://github.com/cardano-scaling/hydra/issues/1883)
+- Fixed memory bug when loading large state file [#1917](https://github.com/cardano-scaling/hydra/issues/1917)
+- Investigated mirror nodes [#1910](https://github.com/cardano-scaling/hydra/pull/1910)
 
 ### Side-load snapshots
+
+@ffakenz
 
 TODO: Update
 
 ### Mirror nodes
 
+@ffakenz
+
 TODO: Update
 
 ### Withdraw zero trick
 
-TODO: Update
+@ch1bo
 
 ### Bounded memory/Midnight notes
-
-TODO: Update
 
 In combination with the etcd-based networking, we have been [working on bounding
 the memory](https://github.com/cardano-scaling/hydra/pull/1860) of the
@@ -108,9 +107,10 @@ hydra nodes. This work remains in progress.
 
 ### Etcd-based networking
 
-TODO: Update
-
-A breaking change in command-line arguments and system requirements (see release notes) is currently unreleased but available on the `master` branch. This update significantly improves the networking architecture, leading to greater stability (ie, fewer stuck heads!). Please try it out!
+A breaking change in command-line arguments and system requirements (see
+release notes) is currently unreleased but available on the `master`
+branch. This update significantly improves the networking architecture,
+leading to greater stability (ie, fewer stuck heads!). Please try it out!
 
 ## Links
 
