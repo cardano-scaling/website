@@ -83,15 +83,17 @@ This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/proje
 
 ### Side-load snapshots
 
-@ffakenz
-
-TODO: Update
+To address ledger state divergence among Hydra nodes, we introduced [snapshot sideloading](
+https://github.com/cardano-scaling/hydra/pull/1864).
+This mechanism allows nodes to adopt a confirmed snapshot to regain consensus when misalignment occurs,
+preventing the Hydra head from getting stuck and ensuring a consistent state across all nodes.
 
 ### Mirror nodes
 
-@ffakenz
-
-TODO: Update
+To improve high availability in a Hydra Head, we explored mirror nodes.
+This approach allows the same party to participate from multiple machines, ensuring redundancy and fault tolerance.
+If a node fails, its mirror can take over signing snapshots and performing L1 operations.
+However, mirror nodes must be carefully managed to maintain etcd quorum and avoid excessive message duplication.
 
 ### Withdraw zero trick
 
