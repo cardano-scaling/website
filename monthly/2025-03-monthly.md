@@ -1,7 +1,7 @@
 ---
 title: March 2025
 slug: 2025-03
-authors: [jpraynaud, noonio]
+authors: [jpraynaud, noonio, ch1bo]
 tags: [monthly]
 ---
 
@@ -81,38 +81,53 @@ This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/proje
 - Fixed memory bug when loading large state file [#1917](https://github.com/cardano-scaling/hydra/issues/1917)
 - Investigated mirror nodes [#1910](https://github.com/cardano-scaling/hydra/pull/1910)
 
-### Side-load snapshots
+### Etcd-based networking
 
-To address ledger state divergence among Hydra nodes, we introduced [snapshot sideloading](
-https://github.com/cardano-scaling/hydra/pull/1864).
-This mechanism allows nodes to adopt a confirmed snapshot to regain consensus when misalignment occurs,
-preventing the Hydra head from getting stuck and ensuring a consistent state across all nodes.
+Feature: [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
+
+The `etcd`-based network feature now fully landed and saw several improvements. Among them a few bug-fixes, [improved observability](https://github.com/cardano-scaling/hydra/pull/1884) and [protocol version checking](https://github.com/cardano-scaling/hydra/pull/1914), but also a breaking [change in command line options](https://github.com/cardano-scaling/hydra/pull/1891) with new `--listen` and `--advertise` (see release notes for more details).
+
+Extensive testing through our friends working on the Midnight glacier drop makes us confident to release this soon as a cornerstone of the [`0.21.0` release](https://github.com/cardano-scaling/hydra/milestone/22?closed=1).
+
+### Bounded memory
+
+After initial work about bounding memory by [streaming events](https://github.com/cardano-scaling/hydra/pull/1808) and implementing the [API server as event sink](https://github.com/cardano-scaling/hydra/pull/1860) last month, we achieved fully bounded memory usage of `hydra-node` when processing millions of transactions, as well as when loading them from disk in [#1920](https://github.com/cardano-scaling/hydra/pull/1920).
+
+A typical memory profile of a `hydra-node` using **~1GB** of memory when loading millions of transactions from the `state` file before this work:
+
+![](./img/2025-03-profile-before.svg)
+
+Which indicates a Haskell-classic space leak because of thunk build-up. Indeed we spotted that `allTxs` in the `HeadState` was not fully forced when loading events from disk and with an additional strictness annotation, loading the same `state` file now while only using **12MB** of memory:
+
+![](./img/2025-03-profile-after.svg)
 
 ### Mirror nodes
 
-To improve high availability in a Hydra Head, we explored mirror nodes.
-This approach allows the same party to participate from multiple machines, ensuring redundancy and fault tolerance.
-If a node fails, its mirror can take over signing snapshots and performing L1 operations.
-However, mirror nodes must be carefully managed to maintain etcd quorum and avoid excessive message duplication.
+To improve fault tolerance of a Hydra Head setup, we explored mirror nodes. This means that one participant runs multiple instances of `hydra-node` using the same `--hydra-signing-key` and `--cardano-signing-key` with the goal of making their snapshot signing highly available with failover in case one node goes down.
+
+Within an experiment we could confirm that this indeed works without changes to the `hydra-node`, but there are some caveats coming with it:
+ - Each additional node increases the number of messages submitted through the Hydra network 
+ - Too many mirrors of one party could imbalance the etcd quorum and make the network unavailable overall although there would be enough signers for the Hydra consensus.
+
+### Side-load snapshots
+
+Feature: [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
+
+Originally, we wanted to address so-called "stuck" heads To address ledger state divergence among Hydra nodes, we introduced [snapshot sideloading]( https://github.com/cardano-scaling/hydra/pull/1864). This mechanism allows nodes to adopt a confirmed snapshot to regain consensus when misalignment occurs, preventing the Hydra head from getting stuck and ensuring a consistent state across all nodes.
 
 ### Withdraw zero trick
 
-@ch1bo
+Feature: [#1795](https://github.com/cardano-scaling/hydra/issues/1795)
 
-### Bounded memory/Midnight notes
+This feature was requested by several users [on Github](https://github.com/cardano-scaling/hydra/issues/1795), on our Discord channel, but also was identified as an enabling feature for the Midnight glacier drop.
 
-In combination with the etcd-based networking, we have been [working on bounding
-the memory](https://github.com/cardano-scaling/hydra/pull/1860) of the
-hydra-node by switching to an event-streaming model, instead of loading and
-keeping all events in memory. This should allow for the long-term running of
-hydra nodes. This work remains in progress.
+The so-called "withdraw zero trick" is a common technique to achieve transaction level verification (once per tx). In fact, it's the only way to do this until [CIP-112](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0112/README.md) gets implemented by the `cardano-ledger` (and `plutus`).
 
-### Etcd-based networking
+While the L2 ledger in Hydra is isomorphic to Cardano in respect to the EUTxO ledger model, this excludes Cardano's Proof-of-Stake features. Consequently one could not register scripts as reward accounts and use withdrawing `0 lovelace` as a trick to have those scripts validate transactions.
 
-A breaking change in command-line arguments and system requirements (see
-release notes) is currently unreleased but available on the `master`
-branch. This update significantly improves the networking architecture,
-leading to greater stability (ie, fewer stuck heads!). Please try it out!
+To implement this feature, @coll78 and @ch1bo found that the `hydra-node` can mock `RewardAccount`s for each `0 lovelace` withdrawal observed in a transaction on-the-fly. This results in the script being evaluated, and even does not require the script to be registered via a stake delegation certificate beforehand.
+
+See [this new How-to](https://hydra.family/head-protocol/unstable/docs/how-to/withdraw-zero) for more details.
 
 ## Links
 
