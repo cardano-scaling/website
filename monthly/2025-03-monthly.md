@@ -91,7 +91,7 @@ Extensive testing through our friends working on the Midnight glacier drop makes
 
 ### Bounded memory
 
-After initial work about bounding memory by [streaming events](https://github.com/cardano-scaling/hydra/pull/1808) and implementing the [API server as event sink](https://github.com/cardano-scaling/hydra/pull/1860) last month, we achieved fully bounded memory usage of `hydra-node` when processing millions of transactions, as well as when loading them from disk in [#1920](https://github.com/cardano-scaling/hydra/pull/1920).
+After preliminary work on bounding memory by [streaming events](https://github.com/cardano-scaling/hydra/pull/1808) and implementing the [API server as an event sink](https://github.com/cardano-scaling/hydra/pull/1860) last month, we achieved fully bounded memory usage of `hydra-node` when processing millions of transactions and loading from disk ([#1920](https://github.com/cardano-scaling/hydra/pull/1920)).
 
 A typical memory profile of a `hydra-node` using **~1GB** of memory when loading millions of transactions from the `state` file before this work:
 
