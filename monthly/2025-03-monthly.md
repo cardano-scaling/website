@@ -119,7 +119,7 @@ Originally, we wanted to address so-called 'stuck' heads to address ledger state
 
 Feature: [#1795](https://github.com/cardano-scaling/hydra/issues/1795)
 
-This feature was requested by several users [on Github](https://github.com/cardano-scaling/hydra/issues/1795), on our Discord channel, but also was identified as an enabling feature for the Midnight glacier drop.
+This feature was requested by multiple users in [GitHub](https://github.com/cardano-scaling/hydra/issues/1795) and on our Discord channel, and it was identified as beneficial for the Midnight glacier drop.
 
 The so-called "withdraw zero trick" is a common technique to achieve transaction level verification (once per tx). In fact, it's the only way to do this until [CIP-112](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0112/README.md) gets implemented by the `cardano-ledger` (and `plutus`).
 
