@@ -73,7 +73,7 @@ You can find more information on the [Mithril protocol insights dashboard](https
 ![The roadmap with features and ideas](./img/2025-03-hydra-roadmap.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
 
-This month, some notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
+This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
 
 - Bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618).
 - Side-load of fully-signed snapshot [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
