@@ -85,7 +85,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 Feature: [#1720](https://github.com/cardano-scaling/hydra/issues/1720)
 
-The `etcd`-based network feature now fully landed and saw several improvements. Among them a few bug-fixes, [improved observability](https://github.com/cardano-scaling/hydra/pull/1884) and [protocol version checking](https://github.com/cardano-scaling/hydra/pull/1914), but also a breaking [change in command line options](https://github.com/cardano-scaling/hydra/pull/1891) with new `--listen` and `--advertise` (see release notes for more details).
+The `etcd`-based networking feature is now fully merged and has undergone several improvements. Highlights include bug fixes, [improved observability](https://github.com/cardano-scaling/hydra/pull/1884), [protocol version checking](https://github.com/cardano-scaling/hydra/pull/1914), and a breaking [change in command line options](https://github.com/cardano-scaling/hydra/pull/1891) (`--listen` and `--advertise`) see release notes for more details.
 
 Extensive testing through our friends working on the Midnight glacier drop makes us confident to release this soon as a cornerstone of the [`0.21.0` release](https://github.com/cardano-scaling/hydra/milestone/22?closed=1).
 
