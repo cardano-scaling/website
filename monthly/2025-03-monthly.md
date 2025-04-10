@@ -79,7 +79,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 - Side-load of fully-signed snapshot [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
 - Etcd control via environment variables [#1883](https://github.com/cardano-scaling/hydra/issues/1883)
 - Fixed memory bug when loading large state file [#1917](https://github.com/cardano-scaling/hydra/issues/1917)
-- Investigated mirror nodes [#1910](https://github.com/cardano-scaling/hydra/pull/1910)
+- Investigated mirror nodes [#1910](https://github.com/cardano-scaling/hydra/pull/1910).
 
 ### Etcd-based networking
 
