@@ -75,7 +75,7 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
 
-- Bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618).
+- Bounded memory [#1618](https://github.com/cardano-scaling/hydra/issues/1618)
 - Side-load of fully-signed snapshot [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
 - Etcd control via environment variables [#1883](https://github.com/cardano-scaling/hydra/issues/1883)
 - Fixed memory bug when loading large state file [#1917](https://github.com/cardano-scaling/hydra/issues/1917)
