@@ -113,7 +113,7 @@ Preliminary experiments showed this approach works without modifications to `hyd
 
 Feature: [#1858](https://github.com/cardano-scaling/hydra/issues/1858)
 
-Originally, we wanted to address so-called "stuck" heads To address ledger state divergence among Hydra nodes, we introduced [snapshot sideloading]( https://github.com/cardano-scaling/hydra/pull/1864). This mechanism allows nodes to adopt a confirmed snapshot to regain consensus when misalignment occurs, preventing the Hydra head from getting stuck and ensuring a consistent state across all nodes.
+Originally, we wanted to address so-called 'stuck' heads to address ledger state divergence among Hydra nodes, we introduced [snapshot sideloading]( https://github.com/cardano-scaling/hydra/pull/1864). This mechanism allows nodes to adopt a confirmed snapshot to regain consensus when misalignment occurs, preventing the Hydra head from getting stuck and ensuring a consistent state across all nodes.
 
 ### Withdraw zero trick
 
