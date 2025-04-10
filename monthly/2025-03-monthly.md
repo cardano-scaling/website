@@ -123,7 +123,7 @@ This feature was requested by multiple users in [GitHub](https://github.com/card
 
 The so-called 'withdraw zero trick' is a common technique to achieve verification on a transaction level (once per tx). In fact, it's the only way to do this until [CIP-112](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0112/README.md) gets implemented by the `cardano-ledger` (and `plutus`).
 
-While the L2 ledger in Hydra is isomorphic to Cardano in respect to the EUTxO ledger model, this excludes Cardano's Proof-of-Stake features. Consequently one could not register scripts as reward accounts and use withdrawing `0 lovelace` as a trick to have those scripts validate transactions.
+While the layer 2 ledger in Hydra is isomorphic to Cardano with respect to the EUTXO ledger model, this excludes Cardano's proof-of-stake features. Consequently, one could not register scripts as reward accounts and use withdrawing `0 lovelace` as a trick to have those scripts validate transactions.
 
 To implement this feature, @coll78 and @ch1bo found that the `hydra-node` can mock `RewardAccount`s for each `0 lovelace` withdrawal observed in a transaction on-the-fly. This results in the script being evaluated, and even does not require the script to be registered via a stake delegation certificate beforehand.
 
