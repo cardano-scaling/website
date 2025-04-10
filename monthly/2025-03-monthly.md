@@ -103,7 +103,7 @@ Which indicates a Haskell-classic space leak because of thunk build-up. Indeed w
 
 ### Mirror nodes
 
-To improve fault tolerance of a Hydra Head setup, we explored mirror nodes. This means that one participant runs multiple instances of `hydra-node` using the same `--hydra-signing-key` and `--cardano-signing-key` with the goal of making their snapshot signing highly available with failover in case one node goes down.
+We explored mirror nodes to improve fault tolerance for Hydra heads. A participant can run multiple instances of `hydra-node` using the same `--hydra-signing-key` and `--cardano-signing-key`, allowing snapshot signing to continue even if one node goes down.
 
 Within an experiment we could confirm that this indeed works without changes to the `hydra-node`, but there are some caveats coming with it:
  - Each additional node increases the number of messages submitted through the Hydra network 
