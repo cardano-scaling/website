@@ -30,11 +30,9 @@ In May, the following events are planned:
 
 ### Dev blog
 
-TODO: Update
-
 We have published the following post:
 
-- [Distribution `2513` is now available](https://mithril.network/doc/dev-blog/2025/03/28/distribution-2513)
+- [Certification of Cardano node database v2](https://mithril.network/doc/dev-blog/2025/04/14/cardano-node-database-v2-certification)
 
 ### New aggregation proof system with ALBA
 
