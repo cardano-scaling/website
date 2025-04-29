@@ -23,22 +23,10 @@ Below are the latest updates on our roadmap:
 
 ### Distributions
 
-TODO: Update
+In May, the following events are planned:
 
-We released Mithril distribution [`2513.0`](https://github.com/input-output-hk/mithril/releases/tag/2513.0), which includes:
-
-- ⚠️ **Breaking** changes in Mithril nodes:
-  - The **minimum required** `glibc` version for pre-built Linux binaries has been upgraded from `2.31` to `2.35`
-  - Mithril signers running versions `<=0.2.200` **must be updated** due to the removal of Thales era legacy code
-  - The `with_snapshot_uploader` function in the Mithril client library has been renamed to `with_file_uploader`
-- Added support for Cardano node `10.2.1` in the signer and aggregator
-- Ended support for **macOS x64 pre-built binaries** for the client CLI
-- Bug fixes and performance improvements.
-
-In April, the following events are planned:
-
-- Release of a new distribution
-- Activation of the incremental Cardano database certification (Cardano DB v2) on the `pre-release-preview` and `release-preprod` network.
+- Release of a new distribution (`2517`)
+- Activation of the incremental Cardano database certification (Cardano DB v2) on the `release-mainnet` network.
 
 ### Dev blog
 
