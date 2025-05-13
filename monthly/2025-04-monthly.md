@@ -83,7 +83,7 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 [Issues and pull requests closed in April](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-04-01..2025-04-30)
 
-![The roadmap with features and ideas](./img/2025-03-hydra-roadmap.png)
+![The roadmap with features and ideas](./img/2025-04-hydra-roadmap.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
 
 This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
@@ -94,44 +94,65 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 - Fixed memory bug when loading large state file [#1917](https://github.com/cardano-scaling/hydra/issues/1917)
 - Investigated mirror nodes [#1910](https://github.com/cardano-scaling/hydra/pull/1910).
 
-### New metric, peers_connected
+### New metric, `peers_connected`
 
-TODO: Update
+We created a new metric to be observed, `peers_connected`, which shows [the
+number of peers presently connected to this
+node](https://hydra.family/head-protocol/unstable/docs/how-to/operating-hydra#monitoring).
 
 ### Side-load snapshot tutorial
 
-TODO: Update
+A new tutorial showing how to use the "Sideload Snapshot" feature: [Sideload
+Snapshot
+Tutorial](https://hydra.family/head-protocol/unstable/docs/how-to/sideload-snapshot).
 
 ### Publish scripts with blockfrost
 
-TODO: Update
+The hydra scripts can now be published by providing a blockfrost API key to
+the hydra-node. This is forboding a full implementation of following the chain
+with Blockfrost! Stay tuned :)
 
 ### Fixed memory leak
 
-TODO: Update
+A [one-character (!)] fix resulting in wildly less memory usage:
+
+![](./img/2025-04-memory.png)
 
 ### API changes
 
-TODO: Update
+The [transaction field has been removed from
+`TxValid`](https://github.com/cardano-scaling/hydra/pull/1947), and support
+for Kupo has been restored pending the merging of this PR: [Fix Hydra
+integration](https://github.com/CardanoSolutions/kupo/pull/189).
 
 ### Bugfixes/Release
 
-TODO: Update
+- Incremental commits to be considered a _beta_ feature since 0.20. Fixes
+incoming.
+- Multiple other fixes:
+  - Not observe invalid transactions [#1953](https://github.com/cardano-scaling/hydra/pull/1953)
+  - Change default contestation period and deposit deadline [#1932](https://github.com/cardano-scaling/hydra/pull/1932)
+  - Deposit not fanned out / observed wrong [#1915](https://github.com/cardano-scaling/hydra/issues/1915)
+  - Transaction observation should not depend on off-chain state [#1895](https://github.com/cardano-scaling/hydra/issues/1895)
+  - HeadIsFinalised event not reporting the UTxOS as observed on L1 [#1913](https://github.com/cardano-scaling/hydra/issues/1913)
 
 ### Roadmap update
 
-TODO: Update
+- Focusing on Blockfrost and more memory fixes
+- Working on deposit fixes and other UX improvements
 
 ### Hiring
 
-TODO: Update
+Join us!
+
+- [Product Manager](https://wrkbl.ink/8wAmz8A)
+- [Software Engineer](https://wrkbl.ink/8wAmz8A)
+
 
 ## Links
-
-TODO: Update recording link
 
 The monthly review meeting for April 2025 took place on April 24, 2025, via Google Meet.
 The presentation [slides][slides] and the [recording][recording] are available for review.
 
-[slides]: https://docs.google.com/presentation/d/1B8FM4k1EmUYSDdeIXhRiYMEIK9KiDoOQ-lMHVN9SzRs/edit
-[recording]: https://drive.google.com/file/d/1WltowNB2APEM-gkS-7JAbYK57MeCkHqL/view
+[slides]: https://docs.google.com/presentation/d/1B8FM4k1EmUYSDdeIXhRiYMEIK9KiDoOQ-lMHVN9SzRs/edit?usp=sharing
+[recording]: https://drive.google.com/file/d/1yFzWel2FzuOMG11-jkwODfazqN58s47W/view?usp=drive_link
