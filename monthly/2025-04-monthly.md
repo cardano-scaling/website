@@ -45,7 +45,7 @@ The current proof system used for Mithril aggregation is the Concatenation proof
 [![The Concatenation aggregation proof system](./img/2025-04-mithril-concatenation-aggregation.jpg)](./img/2025-04-mithril-concatenation-aggregation.jpg)
 <small><center>The Concatenation aggregation proof system</center></small>
 
-During the development of this proof-of-concept, we explored the following questions:
+During the development of this proof of concept, we explored the following questions:
 
 - Is it possible to utilize the ALBA proof system to reduce the size of the multi-signature while maintaining fast verification?
 - Can different proof systems, such as Concatenation and Centralized ALBA, be combined within an aggregator's certificate chain?
