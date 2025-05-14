@@ -58,7 +58,7 @@ Using the **Centralized ALBA proof system**, we've been able to draw the followi
 - It is possible to combine different types of proofs within a single certificate chain
 - Different aggregators within the same Mithril network can operate using distinct proof systems—for instance, a leader using the Concatenation proof system while a follower uses the Centralized ALBA proof system.
 
-This proof-of-concept has surfaced several important questions and challenges:
+This proof of concept has surfaced several important questions and challenges:
 
 - Further research is needed to align Mithril and ALBA protocol parameters, ensuring equivalent levels of security and reliability
 - Additional investigation is required to assess the achievable compression ratio of the Centralized ALBA proof system given the stake distribution on the Cardano mainnet
