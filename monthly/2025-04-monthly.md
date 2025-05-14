@@ -40,7 +40,7 @@ The current proof system used for Mithril aggregation is the Concatenation proof
 
 - The size of the multi-signature increases quasi-linearly with the number of signers
 - Verification is efficient, requiring only a single pairing operation, regardless of how many signers are involved
-- It is not SNARK friendly
+- It is not SNARK-friendly.
 
 [![The Concatenation aggregation proof system](./img/2025-04-mithril-concatenation-aggregation.jpg)](./img/2025-04-mithril-concatenation-aggregation.jpg)
 <small><center>The Concatenation aggregation proof system</center></small>
