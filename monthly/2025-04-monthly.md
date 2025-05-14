@@ -62,7 +62,7 @@ This proof-of-concept has surfaced several important questions and challenges:
 
 - Further research is needed to align Mithril and ALBA protocol parameters, ensuring equivalent levels of security and reliability
 - Additional investigation is required to assess the achievable compression ratio of the Centralized ALBA proof system given the stake distribution on the Cardano mainnet
-- We aim to explore the Decentralized ALBA proof system to determine whether it can offer improved compression while maintaining the same security and reliability—though this would involve significant changes to both the Mithril signer and aggregator due to a different lottery mechanism
+- We aim to explore the Decentralized ALBA proof system to determine whether it can offer improved compression while maintaining the same security and reliability – though this would involve significant changes to both the Mithril signer and aggregator due to a different lottery mechanism
 
 [![The Centralized ALBA aggregation proof system](./img/2025-04-mithril-centralized-alba-aggregation.jpg)](./img/2025-04-mithril-centralized-alba-aggregation.jpg)
 <small><center>The Centralized ALBA aggregation proof system</center></small>
