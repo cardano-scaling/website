@@ -1,5 +1,5 @@
 ---
-title: Apriil 2025
+title: April 2025
 slug: 2025-04
 authors: [jpraynaud, noonio, ch1bo]
 tags: [monthly]
@@ -128,7 +128,7 @@ integration](https://github.com/CardanoSolutions/kupo/pull/189).
 ### Bugfixes/Release
 
 - Incremental commits to be considered a _beta_ feature since 0.20. Fixes
-incoming.
+  incoming.
 - Multiple other fixes:
   - Not observe invalid transactions [#1953](https://github.com/cardano-scaling/hydra/pull/1953)
   - Change default contestation period and deposit deadline [#1932](https://github.com/cardano-scaling/hydra/pull/1932)
@@ -147,7 +147,6 @@ Join us!
 
 - [Product Manager](https://wrkbl.ink/8wAmz8A)
 - [Software Engineer](https://wrkbl.ink/19Qk0M4)
-
 
 ## Links
 
