@@ -134,7 +134,7 @@ incoming.
   - Change default contestation period and deposit deadline [#1932](https://github.com/cardano-scaling/hydra/pull/1932)
   - Deposit not fanned out / observed wrong [#1915](https://github.com/cardano-scaling/hydra/issues/1915)
   - Transaction observation should not depend on off-chain state [#1895](https://github.com/cardano-scaling/hydra/issues/1895)
-  - HeadIsFinalised event not reporting the UTxOS as observed on L1 [#1913](https://github.com/cardano-scaling/hydra/issues/1913)
+  - HeadIsFinalised event not reporting the UTXOs as observed on L1 [#1913](https://github.com/cardano-scaling/hydra/issues/1913)
 
 ### Roadmap update
 
