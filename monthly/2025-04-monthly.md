@@ -109,7 +109,7 @@ Tutorial](https://hydra.family/head-protocol/unstable/docs/how-to/sideload-snaps
 ### Publish scripts with blockfrost
 
 The hydra scripts can now be published by providing a blockfrost API key to
-the hydra-node. This is forboding a full implementation of following the chain
+the hydra-node. This is foreshadowing a full implementation of following the chain
 with Blockfrost! Stay tuned :)
 
 ### Fixed memory leak
