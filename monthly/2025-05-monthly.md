@@ -33,6 +33,12 @@ In June, the following events are planned:
 
 ### Dev blog
 
+We have published the following post:
+
+- [Mithril Cardano database snapshots security advisory](https://mithril.network/doc/dev-blog/2025/05/07/client-security-advisory)
+- [Breaking changes in client library and CLI](https://mithril.network/doc/dev-blog/2025/05/06/client-breaking-change)
+- [Distribution `2517` is now available](https://mithril.network/doc/dev-blog/2025/05/05/distribution-2517)
+
 ### Protocol status
 
 The protocol has operated smoothly on the `release-mainnet` network with the following metrics:
