@@ -21,6 +21,16 @@ Below are the latest updates on our roadmap:
 
 ### Distributions
 
+In May, we have completed the following events:
+
+- Release of the new distribution [`2517`](https://github.com/input-output-hk/mithril/releases/tag/2517.1)
+- Release of the security advisory [`GHSA-qv97-5qr8-2266`](https://github.com/input-output-hk/mithril/security/advisories/GHSA-qv97-5qr8-2266)
+- Activation of the incremental Cardano database certification (Cardano DB v2) on the `release-mainnet` network.
+
+In June, the following events are planned:
+
+- Release of a new distribution (`2523`).
+
 ### Dev blog
 
 ### Protocol status
