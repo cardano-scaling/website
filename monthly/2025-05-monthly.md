@@ -39,6 +39,41 @@ We have published the following post:
 - [Breaking changes in client library and CLI](https://mithril.network/doc/dev-blog/2025/05/06/client-breaking-change)
 - [Distribution `2517` is now available](https://mithril.network/doc/dev-blog/2025/05/05/distribution-2517)
 
+### Signing ancillary files of the Cardano database
+
+Here is a summary of the recent changes related to the signing of ancillary files in the Cardano database, and of the next steps for signing them with the Mithril protocol.:
+
+#### Cardano Database Certification (v1 & v2)
+
+- The Cardano database files, including ledger state snapshots and the last immutable file, differ across signers, which prevents Mithril from signing them.
+- This inconsistency poses a risk, as it may be exploited in long-range attacks, especially when multiple aggregators are involved.
+- A security alert has been published regarding this issue: GHSA-qv97-5qr8-2266.
+
+#### Signing Ancillary Files with IOG Key
+
+- The aggregator now signs ancillary files using GCP KMS and the IOG (Ancillary) key.
+- The same `Ed25519` scheme as Genesis key signing is used for this process.
+- This change introduces a breaking change in the latest Mithril client, affecting both the Library and CLI.
+- Users now have the option to download immutable files either with or without ancillary files.
+
+#### Signing Ledger State Snapshot with Mithril STM
+
+- Signing the ledger state snapshot with Mithril STM requires synchronized snapshots across all Cardano nodes.
+- If the process is deterministic, it becomes vulnerable to targeted attacks; therefore, a random delay per node should be used.
+- The signing should occur only once per epoch, and a new data type for signing will be introduced.
+
+#### All nodes must truncate the last immutable file at the same point at signing time
+
+- The existing tools for this include the `db-truncater` CLI, which is complex and requires database duplication.
+- Another available tool is Pallas `Hardano` from TxPipe, which can be used for chunk and index truncation.
+- Alternatively, it is possible to avoid embedding the last immutable file altogether.
+
+#### Implementation in a multi-node implementations ecosystem
+
+- Implementing this in a multi-node ecosystem requires canonical formats for ledger state snapshots and immutable files.
+- These canonical formats must be portable across all Cardano node implementations.
+- A new CIP (Cardano Improvement Proposal) is currently being developed to standardize these formats.
+
 ### Protocol status
 
 The protocol has operated smoothly on the `release-mainnet` network with the following metrics:
