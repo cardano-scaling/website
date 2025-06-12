@@ -95,19 +95,36 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
 
-### 0.21.0 Release
+### [0.21.0 Release](https://github.com/cardano-scaling/hydra/releases/tag/0.21.0)
+
+We're very excited about this one as it is a huge release incorporating the
+completely new networking layer via etcd. This means a few changes to the
+command-line arguments (which you can read about in the [release
+notes](https://github.com/cardano-scaling/hydra/releases/tag/0.21.0)).
+Other important features are bounded memory usage, and some important bugfixes
+around the observation of increments; but there is much more to read about in
+the changelog! Go and grab the latest version now!
 
 ### Deposit fixes
 
+@ch1bo
+
 ### Blockfrost integration
+
+@v0d1ch
 
 ### Event log rotation
 
+@ffakenz
+
 ### Coding standards as a flake module
 
-### Next release
+@locallycompact
 
 ### Roadmap update
+
+We continue to focus on UX improvements and better logging/errors, while also
+starting to tackle more of the user-reported bugs and feature requests.
 
 ## Links
 
