@@ -111,7 +111,13 @@ the changelog! Go and grab the latest version now!
 
 ### Blockfrost integration
 
-@v0d1ch
+After making posible to publish hydra scripts using Blockfrost we continued
+with the integration so now `hydra-node` can run using a Blockfrost backend.
+This option makes running the `hydra-node` a bit easier since one does not need
+to run local `cardano-node` to connect to which greatly simplifies the setup.
+
+Blockfrost is videly used so making this integration possible in `hydra-node`
+should make experimenting and prototyping with Hydra more approachable.
 
 ### Event log rotation
 
