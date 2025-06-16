@@ -121,7 +121,11 @@ should make experimenting and prototyping with Hydra more approachable.
 
 ### Event log rotation
 
-@ffakenz
+Event log rotation was introduced to improve recovery times by reducing the number of events that need to be replayed on startup. This is achieved by periodically replacing the current event log with a new one that starts from a checkpoint event, which captures the latest aggregated head state.
+
+Only the rotated logs are saved with an incrementing logId, while the main state file name remains unchanged to preserve backward compatibility. Rotation can be enabled via the new optional --persistence-rotate-after command line option, which specifies the number of events after which rotation should occur.
+
+Additionally, a server output was added to notify external agents when a checkpoint occurs, enabling them to perform archival or cleanup actions without interrupting the Hydra head.
 
 ### Coding standards as a flake module
 
