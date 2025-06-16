@@ -1,7 +1,7 @@
 ---
 title: May 2025
 slug: 2025-05
-authors: [jpraynaud, noonio]
+authors: [jpraynaud, noonio, ch1bo]
 tags: [monthly]
 ---
 
@@ -107,7 +107,13 @@ the changelog! Go and grab the latest version now!
 
 ### Deposit fixes
 
-@ch1bo
+Over the last two months, we have been fixing the incremental commit workflow and making it more robust against various edge cases related to rollbacks. Before, the `hydra-node` was very optimistic when observing a deposit posted to the chain, while possibility of double spends of the deposited funds must be prevented in presence of rollbacks. 
+
+This is now done by introducing a deposit period, which limits the minimum and maximum age of a deposit to be considered. The `--deposit-period` command line option supersedes `--deposit-deadline` which was only setting the time before a deposit may be picked up. The picture below shows the life cycle of a deposit which is only considered **active** after one deposit period has passed, and it is considered **expired** if less then a deposit period is left before the deadline; from where onwards a user may recover the funds. The upper validity bound of the deposit transaction is used as a starting point and we also added server outputs to signal activation and expiry of deposits. A query endpoint to list all known deposits is not avaiable right now, but likely introduced in course of doing [hydra#1812](https://github.com/cardano-scaling/hydra/issues/1812).
+
+![](./img/2025-05-hydra-deposits.jpg)
+
+See also the [developer documentation](https://hydra.family/head-protocol/unstable/docs/dev/protocol#rollback-resistance) for more details about rollback resistance, while the [user manual](https://hydra.family/head-protocol/unstable/docs/configuration#deposit-period) has more practical advice on how to configure the deposit period.
 
 ### Blockfrost integration
 
