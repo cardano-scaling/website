@@ -100,7 +100,7 @@ This enhancement was initiated following a discussion led by the MLabs team, as 
 
 While this refactor represents a breaking change, the hydra-node can still be utilized as before if the provided UTxO is at a public key address. However, to spend from a script UTxO and unlock more complex use-cases, users must provide an additional unsigned transaction that accurately specifies required data, such as redeemers and validity ranges.
 
-## Cardano Builder Fest
+## Cardano Buidler Fest
 
 This month the who-is-who of Cardano builders got lured to Toulouse, France for a two-day tech-only conference. It was a great occasion to meet fellow contributors and build bridges (literally) to new projects and their creators.
 
@@ -122,7 +122,7 @@ In a second phase that is scheduled to run from April till roughly beginning of 
 
 Gummiworm is a low-divergence fork of the Hydra node being built by Sundae Labs, which teases apart execution and custody; By sacrificing some control over the opening and closing of heads, it dramatically strengthens the security model specifically in the case when non-head participants are transacting in the head.
 
-At Builder-fest, we demo'd a very early, duct-tape and bubble-gum demo of depositing into a smart contract, minting those funds in the hydra head, and achieving auditability of the transactions in the head.
+At Buidler-fest, we demo'd a very early, duct-tape and bubble-gum demo of depositing into a smart contract, minting those funds in the hydra head, and achieving auditability of the transactions in the head.
 
 We also spoke about our longer term plans, such as changes to the ledger to accommodate a better user experience, and making the custody model "plug and play", so you could provide different mechanisms for different use cases.
 
@@ -138,7 +138,7 @@ This time, the themes we would like to focus on are _open governance_, _use case
 
 As one can see from past quarters, opening up the governance of scalability projects is a recurring theme and of highest priority. Ironically, the proposed work items above were mostly shaped and prioritised in private discussions between IOI and PaloIT. We will need to open discussions of what is valuable to build, to gather feedback and ensure individual projects tie into a compelling and _fundable_ portfolio across the whole ecosystem.
 
-A first glimpse of this already happened at the Builder Fest where a spontaneous (open space) session on "the future of Hydra and Mithril" spawned great interest and new ideas like
+A first glimpse of this already happened at the Buidler Fest where a spontaneous (open space) session on "the future of Hydra and Mithril" spawned great interest and new ideas like
 
 - Shallow node would be interesting
 - Once per epoch Mithril-signed ledger state
@@ -152,7 +152,7 @@ As also listed on the starmap, a logical next step is to create an open working 
 The monthly review meeting for April 2024 was held on 2024-04-30 via Google Meet,
 presenting these [slides][slides] and this [recording][recording].
 
-While we saw some demos on Mithril and Hydra projects' progress, the real highlight this month was the Cardano Builder Fest with its many great talks and discussions - often involving scalability limitations and technology to overcome it. Exciting discussions around zero knowledge primitives, infrastructure projects, and open source likely inspired everyone attending to keep building and improving Cardano.
+While we saw some demos on Mithril and Hydra projects' progress, the real highlight this month was the Cardano Buidler Fest with its many great talks and discussions - often involving scalability limitations and technology to overcome it. Exciting discussions around zero knowledge primitives, infrastructure projects, and open source likely inspired everyone attending to keep building and improving Cardano.
 
 There is still some uncertainty in how exactly governance of Hydra and Mithril can be made more open, collaborating on consistent high-level plans across multiple projects in the realm of improving Cardano scalability. However, we might have found with [cardano-scaling.org](https://cardano-scaling.org) a welcoming home not only for Hydra and Mithril, but for contributors and projects from various backgrounds, while first steps of involving the community more actively in a Hydra working group at Intersect are being made.
 
