@@ -17,7 +17,7 @@ Below are the latest updates on our roadmap:
 
 - **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402): We have started the second phase of the implementation of the DMQ signature diffusion prototype
 - **Cardano database incremental snapshots MVP** [#2047](https://github.com/input-output-hk/mithril/issues/2047): We have activated the incremental snapshots on the `release-mainnet` network
-- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): the home page redesign is in progress.
+- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): The home page redesign is in progress.
 
 ### Distributions
 
