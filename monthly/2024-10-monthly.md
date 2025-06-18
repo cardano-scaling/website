@@ -70,7 +70,7 @@ We have been working on a new Prometheus endpoint for the aggregator, which prov
 Additionally, we created a Grafana template to easily set up a dashboard for this Prometheus endpoint.
 
 ![](img/2024-10-mithril-prometheus-metrics.png)
-<small><center>The aggregator Grafana dahsboard</center></small>
+<small><center>The aggregator Grafana dashboard</center></small>
 
 ## Hydra
 

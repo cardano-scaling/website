@@ -93,7 +93,7 @@ specification became an important artifact to use in discussion, review and
 potential audit of the Hydra Head protocol implementation. The document was now
 moved from overleaf into the Hydra repository, where it is properly versioned
 and built on each CI run. Changes can be proposed using our regular pull request
-worfklow and the final PDF is built and [published to the
+workflow and the final PDF is built and [published to the
 website](https://hydra.family/head-protocol/unstable/core-concepts/specification)
 automatically.
 
@@ -156,7 +156,7 @@ it used to run on a _perfect_ blockchain). You can find more about our
 model-based test strategy in [Model-Based Testing with
 QuickCheck](https://engineering.iog.io/2022-09-28-introduce-q-d/).
 
-![test pyramid](./img/2023-04-test-pyramide.png) <small><center>Testing pyramide</center></small>
+![test pyramid](./img/2023-04-test-pyramide.png) <small><center>Testing pyramid</center></small>
 
 The new property
 [headOpensIfAllPartiesCommit](https://github.com/input-output-hk/hydra/blob/commit_vs_rollback/hydra-node/test/Hydra/ModelSpec.hs#L185)

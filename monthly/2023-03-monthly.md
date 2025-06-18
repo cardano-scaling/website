@@ -37,7 +37,7 @@ The project saw one release this month and several items on our
 
 #### Notable roadmap updates
 
-- Now that 0.9.0 is released, the focus is on mainnet compatiblity. The
+- Now that 0.9.0 is released, the focus is on mainnet compatibility. The
   next planned version **0.10.0** will be the first `hydra-node` to be
   mainnet compatible.
 
@@ -55,7 +55,7 @@ The project saw one release this month and several items on our
   while other ideas are incubating as [github idea
   discussion](https://github.com/input-output-hk/hydra/discussions/categories/ideas).
   We are planning to convert these idea issues to GitHub discussions as these
-  provide better dicussion tools and allow to gauge interest in topics. In turn,
+  provide better discussion tools and allow to gauge interest in topics. In turn,
   by cleaning up we provide more room for the most popular ideas to be planned
   onto the roadmap in a more timely manner.
 
@@ -63,7 +63,7 @@ The project saw one release this month and several items on our
   corresponding [idea
   discussion](https://github.com/input-output-hk/hydra/discussions/categories/ideas).
 
-- The 💬 _feature_ items remaining are the currently identifed "must-haves" or
+- The 💬 _feature_ items remaining are the currently identified "must-haves" or
   too vague to remove 🔴 _red_ items.
 
 ![](./img/2023-03-roadmap-ex-ideas.png) <small><center>The roadmap without idea items.</center></small>

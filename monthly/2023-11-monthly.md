@@ -66,7 +66,7 @@ level [API](https://meshjs.dev/apis/transaction/builderExample) for building
 custom transactions which is pretty similar to what `cardano-cli` does.
 
 Now you can use `isHydra` field which you can pass to this API which then uses
-another set of protocol paramters suitable for Hydra (eg. usually in Hydra we
+another set of protocol parameters suitable for Hydra (eg. usually in Hydra we
 want to have zero transaction fees, reduce script execution units etc.).
 
 Big thanks to the MeshJS team on giving much needed support. They were
