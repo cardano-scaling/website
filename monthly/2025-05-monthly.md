@@ -41,7 +41,7 @@ We have published the following post:
 
 ### Signing ancillary files of the Cardano database
 
-Here is a summary of the recent changes related to the signing of ancillary files in the Cardano database, and of the next steps for signing them with the Mithril protocol.:
+Here is a summary of the recent changes related to the signing of ancillary files in the Cardano database, and of the next steps for signing them with the Mithril protocol:
 
 #### Cardano Database Certification (v1 & v2)
 
