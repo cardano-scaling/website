@@ -56,7 +56,7 @@ Here is a summary of the recent changes related to the signing of ancillary file
 - This change introduces a breaking change in the latest Mithril client, affecting both the Library and CLI.
 - Users now have the option to download immutable files either with or without ancillary files.
 
-#### Signing Ledger State Snapshot with Mithril STM
+#### Signing ledger state snapshot with Mithril STM
 
 - Signing the ledger state snapshot with Mithril STM requires synchronized snapshots across all Cardano nodes.
 - If the process is deterministic, it becomes vulnerable to targeted attacks; therefore, a random delay per node should be used.
