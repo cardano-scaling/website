@@ -72,7 +72,7 @@ Besides the contributed offline mode mentioned above, Sundae Labs is also implem
 
 Also [funded through Catalyst](https://milestones.projectcatalyst.io/projects/1000092) is a continuation of the [Hydra auction](https://github.com/mlabs-haskell/hydra-auction) project by Ikigai and MLabs. The Hydra team has not yet re-engaged in a regular exchange, but they expect to support the project with features as needed as they kick off this work.
 
-As also pointed out in the review session, some of the team members have been involved in organizing the first [Cardano Builder Fest](https://buidl.2024.cardano.org/) - happening on April 23-24 in Toulouse, France. This event will be a prime chance to connect with the people building (on) Cardano and inspire new ways of collaboration. At the time of publishing, tickets are already sold out, but we hope to see many Cardano builders there!
+As also pointed out in the review session, some of the team members have been involved in organizing the first [Cardano Buidler Fest](https://buidl.2024.cardano.org/) - happening on April 23-24 in Toulouse, France. This event will be a prime chance to connect with the people building (on) Cardano and inspire new ways of collaboration. At the time of publishing, tickets are already sold out, but we hope to see many Cardano builders there!
 
 ## Conclusion
 
