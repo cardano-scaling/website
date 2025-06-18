@@ -49,7 +49,7 @@ Here is a summary of the recent changes related to the signing of ancillary file
 - This inconsistency poses a risk, as it may be exploited in long-range attacks, especially when multiple aggregators are involved.
 - A security alert has been published regarding this issue: GHSA-qv97-5qr8-2266.
 
-#### Signing Ancillary Files with IOG Key
+#### Signing ancillary files with IOG key
 
 - The aggregator now signs ancillary files using GCP KMS and the IOG (Ancillary) key.
 - The same `Ed25519` scheme as Genesis key signing is used for this process.
