@@ -3,24 +3,20 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     systems.url = "github:nix-systems/default";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    treefmt-nix.url = "github:numtide/treefmt-nix";
-    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
+    hydra-coding-standards.url = "github:cardano-scaling/hydra-coding-standards/0.6.6";
   };
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = import inputs.systems;
       imports = [
-        inputs.treefmt-nix.flakeModule
+        inputs.hydra-coding-standards.flakeModule
       ];
-      perSystem = { self', system, lib, config, pkgs, ... }: {
+      perSystem = { config, pkgs, ... }: {
         # Auto formatters. This also adds a flake check to ensure that the
         # source tree was auto formatted.
-        treefmt.config = {
-          projectRootFile = "docusaurus.config.js";
-          package = pkgs.treefmt;
-          programs.nixpkgs-fmt.enable = true;
-        };
+
+        coding.standards.hydra.enable = true;
 
         devShells.default = pkgs.mkShell {
           name = "Cardano Scaling";

@@ -46,7 +46,7 @@ We have added a new [page](https://mithril.network/explorer/registrations-in-out
 
 ### The protocol insights dashboard
 
-A new [Mithril protocol insights dashbord](https://lookerstudio.google.com/u/1/reporting/8b05ea4b-6a43-45ea-aef2-237906ec7a42/paage/kem0D) has been released. It provides metrics such as the number of SPOs and total stake involved, the daily number of Cardano database restorations, and the breakdown of running signer versions.
+A new [Mithril protocol insights dashboard](https://lookerstudio.google.com/u/1/reporting/8b05ea4b-6a43-45ea-aef2-237906ec7a42/paage/kem0D) has been released. It provides metrics such as the number of SPOs and total stake involved, the daily number of Cardano database restorations, and the breakdown of running signer versions.
 
 Feel free to request some new metrics on the dashboard!
 

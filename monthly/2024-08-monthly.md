@@ -63,7 +63,7 @@ Notable updates on our [roadmap](https://github.com/orgs/cardano-scaling/project
 - Incremental commits (coming in a 0.19 release) have pivoted to a deposit-based scheme based on [open discussions](https://github.com/cardano-scaling/hydra/issues/199) (thanks [@GeorgeFlerovsky!](https://github.com/GeorgeFlerovsky))
 - Ready to shift ledger to Conway when hardfork is complete [#1338](https://github.com/cardano-scaling/hydra/pull/1338)
 - Settled on [Partial Fanout](https://github.com/cardano-scaling/hydra/issues/1468) as a good solution to [a few known problems](https://hydra.family/head-protocol/docs/known-issues#head-protocol-limits)
-- Initial work on a suite of network-resiliance tests [#1552](https://github.com/cardano-scaling/hydra/pull/1552)
+- Initial work on a suite of network-resilience tests [#1552](https://github.com/cardano-scaling/hydra/pull/1552)
 - The Hydra Doom demo yielded several ideas that need to be refined into features
 
 ### Hydra Doom

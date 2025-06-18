@@ -33,7 +33,7 @@ features, which will be released soon as version 0.11.0:
 
 - Plan to release 0.11.0 without [Authenticate network messages
   #727](https://github.com/input-output-hk/hydra/issues/727) to deliver enabling
-  featues earlier.
+  features earlier.
 
 - API improvements and exploring batched transactions on L2 showed that [ReqSN
   only sends transaction IDs
@@ -71,7 +71,7 @@ repository](/monthly/2023-04#versioned-docs-and-specification), it could be kept
 consistent within the same pull request.
 
 Despite being a **breaking change**, leading to new Hydra script hashes to be
-published and used starting with version 0.11.0, this change was suprisingly
+published and used starting with version 0.11.0, this change was surprisingly
 easy to do and demonstrated the amenability of the Head protocol and the system
 architecture.
 
@@ -98,7 +98,7 @@ step and no single `hydra-node` has access to user funds used in the Head
 protocol.
 
 Within this work package, _marking fuel_ became deprecated and all UTXOs owned
-by the internal wallet are considered fuel. Fuel marking wil be completely
+by the internal wallet are considered fuel. Fuel marking will be completely
 removed in the future. Furthermore, a good old HTTP-based API is now used
 for the new query (so far it was only WebSocket-based), which prompts a
 potential shift to using OpenAPI as API specification since AsyncAPI does not

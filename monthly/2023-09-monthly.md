@@ -38,7 +38,7 @@ From 2023-09-12 to 2023-09-14, most of the _Scaling Tribe_ members, that is the 
 
 ### Aiken validator experiment
 
-As part of thw workshop, we explored how hard it would be to implement one of
+As part of the workshop, we explored how hard it would be to implement one of
 the Hydra validators in `aiken`. After roughly two hours of work we had a
 `hydra-node` running, tests passing and benchmarks of verifying one step in the
 Hydra protocol using aiken.
@@ -55,7 +55,7 @@ Next, we ported the simplest contract we have, namely the
 validator, [to
 Aiken](https://github.com/input-output-hk/hydra/blob/4ec572511fc13a526b85efce3aac556ae5bd007c/hydra-plutus/validators/commit.ak).
 This was fairly straight-forward and we test were passing after some fiddling
-with internal representations of data strctures (`plutus-tx` is encoding triples
+with internal representations of data structures (`plutus-tx` is encoding triples
 as `Constr` data on-chain).
 
 The results? A significant reduction in script size, cpu and memory usage on
@@ -242,7 +242,7 @@ tools is needed and best for the job at hand, relentlessly prototyping
 and experimenting collectively to find the best solutions solving
 actual people's problems.
 
-It is also worth mentioning that Catalyst's Fund 10 outcome shoudl
+It is also worth mentioning that Catalyst's Fund 10 outcome should
 result in more contributions to Hydra (and hopefully Mithril!) in the
 near term.
 
