@@ -43,7 +43,7 @@ We have published the following post:
 
 Here is a summary of the recent changes related to the signing of ancillary files in the Cardano database, and of the next steps for signing them with the Mithril protocol:
 
-#### Cardano Database Certification (v1 & v2)
+#### Cardano database certification (v1 and v2)
 
 - The Cardano database files, including ledger state snapshots and the last immutable file, differ across signers, which prevents Mithril from signing them.
 - This inconsistency poses a risk, as it may be exploited in long-range attacks, especially when multiple aggregators are involved.
