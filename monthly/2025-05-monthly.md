@@ -76,7 +76,6 @@ Here is a summary of the recent changes related to the signing of ancillary file
 
 ### Protocol status
 
-The protocol has operated smoothly on the `release-mainnet` network with the following metrics:
 The protocol operated smoothly on the `release-mainnet` network with the following metrics:
 
 - **Registered stake**: `4.6B₳` (`21%` of the Cardano network)
