@@ -135,7 +135,11 @@ Additionally, a server output was added to notify external agents when a checkpo
 
 ### Coding standards as a flake module
 
-@locallycompact
+In order to better standardise code quality across multiple repositories, we have extracted
+all of our quality control tooling to a flake-parts module called [hydra-coding-standards](https://github.com/cardano-scaling/hydra-coding-standards).
+This contains all kinds of formatting checks, dead code elimination, and static analysis checks
+for haskell and nix, as well as typo checking. We are rolling these standardisation checks to more
+cardano-scaling repositories, which will enable a more uniform experience for active and external contributors.
 
 ### Roadmap update
 
