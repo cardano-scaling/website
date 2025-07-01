@@ -77,12 +77,20 @@ With the release of the new 2524 distribution, the `tools` command has been adde
 The following command can be used to convert a restored ledger state snapshot into the UTxO-HD flavor:
 
 ```bash
-mithril-client --unstable tools utxo-hd snapshot-converter --db-directory $DB_DIRECTORY --cardano-node-version 10.1.4 --utxo-hd-flavor $UTXO_HD_FLAVOR --cardano-network $CARDANO_NETWORK
+./mithril-client --unstable tools utxo-hd snapshot-converter --db-directory $DB_DIRECTORY --cardano-node-version 10.1.4 --utxo-hd-flavor $UTXO_HD_FLAVOR --cardano-network $CARDANO_NETWORK
 ```
+
+More information is available in the [UTXO-HD ledger state snapshot converter command in client CLI](https://mithril.network/doc/dev-blog/2025/06/16/client-cli-utxo-snapshot-converter-command) dev blog post.
 
 ### Verify existing Cardano database with client CLI
 
-TODO: Update
+We have created a new command in the Mithril client CLI to verify an existing Cardano database. This command allows users to check the integrity of their Cardano node database and ensure it is authentic. The tool has not been released yet, but it is available in the [`unstable`](https://github.com/input-output-hk/mithril/releases/tag/unstable) release of the Mithril client CLI.
+
+Here is an example of how to use the command:
+
+```bash
+./mithril-client --unstable cardano-db verify --db-directory $DB_DIRECTORY
+```
 
 ### Protocol status
 
