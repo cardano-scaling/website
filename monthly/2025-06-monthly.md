@@ -41,7 +41,11 @@ We have published the following post:
 
 ### New website homepage
 
-TODO: Update
+The new homepage of the Mithril website has been deployed. It features a more modern design, improved navigation, and better accessibility.
+The new homepage is now live at [mithril.network](https://mithril.network).
+
+![The new homepage](./img/2025-06-mithril-website.png)
+<small><center>Snapshot of the new homepage</center></small>
 
 ### DMQ implementation update
 
