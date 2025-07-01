@@ -61,7 +61,14 @@ The next steps are to complete a end to end test with a Fake DMQ node, and progr
 
 ### Cardano database certification backend update
 
-TODO: Update
+The Cardano node database v2 certification offers incremental verification and greater efficiency compared to the original method. It will progressively replace the current certification process for the Cardano node internal database.
+
+In particular, the `cardano-db` command in the Mithril client CLI has been updated to support the new incremental certification process and eventually a seamless switch to the new backend. A new `--backend` option has been added to the command, allowing users to specify the certification version:
+
+- `--backend v1` uses the original Cardano node database certification (this remains the default)
+- `--backend v2` enables the new incremental Cardano node database certification.
+
+We will progressively switch to the new backend in the coming months, a full schedule is available in this blog post: [Switching to Cardano database incremental certification](https://mithril.network/doc/dev-blog/2025/06/17/client-cli-cardano-database-backends).
 
 ### UTxO-HD ledger state snapshot converter command in client CLI
 
