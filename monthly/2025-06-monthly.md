@@ -21,27 +21,23 @@ Below are the latest updates on our roadmap:
 
 ### Distributions
 
-TODO: Update
+In June, we have completed the following events:
 
-In May, we have completed the following events:
+- Release of the new distribution [`2524`](https://github.com/input-output-hk/mithril/releases/tag/2524.0)
+- Activation of the support for UTxO-HD in the Mithril client CLI
+- Preparation of the switch to the new Cardano database certification backend.
 
-- Release of the new distribution [`2517`](https://github.com/input-output-hk/mithril/releases/tag/2517.1)
-- Release of the security advisory [`GHSA-qv97-5qr8-2266`](https://github.com/input-output-hk/mithril/security/advisories/GHSA-qv97-5qr8-2266)
-- Activation of the incremental Cardano database certification (Cardano DB v2) on the `release-mainnet` network.
+In July, the following events are planned:
 
-In June, the following events are planned:
-
-- Release of a new distribution (`2523`).
+- Release of a new distribution (`2529`).
 
 ### Dev blog
 
-TODO: Update
-
 We have published the following post:
 
-- [Mithril Cardano database snapshots security advisory](https://mithril.network/doc/dev-blog/2025/05/07/client-security-advisory)
-- [Breaking changes in client library and CLI](https://mithril.network/doc/dev-blog/2025/05/06/client-breaking-change)
-- [Distribution `2517` is now available](https://mithril.network/doc/dev-blog/2025/05/05/distribution-2517).
+- [Switching to Cardano database incremental certification](https://mithril.network/doc/dev-blog/2025/06/17/client-cli-cardano-database-backends)
+- [UTXO-HD ledger state snapshot converter command in client CLI](https://mithril.network/doc/dev-blog/2025/06/16/client-cli-utxo-snapshot-converter-command)
+- [Distribution `2524` is now available](https://mithril.network/doc/dev-blog/2025/06/16/distribution-2524).
 
 ### New website homepage
 
