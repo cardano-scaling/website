@@ -49,7 +49,15 @@ The new homepage is now live at [mithril.network](https://mithril.network).
 
 ### DMQ implementation update
 
-TODO: Update
+Here is the current status of the DMQ implementation:
+
+| **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Haskell DMQ Node** |
+| ------------------ | :--------: | :----------------: | :--------------------: | :------------------: |
+| N2C Submission     |     ✓      |         ✓          |           -            |    _In progress_     |
+| N2C Notification   |     ✓      |         -          |           ✓            |    _In progress_     |
+| N2N Diffusion      |     -      |         -          |           -            |    _In progress_     |
+
+The next steps are to complete a end to end test with a Fake DMQ node, and progressively replace it with the real Haskell DMQ node implementation. Our goal is to have the DMQ network start operating in a test network.
 
 ### Cardano database certification backend update
 
