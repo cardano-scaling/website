@@ -72,7 +72,13 @@ We will progressively switch to the new backend in the coming months, a full sch
 
 ### UTxO-HD ledger state snapshot converter command in client CLI
 
-TODO: Update
+With the release of the new 2524 distribution, the `tools` command has been added to the Mithril client CLI. The new `tools utxo-hd snapshot-converter` subcommand simplifies node bootstrapping by converting the restored ledger state snapshot into the required UTxO-HD flavor (`LMDB` or `Legacy`).
+
+The following command can be used to convert a restored ledger state snapshot into the UTxO-HD flavor:
+
+```bash
+mithril-client --unstable tools utxo-hd snapshot-converter --db-directory $DB_DIRECTORY --cardano-node-version 10.1.4 --utxo-hd-flavor $UTXO_HD_FLAVOR --cardano-network $CARDANO_NETWORK
+```
 
 ### Verify existing Cardano database with client CLI
 
