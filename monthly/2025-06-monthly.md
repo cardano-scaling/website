@@ -105,36 +105,39 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 ## Hydra
 
-TODO: Update
-
 [Issues and pull requests closed in June](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-06-01..2025-06-30)
 
-![The roadmap with features and ideas](./img/2025-06-hydra-roadmap.png)
+![The roadmap with features and ideas](./hydra-roadmap-2025-06.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
 
 This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
 
 ### [0.22.0 Release](https://github.com/cardano-scaling/hydra/releases/tag/0.22.0)
 
-TODO: Update
+- Important security fix for security advisory: [Dangerous L1 event finality assumptions & Failed transactions not considered](https://github.com/cardano-scaling/hydra/security/advisories/GHSA-qr9f-mpgf-wp25)
+- Event log rotation feature; `--persistence-rotate-after 10000` to rotate after seeing 10k events,
+- The `etcd` binary is now embedded into the binary, and _used by default_.
+  Disable with `--use-system-etcd`.
+- New `/head` HTTP endpoint to get status of the head
+- UX improvements to diagnose etcd connection problems
 
 ### New working group
 
-TODO: Update
+Hydra working group → Layer 2 working group!
+
+More details here: [wg-layer2](https://github.com/cardano-scaling/wg-layer2).
 
 ### Roadmap update
 
-TODO: Update
-
-We continue to focus on UX improvements and better logging/errors, while also
-starting to tackle more of the user-reported bugs and feature requests.
+- We are focused on supporting the Glacier Drop, and are working on improving
+  our failure resilience
+- We are also working on improving the UX around etcd/networking errors
+- We are aiming to implement a HTLC between Hydra heads, to form a pathway to Bitcoin lightning integration.
 
 ## Links
-
-TODO: Update recording link
 
 The monthly review meeting for June 2025 took place on June 25, 2025, via Google Meet.
 The presentation [slides][slides] and the [recording][recording] are available for review.
 
 [slides]: https://docs.google.com/presentation/d/1rkEr9zPWY7MH7sRACYZ2ENDLQtccUYeBPJaC-za7-Ew/edit?slide=id.g1f87a7454a5_0_1392#slide=id.g1f87a7454a5_0_1392
-[recording]: https://drive.google.com/file/d/1qdOu_3WXXxEbQg-IhVdgZFENgJKX2o6A/view?usp=sharing
+[recording]: https://drive.google.com/file/d/1lpUWYeWjHFqHjCu3USjf8rtj4t7OJ2fA/view?usp=drive_link
