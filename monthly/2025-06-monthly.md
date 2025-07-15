@@ -118,7 +118,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 - The `etcd` binary is now embedded into the binary, and _used by default_
   Disable with `--use-system-etcd`
 - New `/head` HTTP endpoint to get status of the head
-- UX improvements to diagnose etcd connection problems
+- UX improvements to diagnose `etcd` connection problems.
 
 ### New working group
 
