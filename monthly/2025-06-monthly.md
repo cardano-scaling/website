@@ -16,7 +16,7 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 Below are the latest updates on our roadmap:
 
 - **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402). We have started the second phase of the implementation of the DMQ signature diffusion prototype
-- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051): The new home page has been deployed on the website
+- **Redesign the website and improve documentation** [#2051](https://github.com/input-output-hk/mithril/issues/2051). The new home page has been deployed on the website
 - **Refactor STM library** [#2567](https://github.com/input-output-hk/mithril/issues/2567): We have completed the first phase of the refactoring of the SMT library, and we have started the second phase.
 
 ### Distributions
