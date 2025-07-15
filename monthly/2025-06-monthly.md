@@ -56,7 +56,7 @@ Here is the current status of the DMQ implementation:
 | N2C Notification   |     ✓      |         -          |           ✓            |    _In progress_     |
 | N2N Diffusion      |     -      |         -          |           -            |    _In progress_     |
 
-The next steps are to complete a end to end test with a Fake DMQ node, and progressively replace it with the real Haskell DMQ node implementation. Our goal is to have the DMQ network start operating in a test network.
+Next, we will complete an end to end test with a fake DMQ node and gradually replace it with the real Haskell DMQ node implementation. Our goal is to operate the DMQ network on a testnet.
 
 ### Cardano database certification backend update
 
