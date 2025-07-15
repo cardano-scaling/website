@@ -24,7 +24,7 @@ Below are the latest updates on our roadmap:
 In June, we have completed the following events:
 
 - Released the new distribution [`2524`](https://github.com/input-output-hk/mithril/releases/tag/2524.0)
-- Activation of the support for UTxO-HD in the Mithril client CLI
+- Activated support for UTXO-HD in the Mithril client CLI  
 - Preparation of the switch to the new Cardano database certification backend.
 
 In July, the following events are planned:
