@@ -115,7 +115,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 - Important security fix for security advisory: [Dangerous L1 event finality assumptions and Failed transactions not considered](https://github.com/cardano-scaling/hydra/security/advisories/GHSA-qr9f-mpgf-wp25)
 - Event log rotation feature; `--persistence-rotate-after 10000` to rotate after seeing 10k events
-- The `etcd` binary is now embedded into the binary, and _used by default_.
+- The `etcd` binary is now embedded into the binary, and _used by default_
   Disable with `--use-system-etcd`.
 - New `/head` HTTP endpoint to get status of the head
 - UX improvements to diagnose etcd connection problems
