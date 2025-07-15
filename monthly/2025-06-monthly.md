@@ -24,7 +24,7 @@ Below are the latest updates on our roadmap:
 In June, we have completed the following events:
 
 - Released the new distribution [`2524`](https://github.com/input-output-hk/mithril/releases/tag/2524.0)
-- Activated support for UTXO-HD in the Mithril client CLI  
+- Activated support for UTXO-HD in the Mithril client CLI
 - Prepared for the switch to the new Cardano database certification backend.
 
 In July, the following events are planned:
@@ -106,7 +106,7 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 [Issues and pull requests closed in June](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-06-01..2025-06-30)
 
-![The roadmap with features and ideas](./hydra-roadmap-2025-06.png)
+![The roadmap with features and ideas](./img/hydra-roadmap-2025-06.png)
 <small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
 
 This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
