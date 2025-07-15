@@ -113,7 +113,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 ### [0.22.0 Release](https://github.com/cardano-scaling/hydra/releases/tag/0.22.0)
 
-- Important security fix for security advisory: [Dangerous L1 event finality assumptions & Failed transactions not considered](https://github.com/cardano-scaling/hydra/security/advisories/GHSA-qr9f-mpgf-wp25)
+- Important security fix for security advisory: [Dangerous L1 event finality assumptions and Failed transactions not considered](https://github.com/cardano-scaling/hydra/security/advisories/GHSA-qr9f-mpgf-wp25)
 - Event log rotation feature; `--persistence-rotate-after 10000` to rotate after seeing 10k events,
 - The `etcd` binary is now embedded into the binary, and _used by default_.
   Disable with `--use-system-etcd`.
