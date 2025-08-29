@@ -21,17 +21,17 @@ Below are the latest updates on our roadmap:
 
 ### DMQ implementation update
 
-TODO: Update
-
 Here is the current status of the DMQ implementation:
 
-| **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Haskell DMQ Node** |
-| ------------------ | :--------: | :----------------: | :--------------------: | :------------------: |
-| N2C Submission     |     ✓      |         ✓          |           -            |    _In progress_     |
-| N2C Notification   |     ✓      |         -          |           ✓            |    _In progress_     |
-| N2N Diffusion      |     -      |         -          |           -            |    _In progress_     |
+| **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Mithril Relay** | **Haskell DMQ Node** |
+| ------------------ | :--------: | :----------------: | :--------------------: | :---------------: | :------------------: |
+| N2C Submission     |     ✓      |         ✓          |           -            |  ✓<sup>\*</sup>   |    _In progress_     |
+| N2C Notification   |     ✓      |      Planned       |           ✓            |  ✓<sup>\*</sup>   |    _In progress_     |
+| N2N Diffusion      |  Planned   |         -          |           -            |         -         |    _In progress_     |
 
-Next, we will complete an end to end test with a fake DMQ node and gradually replace it with the real Haskell DMQ node implementation. Our goal is to operate the DMQ network on a testnet.
+<i><sup>\*</sup>: for testing purpose only</i>
+
+The network team has kept implementing the DMQ mini-protocols in the Haskell DMQ node. In the mean time, we have implemented a fake DMQ node which allowed us to test the Mithril nodes implementation of the DMQ protocol in an end to end test. This fake DMQ node is implemented in the Mithril relay which now exposes the server sides of the n2c submission and notification mini-protocols. Once the Haskell DMQ node is ready, we will replace the fake DMQ node with the real implementation.
 
 ### Prototyping SNARK circuit for Mithril certificates
 
