@@ -75,10 +75,10 @@ Additional testing included using IVC (recursive SNARK) to limit the number of c
 
 The protocol operated smoothly on the `release-mainnet` network with the following metrics:
 
-- **Registered stake**: `4.7B₳` (`21%` of the Cardano network)
-- **Registered SPOs**: `247` (`9%` of the Cardano network)
-- **Full Cardano database restorations**: `185` restorations
-- **Signer software adoption**: `81.1%` of the SPOs are running a recent version (one of the last three releases).
+- **Registered stake**: `4.7B₳` (`22%` of the Cardano network)
+- **Registered SPOs**: `249` (`9%` of the Cardano network)
+- **Full Cardano database restorations**: `710` restorations
+- **Signer software adoption**: `82.9%` of the SPOs are running a recent version (one of the last three releases).
 
 You can find more information on the [Mithril protocol insights dashboard](https://lookerstudio.google.com/s/mbL23-8gibI).
 
