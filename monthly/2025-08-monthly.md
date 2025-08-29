@@ -35,7 +35,41 @@ The network team has kept implementing the DMQ mini-protocols in the Haskell DMQ
 
 ### Prototyping SNARK circuit for Mithril certificates
 
-TODO: Update
+We have been working on creating a Mithril certificate with a multi-signature that meets specific requirements for on-chain deployment. The current concatenation proof approach does not meet our constraints, as it exceeds 150 kB with full stake distribution of approximately 2,000 individual signatures, which is too large for on-chain storage (we need < 16 kB).
+
+#### Requirements and solution
+
+Our target requirements for the new approach are:
+
+- Certificate storage on-chain with size under **16 kB**
+- Fast verification performance (**few milliseconds**)
+- Relatively fast generation time (**few minutes**)
+- On-chain verification capability.
+
+We selected a SNARK generated with Halo2 as our solution, which provides:
+
+- Expected multi-signature size of **1-10 kB**
+- Expected verification time of **1-10 ms**
+- Expected generation time of **1-10 min**
+- Available primitives for smart contracts.
+
+#### Implementation approaches
+
+**Faithful circuit transcription**: Our initial approach attempted to create a circuit that faithfully replicates the actual concatenation proof, including BLS verification of aggregated signatures, Merkle proof inclusion in signer registration, and eligibility check with lottery. However, this proved unrealistic as just the BLS verification alone required approximately **50 seconds** with **2^19 constraints** on a **48 CPU / 384 GB** machine.
+
+**Modified circuit transcription**: We then developed a circuit that verifies all individual signatures one by one and makes sure that the lottery indices reach the quorum. We needed to modify the curve, individual signatures, hash function, and lottery function. This approach proved very efficient for approximately **2,000** signatures, achieving a certificate size of **4 kB**, verification time of **7 ms**, and generation time of **6 minutes**.
+
+**ALBA proof circuit**: We also tested an ALBA proof implementation and this approach proved even more efficient, maintaining the same **4 kB** certificate size and **7 ms** verification time while reducing generation time to just **1.5 minutes**.
+
+Additional testing included using IVC (recursive SNARK) to limit the number of constraints, though this showed no substantial gain over our other approaches.
+
+#### Roadmap
+
+**Short term**: We are assessing the minimal set of modifications needed for STM implementation, creating a full report, adapting the STM library for SNARK friendliness (a breaking change that will require a Mithril era upgrade), and working to verify a Mithril certificate in a smart contract.
+
+**Mid term**: Our goals include deploying a SNARK for Mithril certificates on mainnet, auditing both the STM and SNARK implementations, and implementing ALBA, Fait accompli and their corresponding SNARKs.
+
+**Long term**: We plan to evaluate folding and recursive techniques for creating a SNARK of the entire certificate chain.
 
 ### Protocol status
 
