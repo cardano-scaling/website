@@ -93,40 +93,47 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 ### [0.22.4 Release](https://github.com/cardano-scaling/hydra/releases/tag/0.22.4)
 
-TODO: Update
+This is an important release on top of 0.22.0; featuring many important fixes
+observed while testing Hydra for a large operational usecase. In particular we
+have now:
 
-- Important security fix for security advisory: [Dangerous L1 event finality assumptions and Failed transactions not considered](https://github.com/cardano-scaling/hydra/security/advisories/GHSA-qr9f-mpgf-wp25)
-- Event log rotation feature; `--persistence-rotate-after 10000` to rotate after seeing 10k events
-- The `etcd` binary is now embedded into the binary, and _used by default_
-  Disable with `--use-system-etcd`
-- New `/head` HTTP endpoint to get status of the head
-- UX improvements to diagnose `etcd` connection problems.
+- Fixed the API not correctly dealing with log rotation
+- Reduced message spam in the presence of mirror nodes
+- Fix a bug with an internal queue causing a deadlock
+- Fixed an issue with etcd lease renewal
+- Implemeneted a workaround for a blocking bug observed with etcd
+- Fixed a bug where the hydra-node could stall after a restart (during `ReplayingState`)
+- Drop transactions that could lead to a stuck head
+
 
 ### Partial Ada commits
 
 TODO: Update
 
+
 ### Hydra Doom at RareEvo (again!)
 
 TODO: Update
+
 
 ### Example grafana dashboard for node operators
 
 TODO: Update
 
+
 ### Roadmap update
 
-- We are focused on supporting the Glacier Drop, and are working on improving
-  our failure resilience
-- We are also working on improving the UX around etcd/networking errors
-- We are aiming to implement a HTLC between Hydra heads, to form a pathway to Bitcoin lightning integration.
+- Delivered all the essential features for the Glacier Drop
+- Working towards a lightweight Hydra node PoC
+- Working towards inter-head payments via a HTLC PoC
+- Investigating partial fanout
+
+![](img/2025-08-hydra-roadmap.png)
 
 ## Links
-
-TODO: Update recording link
 
 The monthly review meeting for August 2025 took place on August 27, 2025, via Google Meet.
 The presentation [slides][slides] and the [recording][recording] are available for review.
 
-[slides]: https://docs.google.com/presentation/d/1yQKsqoTv1MAV4g6Ujt42dRKeT714v75Tqgmnd-y7VuE/edit?slide=id.g34fc91d1b1c_4_0#slide=id.g34fc91d1b1c_4_0
-[recording]: https://drive.google.com/file/d/1lpUWYeWjHFqHjCu3USjf8rtj4t7OJ2fA/view?usp=drive_link
+[slides]: https://docs.google.com/presentation/d/1yQKsqoTv1MAV4g6Ujt42dRKeT714v75Tqgmnd-y7VuE/edit?usp=sharing
+[recording]: https://drive.google.com/file/d/1D3kIhjlL-8fNeYVDktm4l9qyyGKcJD3k/view?usp=sharing
