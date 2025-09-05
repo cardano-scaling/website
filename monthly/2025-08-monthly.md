@@ -119,8 +119,15 @@ TODO: Update
 
 ### Example grafana dashboard for node operators
 
-TODO: Update
+We delivered a minimal monitoring setup using Prometheus and Grafana to provide insight into Hydra node activity, including snapshot processing and peer connectivity.
 
+This was added as part of the _Getting Started_ tutorial, making it easier for users to quickly visualize the exposed node metrics.
+
+> The setup focused exclusively on metrics exposed by Hydra nodes and did not include system-level metrics such as CPU, memory, disk, or network usage.
+
+![](img/2025-08-hydra-monitoring.png)
+
+**Acknowledgment:** This dashboard was largely based on the work originally done by @jmagan — thanks for laying the groundwork! 🙏
 
 ### Roadmap update
 
