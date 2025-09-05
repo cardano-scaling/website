@@ -108,8 +108,9 @@ have now:
 
 ### Partial Ada commits
 
-TODO: Update
-
+Not yet released; but on master you can now commit part of the UTxO input:
+[#2140](https://github.com/cardano-scaling/hydra/issues/2140). Thanks to
+aniadev for the great feature request!
 
 ### Hydra Doom at RareEvo (again!)
 
