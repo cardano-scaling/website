@@ -16,7 +16,7 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 Below are the latest updates on our roadmap:
 
 - **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402). We have implemented a end to end test of the DMQ protocol for the Mithril nodes, and the networking team has kept implementing the mini-protocols in the Haskell DMQ node
-- **Simple Aggregation Halo2 - Prototype** [#2526](https://github.com/input-output-hk/mithril/issues/2526). We have worked with the innovation team on the implementation of a prototype for a SNARK circuit for Mithril certificates based on Halo2.
+- **Simple aggregation Halo2 – prototype** [#2526](https://github.com/input-output-hk/mithril/issues/2526). We collaborated with the innovation team on developing a prototype for a SNARK circuit for Mithril certificates based on Halo2
 - **Refactor STM library** [#2567](https://github.com/input-output-hk/mithril/issues/2567). We have kept working on the second phase of the refactoring of the STM library.
 
 ### DMQ implementation update
