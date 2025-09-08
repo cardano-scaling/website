@@ -108,7 +108,7 @@ have now:
 
 ### Partial Ada commits
 
-Not yet released; but on master you can now commit part of the UTxO input:
+Not yet released, but on `master` you can now commit part of the UTXO input:
 [#2140](https://github.com/cardano-scaling/hydra/issues/2140). Thanks to
 aniadev for the great feature request!
 
