@@ -61,7 +61,7 @@ We selected a SNARK generated with Halo2 as our solution, which provides:
 
 **ALBA proof circuit**: We also tested an ALBA proof implementation and this approach proved even more efficient, maintaining the same **4 kB** certificate size and **7 ms** verification time while reducing generation time to just **1.5 minutes**.
 
-Additional testing included using IVC (recursive SNARK) to limit the number of constraints, though this showed no substantial gain over our other approaches.
+Additionally, we also tested IVC (recursive SNARK) to limit the number of constraints, though this showed no substantial gain over the other approaches.
 
 #### Roadmap
 
