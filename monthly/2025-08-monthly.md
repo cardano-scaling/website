@@ -67,7 +67,7 @@ Additionally, we also tested IVC (recursive SNARK) to limit the number of constr
 
 **Short term**: Assess the minimal modifications needed for STM implementation, create a full report, adapt the STM library for SNARK compatibility (a breaking change that will require a Mithril era upgrade), and verify a Mithril certificate in a smart contract.
 
-**Mid term**: Our goals include deploying a SNARK for Mithril certificates on mainnet, auditing both the STM and SNARK implementations, and implementing ALBA, Fait accompli and their corresponding SNARKs.
+**Mid term**: Deploy a SNARK for Mithril certificates on mainnet, audit both the STM and SNARK implementations, and implement ALBA, *Fait accompli*, and their corresponding SNARKs.
 
 **Long term**: We plan to evaluate folding and recursive techniques for creating a SNARK of the entire certificate chain.
 
