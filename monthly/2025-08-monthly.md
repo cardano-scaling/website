@@ -103,7 +103,7 @@ have now:
 - Fixed an issue with etcd lease renewal
 - Implemeneted a workaround for a blocking bug observed with etcd
 - Fixed a bug where the hydra-node could stall after a restart (during `ReplayingState`)
-- Drop transactions that could lead to a stuck head
+- Dropped transactions that could lead to a stuck head.
 
 
 ### Partial Ada commits
