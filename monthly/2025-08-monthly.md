@@ -116,7 +116,7 @@ aniadev for the great feature request!
 
 [hydra-doom](https://github.com/cardano-scaling/hydra-doom) returned to Rare Evo 2025. This time running on hydra 0.22.4 on a public network (preprod).
 
-This ran on an ASUS NUC 14 using an N97 chip and 16GB of RAM, allowing us to run both the hydra head and a full preprod node directly on the device using
+This ran on an ASUS NUC 14 with an N97 chip and 16 GB of RAM, allowing us to run both the Hydra head and a full preprod node directly on the device using the UTxO-HD on-disk backend from cardano-node.
 
 
 ### Example grafana dashboard for node operators
