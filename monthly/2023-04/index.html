@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-monthly" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.1">
+<title data-rh="true">April 2023 | Cardano Scaling</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://cardano-scaling.org/monthly/2023-04"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="April 2023 | Cardano Scaling"><meta data-rh="true" name="description" content="This report summarizes the work on Hydra since March 2023. It serves as"><meta data-rh="true" property="og:description" content="This report summarizes the work on Hydra since March 2023. It serves as"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2023-05-03T06:45:42.000Z"><meta data-rh="true" property="article:author" content="https://github.com/ch1bo,https://github.com/abailly-iohk,https://github.com/v0d1ch,https://github.com/pgrange"><meta data-rh="true" property="article:tag" content="monthly"><link data-rh="true" rel="icon" href="/img/faviconl.io"><link data-rh="true" rel="canonical" href="https://cardano-scaling.org/monthly/2023-04"><link data-rh="true" rel="alternate" href="https://cardano-scaling.org/monthly/2023-04" hreflang="en"><link data-rh="true" rel="alternate" href="https://cardano-scaling.org/monthly/2023-04" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/monthly/rss.xml" title="Cardano Scaling RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/monthly/atom.xml" title="Cardano Scaling Atom Feed">
+
+
+
+<script src="https://plausible.io/js/script.js" defer="defer" data-domain="hydra.family"></script><link rel="stylesheet" href="/assets/css/styles.d23c1e19.css">
+<script src="/assets/js/runtime~main.4d3c2d81.js" defer="defer"></script>
+<script src="/assets/js/main.8dc0d6cc.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/scaling-logo-draft-black.png" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/scaling-logo-draft-white.png" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Cardano Scaling</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/monthly">Monthly reports</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/cardano-scaling" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Monthly reports</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-08">August 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-06">June 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-05">May 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-04">April 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-03">March 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-02">February 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-01">January 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-11">November 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-10">October 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-09">September 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-08">August 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-07">July 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-06">June 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-05">May 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-04">April 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-03">March 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-02">February 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-01">January 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-11">November 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-10">October 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-09">September 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-08">August 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-07">July 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-06">June 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-05">May 2023</a></li><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/monthly/2023-04">April 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-03">March 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-02">February 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-01">January 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2022-12">December 2022</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2022-11">November 2022</a></li></ul></nav></aside><main class="col col--7" itemscope="" itemtype="https://schema.org/Blog"><article itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="This report summarizes the work on Hydra since March 2023. It serves as"><header><h1 class="title_f1Hy" itemprop="headline">April 2023</h1><div class="container_mt6G margin-vert--md"><time datetime="2023-05-03T06:45:42.000Z" itemprop="datePublished">May 3, 2023</time> · <!-- -->9 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/ch1bo" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/ch1bo.png" alt="Sebastian Nagel" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/ch1bo" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Sebastian Nagel</span></a></div><small class="avatar__subtitle" itemprop="description">Software Engineering Lead, IOG</small></div></div></div><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/abailly-iohk" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/abailly-iohk.png" alt="Arnaud Bailly" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/abailly-iohk" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Arnaud Bailly</span></a></div><small class="avatar__subtitle" itemprop="description">Lead Architect, IOG</small></div></div></div><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/v0d1ch" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/v0d1ch.png" alt="Sasha Bogicevic" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/v0d1ch" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Sasha Bogicevic</span></a></div><small class="avatar__subtitle" itemprop="description">Senior Software Engineer, IOG</small></div></div></div><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/pgrange" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/pgrange.png" alt="Pascal Grange" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/pgrange" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Pascal Grange</span></a></div><small class="avatar__subtitle" itemprop="description">Senior Software Engineer, IOG</small></div></div></div></div></header><div id="__blog-post-container" class="markdown" itemprop="articleBody"><p>This report summarizes the work on Hydra since March 2023. It serves as
+preparation for the monthly review meeting (see
+<a href="https://docs.google.com/presentation/d/10wZJy0tyGMbvMihbHnHk0QByA_TAZrtbcRbf5Gd-SHg/" target="_blank" rel="noopener noreferrer">slides</a>
+and the
+<a href="https://drive.google.com/file/d/1X4yPerLTatPPMrX3RYS7XH9lfT_LYaaX/view?usp=sharing" target="_blank" rel="noopener noreferrer">recording</a>),
+where the team updates major project stakeholders on recent developments to
+gather their feedback on proposed plans.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="roadmap">Roadmap<a href="#roadmap" class="hash-link" aria-label="Direct link to Roadmap" title="Direct link to Roadmap">​</a></h2>
+<p>The project <a href="https://github.com/orgs/input-output-hk/projects/21" target="_blank" rel="noopener noreferrer">roadmap</a> was
+only slightly updated this month:</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/2023-04-roadmap-d86dcb7d087f91df1d2f7d8bc87fdd23.png" width="2827" height="1111" class="img_ev3q"> <small><center>The latest roadmap with features and ideas</center></small></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="notable-roadmap-updates">Notable roadmap updates<a href="#notable-roadmap-updates" class="hash-link" aria-label="Direct link to Notable roadmap updates" title="Direct link to Notable roadmap updates">​</a></h4>
+<ul>
+<li>
+<p>There are still many 💭 <strong>idea</strong> items on the roadmap, however, not on the
+current and next planned release columns. The process involves clarifying and
+refining each idea item into a 💬 <strong>feature</strong> before starting work on it. This
+includes giving equal consideration to new user 💭 <strong>idea</strong>s and requests.</p>
+</li>
+<li>
+<p>Temporarily postponed the <a href="https://github.com/input-output-hk/hydra/issues/696" target="_blank" rel="noopener noreferrer">Hydra heads explorer
+#696</a> item until there is
+more clarity. While there aren&#x27;t any major blockers,the explorer just requires
+further detailing, especially since we&#x27;re currently in talks with existing
+Cardano explorer platforms.</p>
+</li>
+<li>
+<p>Converted the <a href="https://github.com/input-output-hk/hydra/issues/193" target="_blank" rel="noopener noreferrer">aggregated multi-signature
+#193</a> from the concrete
+roadmap into an <a href="https://github.com/input-output-hk/hydra/discussions/787" target="_blank" rel="noopener noreferrer">idea discussion
+#787</a>. This is based
+on feedback from the community, and we believe that discussing it there would
+be more beneficial.</p>
+</li>
+<li>
+<p>The main focus for the 0.10.0 release is implementing mainnet compatibility.
+This is mostly done and only requires some documentation and disclaimer
+updates. We&#x27;re about to release 0.10.0, which will be the first
+mainnet-compatible version.</p>
+</li>
+<li>
+<p>Meanwhile, work on the <a href="https://github.com/input-output-hk/hydra/issues/380" target="_blank" rel="noopener noreferrer">configurable API
+#380</a> was completed,
+which gave rise to new ideas and follow-up feature requests from users. One of
+them (<a href="https://github.com/input-output-hk/hydra/issues/823" target="_blank" rel="noopener noreferrer">Add HeadState/Snapshot to Greetings
+#823</a>) was fairly
+straightforward and necessary to deliver a consistent, usable increment on the
+API with the upcoming release.</p>
+</li>
+<li>
+<p>Prioritized <a href="https://github.com/input-output-hk/hydra/issues/196" target="_blank" rel="noopener noreferrer">Support timed transactions
+#196</a> higher as yet
+another use case would benefit from this.</p>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="/assets/images/2023-04-roadmap-ex-ideas-28efc0211737e7b74b8c8d4c05c681c9.png" width="2133" height="1014" class="img_ev3q"> <small><center>The roadmap without idea items</center></small></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development">Development<a href="#development" class="hash-link" aria-label="Direct link to Development" title="Direct link to Development">​</a></h2>
+<p><a href="https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2023-03-29..2023-04-26" target="_blank" rel="noopener noreferrer">Issues and pull requests closed since last
+report</a></p>
+<p>This month, the team worked on the following:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="configurable-api">Configurable API<a href="#configurable-api" class="hash-link" aria-label="Direct link to Configurable API" title="Direct link to Configurable API">​</a></h4>
+<p>The API evolved a bit, driven by the issues our users reported
+<a href="https://github.com/input-output-hk/hydra/issues/823" target="_blank" rel="noopener noreferrer">#823</a>
+<a href="https://github.com/input-output-hk/hydra/issues/813" target="_blank" rel="noopener noreferrer">#813</a>
+<a href="https://github.com/input-output-hk/hydra/issues/800" target="_blank" rel="noopener noreferrer">#800</a>
+<a href="https://github.com/input-output-hk/hydra/issues/789" target="_blank" rel="noopener noreferrer">#789</a>. Related changes
+were added to the API server so now our clients can:</p>
+<ul>
+<li>Control the historical messages output. History messages can be displayed
+upon re/connection or not depending on client needs.</li>
+<li>Snapshot UTXOs can optionally be disabled.</li>
+<li>Transactions can be displayed in CBOR or JSON format.</li>
+</ul>
+<p>Our clients can also have a nice insight into the current Hydra node state and head UTXOs
+that are now displayed as part of a <code>Greetings</code> message.</p>
+<p>Next steps on the API level are to further fulfill user needs by grooming and
+implementing needed changes related to filtering, pagination etc.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="versioned-docs-and-specification">Versioned docs and specification<a href="#versioned-docs-and-specification" class="hash-link" aria-label="Direct link to Versioned docs and specification" title="Direct link to Versioned docs and specification">​</a></h4>
+<p>Over the <a href="/monthly/2023-02#development">last couple of months</a> the Hydra
+specification became an important artifact to use in discussion, review and
+potential audit of the Hydra Head protocol implementation. The document was now
+moved from overleaf into the Hydra repository, where it is properly versioned
+and built on each CI run. Changes can be proposed using our regular pull request
+workflow and the final PDF is built and <a href="https://hydra.family/head-protocol/unstable/core-concepts/specification" target="_blank" rel="noopener noreferrer">published to the
+website</a>
+automatically.</p>
+<p>Note that the above link points to the new <code>/unstable</code> version of the
+documentation, which holds the bleeding edge user manual, specification and
+API reference (which got a new sidebar) built directly from <code>master</code>. The
+normal, non-unstable version of the website is always referring to the <a href="https://github.com/input-output-hk/hydra/releases" target="_blank" rel="noopener noreferrer">last
+released version</a>.</p>
+<p><img decoding="async" loading="lazy" src="/assets/images/2023-04-specification-c62e215ae68896ec86ea6e51aa2ccd76.png" width="1365" height="751" class="img_ev3q"> <small><center>Specification on the Hydra website</center></small></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fixed-scripts-plutonomy-and-custom-script-contexts">Fixed scripts, Plutonomy and custom script contexts<a href="#fixed-scripts-plutonomy-and-custom-script-contexts" class="hash-link" aria-label="Direct link to Fixed scripts, Plutonomy and custom script contexts" title="Direct link to Fixed scripts, Plutonomy and custom script contexts">​</a></h4>
+<p>As we made the specification use a more direct way to represent transactions
+(instead of the constraint emitting machine formalism), we realized that our
+scripts are not correctly ensuring <em>script continuity</em>. We identified these
+&#x27;gaps&#x27; as red sections (see above) in the specification and worked on fixing
+them.</p>
+<p>While the <a href="https://github.com/input-output-hk/hydra/pull/777" target="_blank" rel="noopener noreferrer">actual fix #777</a>
+was fairly straightforward and could easily be covered by our mutation-based
+contract tests, the script size increased and we could not publish all three
+Hydra scripts in a single publish transaction (which allows for a single
+<code>--hydra-scripts-tx-id</code> parameter on the <code>hydra-node</code>).</p>
+<p>To mitigate this, we looked into the UPLC optimizer
+<a href="https://github.com/well-typed/plutonomy/tree/master/src/Plutonomy" target="_blank" rel="noopener noreferrer">Plutonomy</a>.
+Applying it was fairly simple, our tests did also pass, script sizes <em>and
+costs</em> also became lower. But, script size does not matter so much as we are
+using reference scripts and using a (not really maintained?) optimizer which
+introduces yet another question mark after compilation from <code>plutus-tx</code> to
+<code>uplc</code> was not our cup of tea right now at least (and we might pull this out
+of the drawer later).</p>
+<p>There is an alternative: decoding <code>ScriptContext</code> involves quite some code,
+but we don&#x27;t need everything in all validators. So we introduced a
+customscript context that only decodes the fields we need.</p>
+<table><thead><tr><th>scripts</th><th>@0.9.0</th><th>fixes</th><th>fixes + plutonomy</th><th>fixes + custom ScriptContext</th></tr></thead><tbody><tr><td>νInitial</td><td>4621</td><td>4727</td><td>3672</td><td>4300</td></tr><tr><td>νCommit</td><td>2422</td><td>2513</td><td>1816</td><td>2068</td></tr><tr><td>νHead</td><td>8954</td><td>9492</td><td>7579</td><td>9456 (no custom SC)</td></tr><tr><td>μHead</td><td>4458</td><td>4537</td><td>3468</td><td>4104</td></tr></tbody></table>
+<p>As part of this process, we also updated dependencies #<a href="https://github.com/input-output-hk/hydra/pull/826" target="_blank" rel="noopener noreferrer">826</a> to the latest
+<code>cardano-node</code> master. Although it didn&#x27;t have an impact on script sizes, it&#x27;s a
+crucial step towards preparing for upcoming hard-forks.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rollback-bug-hunt">Rollback bug hunt<a href="#rollback-bug-hunt" class="hash-link" aria-label="Direct link to Rollback bug hunt" title="Direct link to Rollback bug hunt">​</a></h4>
+<p>Opening our first head on mainnet failed. We didn&#x27;t
+lose any funds, except for some fees, but the head just did not open.
+Exploring the logs, we figured out that a rollback happened while opening the
+head and there was a bug.</p>
+<p>This is our test pyramid. It already contained some tests about the rollback but
+we decided to enrich our model-based tests to simulate rollbacks (before that,
+it used to run on a <em>perfect</em> blockchain). You can find more about our
+model-based test strategy in <a href="https://engineering.iog.io/2022-09-28-introduce-q-d/" target="_blank" rel="noopener noreferrer">Model-Based Testing with
+QuickCheck</a>.</p>
+<p><img decoding="async" loading="lazy" alt="test pyramid" src="/assets/images/2023-04-test-pyramide-d76808e09459750072e15c10a660a09d.png" width="2048" height="1418" class="img_ev3q"> <small><center>Testing pyramid</center></small></p>
+<p>The new property
+<a href="https://github.com/input-output-hk/hydra/blob/commit_vs_rollback/hydra-node/test/Hydra/ModelSpec.hs#L185" target="_blank" rel="noopener noreferrer">headOpensIfAllPartiesCommit</a>
+helped prove the issue. At the end of the day, the problem came from a
+concurrency issue introduced while implementing <a href="https://hydra.family/head-protocol/adr/18" target="_blank" rel="noopener noreferrer">ADR 18</a>.</p>
+<p>In the figure below, the <code>DirectChain</code> processes a new block, updating the
+<code>chainState</code> stored inside the <code>headState</code>. This also leads to an event being
+published to some event queue. Later, the <code>HeadLogic</code> (called <em>Node</em> in the
+picture) will process this event, updating the <code>headState</code>.</p>
+<p>At the end of the process, we can see that the new <code>headState</code> points to a
+<code>previousRecoverableState</code> which contains the same <code>chainState</code>, <code>chainState 1</code>
+instead of <code>chainState 0</code>. If a rollback then happens, the <code>headState</code> will be
+reverted to this <code>previousRecoverableState</code> and the fact that it contains
+<code>chainState 1</code> instead of <code>chainState 0</code> makes some on-chain observations
+impossible.</p>
+<p><img decoding="async" loading="lazy" alt="Race condition" src="/assets/images/2023-04-race-condition-734c42e231ebc340c1c72e4014aeb691.png" width="1412" height="915" class="img_ev3q"> <small><center>Race condition</center></small></p>
+<p>This explains the issue we had when opening our head:</p>
+<ol>
+<li>a commit A is observed on-chain;</li>
+<li>a rollback happens so that the headState <em>forgets</em> about this commit but not
+the <code>chainState</code> (remember, it&#x27;s the wrong <code>chainState</code>);</li>
+<li>the commit is observed again on the chain but ignored by the <code>chainState</code> (because
+it has already seen it, it just ignores it);</li>
+<li>the <code>headState</code> will never hear about this commit again and so will never open
+the head, waiting forever for the missing commit.</li>
+</ol>
+<p>We decided to implement the following solution:</p>
+<ul>
+<li>A local chain state is re-introduced in the chain component, not shared with
+the head logic.</li>
+<li>A copy of the chain state is kept in the head state to keep the benefits of
+ADR <a href="https://hydra.family/head-protocol/adr/18" target="_blank" rel="noopener noreferrer">18</a> regarding persistence.</li>
+<li>The rollback event is removed from the API until <a href="https://github.com/input-output-hk/hydra/issues/185" target="_blank" rel="noopener noreferrer">#185</a>.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="possible solution" src="/assets/images/2023-04-possible-solution-1b4bc4a476389bd660fa06cc182bc26b.png" width="1597" height="956" class="img_ev3q"> <small><center>Possible solution</center></small></p>
+<p>Rollback management is quite a tricky business. It might be the case that we&#x27;ve
+tried to be a bit too smart. So we&#x27;re doing a rollback in our way of handling
+rollbacks until we focus on this topic again when dealing with this roadmap item:
+<a href="https://github.com/input-output-hk/hydra/issues/185" target="_blank" rel="noopener noreferrer">Handle rollbacks II</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community">Community<a href="#community" class="hash-link" aria-label="Direct link to Community" title="Direct link to Community">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hydra-for-voting">Hydra for Voting<a href="#hydra-for-voting" class="hash-link" aria-label="Direct link to Hydra for Voting" title="Direct link to Hydra for Voting">​</a></h4>
+<p>The project is advancing and a basic vote tallying scenario in the Catalyst use
+case was demonstrated in the review meeting. The project is driving the API
+discussions as it is not using any Haskell tooling, but an application in Java
+with Aiken as the validator scripting language. Besides the catalyst use case,
+other scenarios like the ballot voting for the summit are also explored now.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hydra-for-auctions">Hydra for Auctions<a href="#hydra-for-auctions" class="hash-link" aria-label="Direct link to Hydra for Auctions" title="Direct link to Hydra for Auctions">​</a></h4>
+<p>A new demo was recorded in the wake of an upcoming Twitter space discussing
+auctions and NFT marketplaces with the community. The feature set currently
+includes starting the auction on L1, bidding on L1 or (and this is the novel
+thing!) transferring the auction from L1 to L2, such that it can be bid on L2.</p>
+<div style="position:relative;padding-bottom:56.25%;height:0"><iframe src="https://www.loom.com/embed/7ed84e37d65748d994d8a0be147f7ecb" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="kupo-x-hydra">Kupo x Hydra<a href="#kupo-x-hydra" class="hash-link" aria-label="Direct link to Kupo x Hydra" title="Direct link to Kupo x Hydra">​</a></h4>
+<p>In a good old pairing session between IOG and CF engineers, the integration of
+Kupo with Hydra was explored. This seems to be promising and work started <a href="https://github.com/CardanoSolutions/kupo/pull/117" target="_blank" rel="noopener noreferrer">here
+kupo#117</a>. This will make it
+possible to run <code>kupo</code> natively connected to a <code>hydra-node</code>, very much it would
+run with <code>cardano-node</code> or <code>ogmios</code>. Kupo is a lightweight indexer of chain data
+like unspent transaction outputs and allows its clients to query information
+on-demand. 🐹</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cbia-meetings">CBIA meetings<a href="#cbia-meetings" class="hash-link" aria-label="Direct link to CBIA meetings" title="Direct link to CBIA meetings">​</a></h4>
+<p>Hydra Team is now a regular participant to <a href="https://www.cbia.io/" target="_blank" rel="noopener noreferrer">Cardano Blockchain Infrastructure
+Alliance</a> meetings which happen more or less on a monthly
+basis. Hydra was featured during the meetup that happened while the team was on
+a <a href="/monthly/2023-03">workshop in Feldkirch</a> and through this participation we
+hope to contribute to growth of the Cardano eco-system and position Hydra as a
+key infrastructure for builders.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="twitter-space-on-scaling-cardano">Twitter space on scaling Cardano<a href="#twitter-space-on-scaling-cardano" class="hash-link" aria-label="Direct link to Twitter space on scaling Cardano" title="Direct link to Twitter space on scaling Cardano">​</a></h4>
+<p>This month we took part in a Twitter space about scaling Cardano and how Hydra
+can contribute to this. Thanks for conducting this
+<a href="https://twitter.com/thepizzaknight_" target="_blank" rel="noopener noreferrer">@thepizzaknight_</a> 🙏</p>
+<a href="https://twitter.com/i/spaces/1vOxwMVDaXLGB"><p><img decoding="async" loading="lazy" src="/assets/images/2023-04-twitter-space-d7f42586519d5d7f7c6bc89405b06cd4.png" width="708" height="258" class="img_ev3q"></p></a>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>The monthly review meeting for April was held on 2023-04-26 via Google Meet with
+these
+<a href="https://docs.google.com/presentation/d/10wZJy0tyGMbvMihbHnHk0QByA_TAZrtbcRbf5Gd-SHg/" target="_blank" rel="noopener noreferrer">slides</a>
+and here is the
+<a href="https://drive.google.com/file/d/1X4yPerLTatPPMrX3RYS7XH9lfT_LYaaX/view?usp=sharing" target="_blank" rel="noopener noreferrer">recording</a>.</p>
+<p>Although it has been a busy month we could not cut a release, unfortunately.</p>
+<p>We&#x27;ve experienced several setbacks due to the commits vs. rollbacks bug and oversized script sizes, which have slowed down our progress. Additionally, the back and forth on the API, which at times required creative and unconventional solutions, has also been time-intensive. However, we view this feedback as <strong>incredibly</strong> valuable, as it will ultimately make hydra-node more user-friendly and capable, albeit through a step-by-step process.</p>
+<p>Associated projects in the greater Hydra community are moving ahead nicely
+due to the collaborative approach and tight loops of interaction between the
+individual teams.</p>
+<p>All things considered, the project can be considered on track. We are very close to cutting our first mainnet-compatible release and the rising number of user
+requests and interested developers are good indicators that Hydra adoption
+is increasing.</p></div><footer class="row docusaurus-mt-lg blogPostFooterDetailsFull_mRVl"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/monthly/tags/monthly">monthly</a></li></ul></div><div class="col margin-top--sm"><a href="https://github.com/cardano-scaling/website/tree/master/monthly/2023-04-monthly.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/monthly/2023-05"><div class="pagination-nav__sublabel">Newer Post</div><div class="pagination-nav__label">May 2023</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/monthly/2023-03"><div class="pagination-nav__sublabel">Older Post</div><div class="pagination-nav__label">March 2023</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#roadmap" class="table-of-contents__link toc-highlight">Roadmap</a></li><li><a href="#development" class="table-of-contents__link toc-highlight">Development</a></li><li><a href="#community" class="table-of-contents__link toc-highlight">Community</a></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://static.iohk.io/terms/iohktermsandconditions.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Terms &amp; Conditions</a></li><li class="footer__item"><a href="https://static.iohk.io/terms/iog-privacy-policy.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Privacy Policy</a></li><li class="footer__item"><a href="https://github.com/orgs/cardano-scaling/people" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contributors</a></li></ul></div></div></div></footer></div>
+</body>
+</html>

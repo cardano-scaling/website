@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcardano_scaling_website=self.webpackChunkcardano_scaling_website||[]).push([[4283],{6114:e=>{e.exports=JSON.parse('{"permalink":"/monthly/tags/monthly","page":1,"postsPerPage":10,"totalPages":4,"totalCount":31,"nextPage":"/monthly/tags/monthly/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

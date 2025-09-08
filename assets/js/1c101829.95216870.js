@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcardano_scaling_website=self.webpackChunkcardano_scaling_website||[]).push([[4372],{2258:e=>{e.exports=JSON.parse('[{"label":"monthly","permalink":"/monthly/tags/monthly","count":31}]')}}]);

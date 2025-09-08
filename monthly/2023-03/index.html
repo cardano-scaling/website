@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-monthly" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.1">
+<title data-rh="true">March 2023 | Cardano Scaling</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://cardano-scaling.org/monthly/2023-03"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="March 2023 | Cardano Scaling"><meta data-rh="true" name="description" content="This report summarizes the work on Hydra since February 2023. It serves as"><meta data-rh="true" property="og:description" content="This report summarizes the work on Hydra since February 2023. It serves as"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2023-04-04T13:15:50.000Z"><meta data-rh="true" property="article:author" content="https://github.com/ffakenz,https://github.com/v0d1ch,https://github.com/ch1bo"><meta data-rh="true" property="article:tag" content="monthly"><link data-rh="true" rel="icon" href="/img/faviconl.io"><link data-rh="true" rel="canonical" href="https://cardano-scaling.org/monthly/2023-03"><link data-rh="true" rel="alternate" href="https://cardano-scaling.org/monthly/2023-03" hreflang="en"><link data-rh="true" rel="alternate" href="https://cardano-scaling.org/monthly/2023-03" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/monthly/rss.xml" title="Cardano Scaling RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/monthly/atom.xml" title="Cardano Scaling Atom Feed">
+
+
+
+<script src="https://plausible.io/js/script.js" defer="defer" data-domain="hydra.family"></script><link rel="stylesheet" href="/assets/css/styles.d23c1e19.css">
+<script src="/assets/js/runtime~main.4d3c2d81.js" defer="defer"></script>
+<script src="/assets/js/main.8dc0d6cc.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/scaling-logo-draft-black.png" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/scaling-logo-draft-white.png" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Cardano Scaling</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/monthly">Monthly reports</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/cardano-scaling" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Monthly reports</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-08">August 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-06">June 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-05">May 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-04">April 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-03">March 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-02">February 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2025-01">January 2025</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-11">November 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-10">October 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-09">September 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-08">August 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-07">July 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-06">June 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-05">May 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-04">April 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-03">March 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-02">February 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2024-01">January 2024</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-11">November 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-10">October 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-09">September 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-08">August 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-07">July 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-06">June 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-05">May 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-04">April 2023</a></li><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/monthly/2023-03">March 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-02">February 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2023-01">January 2023</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2022-12">December 2022</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/monthly/2022-11">November 2022</a></li></ul></nav></aside><main class="col col--7" itemscope="" itemtype="https://schema.org/Blog"><article itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="This report summarizes the work on Hydra since February 2023. It serves as"><header><h1 class="title_f1Hy" itemprop="headline">March 2023</h1><div class="container_mt6G margin-vert--md"><time datetime="2023-04-04T13:15:50.000Z" itemprop="datePublished">April 4, 2023</time> · <!-- -->6 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/ffakenz" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/ffakenz.png" alt="Franco Testagrossa" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/ffakenz" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Franco Testagrossa</span></a></div><small class="avatar__subtitle" itemprop="description">Senior Software Engineer, IOG</small></div></div></div><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/v0d1ch" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/v0d1ch.png" alt="Sasha Bogicevic" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/v0d1ch" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Sasha Bogicevic</span></a></div><small class="avatar__subtitle" itemprop="description">Senior Software Engineer, IOG</small></div></div></div><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/ch1bo" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/ch1bo.png" alt="Sebastian Nagel" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/ch1bo" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Sebastian Nagel</span></a></div><small class="avatar__subtitle" itemprop="description">Software Engineering Lead, IOG</small></div></div></div></div></header><div id="__blog-post-container" class="markdown" itemprop="articleBody"><p>This report summarizes the work on Hydra since February 2023. It serves as
+preparation for the monthly review meeting
+(<a href="https://docs.google.com/presentation/d/1yZ4AqUQ8OBMG9ARMYvj3IOjaIAqglf7kZei4vsLMrbs/edit#slide=id.g1f87a7454a5_0_1392" target="_blank" rel="noopener noreferrer">slides</a>/<a href="https://www.youtube.com/watch?v=mA9lMV0tKN8" target="_blank" rel="noopener noreferrer">recording</a>)
+, where the team updates major project stakeholders on recent developments to
+gather their feedback on proposed plans.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="roadmap">Roadmap<a href="#roadmap" class="hash-link" aria-label="Direct link to Roadmap" title="Direct link to Roadmap">​</a></h2>
+<p>The project saw one release this month and several items on our
+<a href="https://github.com/orgs/input-output-hk/projects/21" target="_blank" rel="noopener noreferrer">roadmap</a> were updated.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="released-version-090">Released version 0.9.0<a href="#released-version-090" class="hash-link" aria-label="Direct link to Released version 0.9.0" title="Direct link to Released version 0.9.0">​</a></h4>
+<ul>
+<li>
+<p>This release brought in on-chain and off-chain changes that are now also fully
+reflected in our specification.</p>
+</li>
+<li>
+<p>We managed to decrease the costs of our plutus scripts by using a new error code
+framework and made also the head script a reference script.</p>
+</li>
+<li>
+<p>The mutation test suite is improved. Now, if tests fail they show the correct reason.</p>
+</li>
+<li>
+<p>The contestation deadline is now pushed out by each contesting party, so the
+contestation period parameter can be chosen irrespective of number of parties.</p>
+</li>
+<li>
+<p>Added a tutorial contributed by <a href="https://github.com/perturbing/" target="_blank" rel="noopener noreferrer">@perturbing</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/input-output-hk/hydra/releases/tag/0.9.0" target="_blank" rel="noopener noreferrer">Full release notes</a> and list of <a href="https://github.com/input-output-hk/hydra/milestone/9?closed=1" target="_blank" rel="noopener noreferrer">delivered features</a></p>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="/assets/images/2023-03-roadmap-0dbb5851443550bdeea79e517480eed0.png" width="1873" height="609" class="img_ev3q"> <small><center>The latest roadmap, with many items marked as idea.</center></small></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="notable-roadmap-updates">Notable roadmap updates<a href="#notable-roadmap-updates" class="hash-link" aria-label="Direct link to Notable roadmap updates" title="Direct link to Notable roadmap updates">​</a></h4>
+<ul>
+<li>
+<p>Now that 0.9.0 is released, the focus is on mainnet compatibility. The
+next planned version <strong>0.10.0</strong> will be the first <code>hydra-node</code> to be
+mainnet compatible.</p>
+</li>
+<li>
+<p>Also prioritized <a href="https://github.com/input-output-hk/hydra/issues/380" target="_blank" rel="noopener noreferrer">API configurability
+#380</a> higher and planned
+it into 0.10.0 as more users were requesting this.</p>
+</li>
+<li>
+<p>We aim for several more <strong>0.x.0</strong> versions to incorporate user-requested
+features before reaching a 1.0.0, which will be a fully maintained release
+where features can be considered stable and won&#x27;t be removed without
+appropriate deprecation cycles.</p>
+</li>
+<li>
+<p>Marked multiple features as 💭 <em>idea</em>, meaning they are up for discussion.
+Many have been on the roadmap for a long time without user demand or input,
+while other ideas are incubating as <a href="https://github.com/input-output-hk/hydra/discussions/categories/ideas" target="_blank" rel="noopener noreferrer">github idea
+discussion</a>.
+We are planning to convert these idea issues to GitHub discussions as these
+provide better discussion tools and allow to gauge interest in topics. In turn,
+by cleaning up we provide more room for the most popular ideas to be planned
+onto the roadmap in a more timely manner.</p>
+</li>
+<li>
+<p>In short, if you want to see some feature added, <strong>show your support</strong> on the
+corresponding <a href="https://github.com/input-output-hk/hydra/discussions/categories/ideas" target="_blank" rel="noopener noreferrer">idea
+discussion</a>.</p>
+</li>
+<li>
+<p>The 💬 <em>feature</em> items remaining are the currently identified &quot;must-haves&quot; or
+too vague to remove 🔴 <em>red</em> items.</p>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="/assets/images/2023-03-roadmap-ex-ideas-780befa80ce4acd0270b5952637d2265.png" width="1778" height="749" class="img_ev3q"> <small><center>The roadmap without idea items.</center></small></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development">Development<a href="#development" class="hash-link" aria-label="Direct link to Development" title="Direct link to Development">​</a></h2>
+<p><a href="https://github.com/input-output-hk/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2023-02-24..2023-03-29" target="_blank" rel="noopener noreferrer">Issues and pull requests closed since last
+report</a></p>
+<p>This month, the team worked on the following:</p>
+<ul>
+<li>
+<p><strong>Making Hydra mainnet compatible.</strong> Besides making it technically possible to
+run on mainnet, this is about safeguarding our users and preventing them from
+shooting themselves in the foot with a mainnet gun. That is why we
+<a href="https://github.com/input-output-hk/hydra/issues/762" target="_blank" rel="noopener noreferrer">limited</a> the amount of
+ada you can commit to a head on mainnet. Our smoke tests should be running on
+mainnet also so we made sure to
+<a href="https://github.com/input-output-hk/hydra/pull/770" target="_blank" rel="noopener noreferrer">return</a> the leftover funds
+back to our faucet. There was also
+<a href="https://github.com/input-output-hk/hydra/pull/775" target="_blank" rel="noopener noreferrer">work</a> on our CI that
+enables running the tests on mainnet using a dedicated github runner.</p>
+</li>
+<li>
+<p><strong>Improving the Hydra UX.</strong> We noticed a possible pitfall when restarting the
+<code>hydra-node</code> using different parameters than in the persisted state. Now, the
+node would <a href="https://github.com/input-output-hk/hydra/issues/764" target="_blank" rel="noopener noreferrer">prevent</a> this
+kind of misconfiguration.</p>
+</li>
+<li>
+<p><strong>Optimize the on-chain scripts.</strong> Reduced the cost of opening/closing a Head
+by reducing size of scripts via error codes
+<a href="https://github.com/input-output-hk/hydra/pull/748" target="_blank" rel="noopener noreferrer">#748</a> and also having the
+head script as a reference only
+<a href="https://github.com/input-output-hk/hydra/pull/701" target="_blank" rel="noopener noreferrer">#701</a>).</p>
+<p>The mutation test also got improved by making all cases expect the
+corresponding error codes
+<a href="https://github.com/input-output-hk/hydra/issues/705" target="_blank" rel="noopener noreferrer">#705</a> and new <a href="https://github.com/input-output-hk/hydra/pull/772" target="_blank" rel="noopener noreferrer">golden
+test suite </a> ensures the
+script hashes don&#x27;t change accidentally.</p>
+<p>Furthermore, we addressed a problem discovered in our property tests
+<a href="https://github.com/input-output-hk/hydra/pull/724" target="_blank" rel="noopener noreferrer">#724</a> by preventing
+committing outputs with reference scripts to a Head
+<a href="https://github.com/input-output-hk/hydra/pull/766" target="_blank" rel="noopener noreferrer">#766</a>. This is still a
+documented known issue, but a workaround is available.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community">Community<a href="#community" class="hash-link" aria-label="Direct link to Community" title="Direct link to Community">​</a></h2>
+<ul>
+<li>
+<p><strong>Team workshop in Austria.</strong> Meetup of core contributors in Feldkirch,
+Austria for retrospective, grooming and discussions on future plans for
+Hydra. Part of the agenda was also a presentation of Hydra to members of the
+Cardano Foundation and a meeting with builders from the Cardano community.</p>
+<p>The highlight, though was the common effort of going the last mile to open a
+head on mainnet for the monthly review meeting! 🎉</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">JUST IN: We have a Hydra Head live on the <a href="https://twitter.com/hashtag/Cardano?src=hash&amp;ref_src=twsrc%5Etfw">#Cardano</a> Mainnet 🚀 <a href="https://t.co/6kDKq7T7no">pic.twitter.com/6kDKq7T7no</a></p>— Emmanuel 𓂀 🍕 𓅓🇬🇭🦄🟣⚡️ (@thepizzaknight_) <a href="https://twitter.com/thepizzaknight_/status/1638572527789252608?ref_src=twsrc%5Etfw">March 22, 2023</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>We demonstrated our good old <code>hydraw</code> application on that Hydra head and we
+saw thousands of pixels painted by hundreds of users (no detailed metrics).</p>
+</li>
+<li>
+<p><strong>Next step in Hydra for Payments.</strong> Also announced in the monthly meeting was
+the next phase on the Hydra for Payments project. The scope of this will be to
+extend hydra-pay and build a mobile payment channels app that makes direct use
+of it - working title: HydraNow.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>The monthly review meeting for March was conducted on 2023-03-27 via Google
+Meet - <a href="https://docs.google.com/presentation/d/1yZ4AqUQ8OBMG9ARMYvj3IOjaIAqglf7kZei4vsLMrbs/edit#slide=id.g1f87a7454a5_0_1392" target="_blank" rel="noopener noreferrer">slides</a>/<a href="https://www.youtube.com/watch?v=mA9lMV0tKN8" target="_blank" rel="noopener noreferrer">recording</a>.</p>
+<p>This month was very important for the project and culminated in the first
+demonstration of a Hydra Head on mainnet! The demo was well received and we
+received positive feedback in the meeting, on following twitter announcements
+and on the published recording on youtube. Inspired by this, we saw multiple
+people offer to help and collaborate on communicating, educating and ultimately
+spreading the love. The invitation via the new discord category worked well - we
+had about 40 community members in the call - and we will continue with this
+workflow. Make sure to follow the Hydra
+<a href="https://discord.gg/Bwdy2jNdm2" target="_blank" rel="noopener noreferrer">#announcements</a> on the IOG Technical discord
+server.</p>
+<p>While being mainnet compatible is a major milestone for the project, there are
+still many known issues, shortcomings and requested features. The roadmap
+changes this month should make it clear that we are serious about the latter -
+Hydra will only reach 1.0.0 if it is used by an application on mainnet. Hence,
+we will focus on adding features required for payments, voting, auctions, ...
+and eventually, your use case.</p>
+<p>Hydra Head is ready to be used on mainnet. Are you ready to use it?</p></div><footer class="row docusaurus-mt-lg blogPostFooterDetailsFull_mRVl"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/monthly/tags/monthly">monthly</a></li></ul></div><div class="col margin-top--sm"><a href="https://github.com/cardano-scaling/website/tree/master/monthly/2023-03-monthly.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/monthly/2023-04"><div class="pagination-nav__sublabel">Newer Post</div><div class="pagination-nav__label">April 2023</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/monthly/2023-02"><div class="pagination-nav__sublabel">Older Post</div><div class="pagination-nav__label">February 2023</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#roadmap" class="table-of-contents__link toc-highlight">Roadmap</a></li><li><a href="#development" class="table-of-contents__link toc-highlight">Development</a></li><li><a href="#community" class="table-of-contents__link toc-highlight">Community</a></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://static.iohk.io/terms/iohktermsandconditions.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Terms &amp; Conditions</a></li><li class="footer__item"><a href="https://static.iohk.io/terms/iog-privacy-policy.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Privacy Policy</a></li><li class="footer__item"><a href="https://github.com/orgs/cardano-scaling/people" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contributors</a></li></ul></div></div></div></footer></div>
+</body>
+</html>

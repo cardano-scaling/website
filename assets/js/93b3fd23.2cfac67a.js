@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcardano_scaling_website=self.webpackChunkcardano_scaling_website||[]).push([[2261],{8629:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"monthly"}')}}]);
