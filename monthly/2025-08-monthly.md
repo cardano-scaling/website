@@ -137,7 +137,7 @@ This was added as part of the _Getting Started_ tutorial, making it easier for u
 - Delivered all the essential features for the Glacier Drop
 - Working towards a lightweight Hydra node PoC
 - Working towards inter-head payments via a HTLC PoC
-- Investigating partial fanout
+- Investigating partial fanout.
 
 ![](img/2025-08-hydra-roadmap.png)
 
