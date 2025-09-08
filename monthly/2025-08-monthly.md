@@ -35,7 +35,7 @@ The network team has kept implementing the DMQ mini-protocols in the Haskell DMQ
 
 ### Prototyping SNARK circuit for Mithril certificates
 
-We have been working on creating a Mithril certificate with a multi-signature that meets specific requirements for on-chain deployment. The current concatenation proof approach does not meet our constraints, as it exceeds 150 kB with full stake distribution of approximately 2,000 individual signatures, which is too large for on-chain storage (we need < 16 kB).
+We worked on creating a Mithril certificate with a multi-signature that meets specific requirements for on-chain deployment. The current concatenation proof approach does not meet these constraints, as it exceeds 150 kB with a full stake distribution of approximately 2,000 individual signatures. This size is too large for on-chain storage (our target is < 16 kB).
 
 #### Requirements and solution
 
