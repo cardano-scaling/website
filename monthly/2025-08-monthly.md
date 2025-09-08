@@ -69,7 +69,7 @@ Additionally, we also tested IVC (recursive SNARK) to limit the number of constr
 
 **Mid term**: Deploy a SNARK for Mithril certificates on mainnet, audit both the STM and SNARK implementations, and implement ALBA, *Fait accompli*, and their corresponding SNARKs.
 
-**Long term**: We plan to evaluate folding and recursive techniques for creating a SNARK of the entire certificate chain.
+**Long term**: Evaluate folding and recursive techniques for creating a SNARK of the entire certificate chain.
 
 ### Protocol status
 
