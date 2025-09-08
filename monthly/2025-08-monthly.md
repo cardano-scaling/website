@@ -101,7 +101,7 @@ have now:
 - Reduced message spam in the presence of mirror nodes
 - Fix a bug with an internal queue causing a deadlock
 - Fixed an issue with etcd lease renewal
-- Implemeneted a workaround for a blocking bug observed with etcd
+- Implemeneted a workaround for a blocking bug observed with `etcd`
 - Fixed a bug where the hydra-node could stall after a restart (during `ReplayingState`)
 - Dropped transactions that could lead to a stuck head.
 
