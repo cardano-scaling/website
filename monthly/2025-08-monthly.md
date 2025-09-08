@@ -95,7 +95,6 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 This is an important release on top of 0.22.0; featuring many important fixes
 observed while testing Hydra for a large operational usecase. In particular we
-have now:
 
 - Fixed the API not correctly dealing with log rotation
 - Reduced message spam in the presence of mirror nodes
