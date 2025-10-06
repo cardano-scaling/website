@@ -21,19 +21,17 @@ Below are the latest updates on our roadmap:
 
 ### DMQ implementation update
 
-TODO: Update
-
 Here is the current status of the DMQ implementation:
 
 | **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Mithril Relay** | **Haskell DMQ Node** |
 | ------------------ | :--------: | :----------------: | :--------------------: | :---------------: | :------------------: |
-| N2C Submission     |     ✓      |         ✓          |           -            |  ✓<sup>\*</sup>   |    _In progress_     |
-| N2C Notification   |     ✓      |      Planned       |           ✓            |  ✓<sup>\*</sup>   |    _In progress_     |
-| N2N Diffusion      |  Planned   |         -          |           -            |         -         |    _In progress_     |
+| N2C Submission     |     ✓      |         ✓          |           -            |  ✓<sup>\*</sup>   |          ✓           |
+| N2C Notification   |     ✓      |      Planned       |           ✓            |  ✓<sup>\*</sup>   |          ✓           |
+| N2N Diffusion      |  Planned   |         -          |           -            |         -         |          ✓           |
 
 <i><sup>\*</sup>: for testing purpose only</i>
 
-The network team has kept implementing the DMQ mini-protocols in the Haskell DMQ node. In the mean time, we have implemented a fake DMQ node which allowed us to test the Mithril nodes implementation of the DMQ protocol in an end to end test. This fake DMQ node is implemented in the Mithril relay which now exposes the server sides of the n2c submission and notification mini-protocols. Once the Haskell DMQ node is ready, we will replace the fake DMQ node with the real implementation.
+The network team has completed the implementation of the Haskell DMQ node. We have started integrating it with the Mithril nodes and have begun testing the end to end communication. We have also made some adjustments and improvements to the protocol which have been reflected in the [CIP-0137](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0137) and in the Pallas library.
 
 ### Bundling Cardano and Mithril nodes in a Docker image
 
