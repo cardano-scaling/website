@@ -33,6 +33,18 @@ Here is the current status of the DMQ implementation:
 
 The network team has completed the implementation of the Haskell DMQ node. We have started integrating it with the Mithril nodes and have begun testing the end to end communication. We have also made some adjustments and improvements to the protocol which have been reflected in the [CIP-0137](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0137) and in the Pallas library.
 
+### Distributions
+
+In September, we have completed the following events:
+
+- Released the new distribution [`2537`](https://github.com/input-output-hk/mithril/releases/tag/2537.0)
+- Stabilization of the ledger state snapshot converter command in the Mithril client CLI
+- Stabilization of the incremental Cardano database certification backend.
+
+In October, the following events are planned:
+
+- Release of a new distribution (`2542`).
+
 ### Bundling Cardano and Mithril nodes in a Docker image
 
 TODO: Update
