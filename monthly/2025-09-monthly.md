@@ -68,14 +68,12 @@ We have improved the Cardano database verification functionality in both the Mit
 
 ### Protocol status
 
-TODO: Update
-
 The protocol operated smoothly on the `release-mainnet` network with the following metrics:
 
 - **Registered stake**: `4.7B₳` (`22%` of the Cardano network)
-- **Registered SPOs**: `249` (`9%` of the Cardano network)
-- **Full Cardano database restorations**: `710` restorations
-- **Signer software adoption**: `82.9%` of the SPOs are running a recent version (one of the last three releases).
+- **Registered SPOs**: `245` (`9%` of the Cardano network)
+- **Full Cardano database restorations**: `945` restorations
+- **Signer software adoption**: `77.9%` of the SPOs are running a recent version (one of the last three releases).
 
 You can find more information on the [Mithril protocol insights dashboard](https://lookerstudio.google.com/s/mbL23-8gibI).
 
