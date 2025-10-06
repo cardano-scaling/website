@@ -13,13 +13,11 @@ This is a monthly report on the progress of 🐲 Hydra and 🛡 Mithril projects
 
 ### Roadmap
 
-TODO: Update
-
 Below are the latest updates on our roadmap:
 
-- **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402). We have implemented a end to end test of the DMQ protocol for the Mithril nodes, and the networking team has kept implementing the mini-protocols in the Haskell DMQ node
-- **Simple aggregation Halo2 – prototype** [#2526](https://github.com/input-output-hk/mithril/issues/2526). We collaborated with the innovation team on developing a prototype for a SNARK circuit for Mithril certificates based on Halo2
-- **Refactor STM library** [#2567](https://github.com/input-output-hk/mithril/issues/2567). We continued the second phase of the STM library refactoring.
+- **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402). We have worked on integrating the Haskell DMQ node with the Mithril nodes and have started testing the end to end communication.
+- **Support Multiple proof systems in STM** [#2550](https://github.com/input-output-hk/mithril/issues/2550). We have worked on the support of multiple proof systems in the STM library.
+- **Cardano+Mithril Docker image - PoC** [#2541](https://github.com/input-output-hk/mithril/issues/2541). We have created a protoype implementation of a Docker image bundling Cardano and Mithril nodes.
 
 ### DMQ implementation update
 
