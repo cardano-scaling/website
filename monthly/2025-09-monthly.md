@@ -64,7 +64,7 @@ This prototype image can be started with the same configuration parameters as th
 
 ### Error detection in verification of Cardano database
 
-TODO: Update
+We have improved the Cardano database verification functionality in both the Mithril client library and CLI. The enhanced verification process now generates detailed reports listing any tampered or missing files within the database. This enhancement empowers users with better visibility into database integrity issues, enabling them to identify problems more precisely and take targeted corrective actions. The implementation required significant refactoring of the underlying verification logic to achieve more accurate detection and comprehensive reporting of database discrepancies.
 
 ### Protocol status
 
