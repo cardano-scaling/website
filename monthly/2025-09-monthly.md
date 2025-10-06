@@ -45,6 +45,13 @@ In October, the following events are planned:
 
 - Release of a new distribution (`2542`).
 
+### Dev blog
+
+We have published the following post:
+
+- [Pre-built Linux ARM binaries are now available](https://mithril.network/doc/dev-blog/2025/09/17/pre-built-linux-arm-binaries)
+- [Distribution `2537` is now available](https://mithril.network/doc/dev-blog/2025/09/17/distribution-2537).
+
 ### Bundling Cardano and Mithril nodes in a Docker image
 
 TODO: Update
