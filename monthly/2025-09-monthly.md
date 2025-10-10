@@ -1,5 +1,5 @@
 ---
-title: August 2025
+title: September 2025
 slug: 2025-09
 authors: [jpraynaud, noonio]
 tags: [monthly]
@@ -79,61 +79,47 @@ You can find more information on the [Mithril protocol insights dashboard](https
 
 ## Hydra
 
-TODO: Update
-
 [Issues and pull requests closed in September](https://github.com/cardano-scaling/hydra/issues?q=is%3Aclosed+sort%3Aupdated-desc+closed%3A2025-09-01..2025-09-30)
 
-![The roadmap with features and ideas](./img/hydra-roadmap-2025-06.png)
-<small><center>Snapshot of the new [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) with features and ideas</center></small>
-
-This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/6) updates include:
-
-### [0.22.4 Release](https://github.com/cardano-scaling/hydra/releases/tag/0.22.4)
-
-This release builds on 0.22.0 and includes many important fixes
-observed while testing Hydra for a large operational use case. In particular, we:
-
-- Fixed the API not correctly dealing with log rotation
-- Reduced message spam in the presence of mirror nodes
-- Fix a bug with an internal queue causing a deadlock
-- Fixed an issue with `etcd` lease renewal
-- Implemeneted a workaround for a blocking bug observed with `etcd`
-- Fixed a bug where the hydra-node could stall after a restart (during `ReplayingState`)
-- Dropped transactions that could lead to a stuck head.
+This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7/views/11) updates include:
 
 ### Partial Ada commits
 
-TODO: Update
-
-### Enhanced documentation
-
-TODO: Update
+We had a very nice feature request to allow a user to commit only part of a
+UTxO: [Allow Partial ADA
+Commit](https://github.com/cardano-scaling/hydra/issues/2140). [We have
+implemented this](https://github.com/cardano-scaling/hydra/pull/2160), and
+continue to work away diligently on some repercussions of this work, see
+[#2185](https://github.com/cardano-scaling/hydra/pull/2185) and
+[#2282](https://github.com/cardano-scaling/hydra/pull/2282).
 
 ### Blockfrost enhancements
 
-TODO: Update
+Some simple improvements to the [Blockfrost error
+messages](https://github.com/cardano-scaling/hydra/pull/2261) and [timeout
+options](https://github.com/cardano-scaling/hydra/pull/2267).
 
 ### Enable deposit recovery from any state
 
-TODO: Update
+We have made changes to the API server and the hydra-tui to allow recovery of
+deposits even after the Head you intended to deposit into is closed. See
+[#2217](https://github.com/cardano-scaling/hydra/pull/2217) and
+[#2256](https://github.com/cardano-scaling/hydra/pull/2256) for further
+details.
 
 ### Roadmap update
 
-TODO: Update
+- Delivered recovering in closed state
+- Working on HTLC between to Hydra Heads
+- Starting work on Partial Fanout
+- Starting work on light-weight node via Rasberry Pi
 
-- Delivered all the essential features for the Glacier Drop
-- Working towards a lightweight Hydra node PoC
-- Working towards inter-head payments via a HTLC PoC
-- Investigating partial fanout.
-
-![](img/2025-08-hydra-roadmap.png)
+![](img/2025-09-hydra.png)
 
 ## Links
-
-TODO: Update recording link
 
 The monthly review meeting for September 2025 took place on September 24, 2025, via Google Meet.
 The presentation [slides][slides] and the [recording][recording] are available for review.
 
-[slides]: https://docs.google.com/presentation/d/1kTG4SR_32XhFxRrDZ5dvZzOhDmVZ5OmfDpraPRdfi1c/edit?slide=id.g1f87a7454a5_0_1392#slide=id.g1f87a7454a5_0_1392
-[recording]: https://drive.google.com/file/d/1D3kIhjlL-8fNeYVDktm4l9qyyGKcJD3k/view?usp=sharing
+[slides]: https://docs.google.com/presentation/d/1kTG4SR_32XhFxRrDZ5dvZzOhDmVZ5OmfDpraPRdfi1c/edit?usp=sharing
+[recording]: https://drive.google.com/file/d/1blynT20UZNNLDhZC4gOd7uuIlKUqn5jK/view?usp=sharing
