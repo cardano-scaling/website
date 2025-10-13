@@ -112,7 +112,7 @@ details.
 - Delivered recovering in closed state
 - Working on HTLC between to Hydra Heads
 - Starting work on Partial Fanout
-- Starting work on light-weight node via Rasberry Pi
+- Starting work on light-weight node via Rasberry Pi.
 
 ![](img/2025-09-hydra.png)
 
