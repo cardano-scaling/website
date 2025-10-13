@@ -60,7 +60,7 @@ We have developed a prototype Docker image that extends the existing Cardano nod
 - Pre-configured Mithril-specific configuration files
 - A wrapped Cardano node endpoint that automatically launches the Mithril signer in the background when the node operates as a block producer
 
-This prototype image can be started with the same configuration parameters as the original Cardano node image, which would make it easy for users to deploy a combined Cardano and Mithril setup. We will continue to work on this prototype, and on other options to simplify the deployment of Mithril for SPOs and enhance the protocol adoption by the SPOs.
+This prototype image can be started with the same configuration parameters as the original Cardano node image, which should make it easy for users to deploy a combined Cardano and Mithril setup. We will continue to work on this prototype, as well as other options to simplify Mithril deployments for SPOs and enhance protocol adoption.
 
 ### Error detection in verification of Cardano database
 
