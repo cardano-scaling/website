@@ -17,7 +17,7 @@ Below are the latest updates on our roadmap:
 
 - **DMQ signature diffusion prototype** [#2402](https://github.com/input-output-hk/mithril/issues/2402). We have worked on integrating the Haskell DMQ node with the Mithril nodes and have started testing the end to end communication.
 - **Support Multiple proof systems in STM** [#2550](https://github.com/input-output-hk/mithril/issues/2550). We have worked on the support of multiple proof systems in the STM library.
-- **Cardano+Mithril Docker image - PoC** [#2541](https://github.com/input-output-hk/mithril/issues/2541). We have created a protoype implementation of a Docker image bundling Cardano and Mithril nodes.
+- **Cardano and Mithril Docker image — proof of concept** ([#2541](https://github.com/input-output-hk/mithril/issues/2541)). We created a **prototype** Docker image that bundles Cardano and Mithril nodes.
 
 ### DMQ implementation update
 
