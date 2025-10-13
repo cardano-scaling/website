@@ -35,7 +35,7 @@ The network team has completed the implementation of the Haskell DMQ node. We ha
 
 ### Distributions
 
-In September, we have completed the following events:
+In September, we completed the following:
 
 - Released the new distribution [`2537`](https://github.com/input-output-hk/mithril/releases/tag/2537.0)
 - Stabilized the ledger state snapshot converter command in the Mithril client CLI
