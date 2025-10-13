@@ -101,7 +101,7 @@ options](https://github.com/cardano-scaling/hydra/pull/2267).
 
 ### Enable deposit recovery from any state
 
-We have made changes to the API server and the hydra-tui to allow recovery of
+We updated the API server and `hydra-tui` to allow recovery of
 deposits even after the Head you intended to deposit into is closed. See
 [#2217](https://github.com/cardano-scaling/hydra/pull/2217) and
 [#2256](https://github.com/cardano-scaling/hydra/pull/2256) for further
