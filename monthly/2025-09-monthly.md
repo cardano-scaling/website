@@ -31,7 +31,7 @@ Here is the current status of the DMQ implementation:
 
 <i><sup>\*</sup>: for testing purpose only</i>
 
-The network team has completed the implementation of the Haskell DMQ node. We have started integrating it with the Mithril nodes and have begun testing the end to end communication. We have also made some adjustments and improvements to the protocol which have been reflected in the [CIP-0137](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0137) and in the Pallas library.
+The network team completed the Haskell DMQ node implementation. We began integrating it with the Mithril nodes and started testing end-to-end communication. We also made protocol adjustments that are reflected in [CIP-0137](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0137) and in the Pallas library.
 
 ### Distributions
 
