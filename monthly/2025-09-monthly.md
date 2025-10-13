@@ -95,7 +95,7 @@ continue to work away diligently on some repercussions of this work, see
 
 ### Blockfrost enhancements
 
-Some simple improvements to the [Blockfrost error
+We made improvements to [Blockfrost error
 messages](https://github.com/cardano-scaling/hydra/pull/2261) and [timeout
 options](https://github.com/cardano-scaling/hydra/pull/2267).
 
