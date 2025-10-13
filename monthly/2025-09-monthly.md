@@ -88,7 +88,7 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 We had a very nice feature request to allow a user to commit only part of a
 UTxO: [Allow Partial ADA
 Commit](https://github.com/cardano-scaling/hydra/issues/2140). [We have
-implemented this](https://github.com/cardano-scaling/hydra/pull/2160), and
+implemented this in](https://github.com/cardano-scaling/hydra/pull/2160), and
 and continue to address follow-up work in
 [#2185](https://github.com/cardano-scaling/hydra/pull/2185) and
 [#2282](https://github.com/cardano-scaling/hydra/pull/2282).
