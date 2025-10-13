@@ -38,7 +38,7 @@ The network team has completed the implementation of the Haskell DMQ node. We ha
 In September, we have completed the following events:
 
 - Released the new distribution [`2537`](https://github.com/input-output-hk/mithril/releases/tag/2537.0)
-- Stabilization of the ledger state snapshot converter command in the Mithril client CLI
+- Stabilized the ledger state snapshot converter command in the Mithril client CLI
 - Stabilized the incremental Cardano database certification backend.
 
 In October, the following events are planned:
