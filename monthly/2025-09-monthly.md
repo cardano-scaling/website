@@ -47,7 +47,7 @@ In October, the following events are planned:
 
 ### Dev blog
 
-We have published the following post:
+We published the following posts:
 
 - [Pre-built Linux ARM binaries are now available](https://mithril.network/doc/dev-blog/2025/09/17/pre-built-linux-arm-binaries)
 - [Distribution `2537` is now available](https://mithril.network/doc/dev-blog/2025/09/17/distribution-2537).
