@@ -27,7 +27,7 @@ The network team kept working on the authentication of messages in the n2n mini-
 
 ### Decentralization of Mithril network configurations
 
-TODO: update
+We have worked on the first phase of decentralizing the Mithril network configurations: we have abstracted the retrieval of the network configurations with a new `MithrilNetworkConfigurationProvider` trait. We have created two implementations of this trait: one that retrieves the configurations from a local parameters of the leader aggregator and another that retrieves them from a remote source for the follower aggregators and signers. The second phase will consist of implementing a configuration source based on markers stored on the Cardano chain.
 
 ### Protocol status
 
