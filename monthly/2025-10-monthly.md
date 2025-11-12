@@ -31,14 +31,12 @@ We have worked on the first phase of decentralizing the Mithril network configur
 
 ### Protocol status
 
-TODO: update
-
 The protocol operated smoothly on the `release-mainnet` network with the following metrics:
 
-- **Registered stake**: `4.7B₳` (`22%` of the Cardano network)
-- **Registered SPOs**: `245` (`9%` of the Cardano network)
-- **Full Cardano database restorations**: `945` restorations
-- **Signer software adoption**: `77.9%` of the SPOs are running a recent version (one of the last three releases).
+- **Registered stake**: `4.5B₳` (`21%` of the Cardano network)
+- **Registered SPOs**: `239` (`9%` of the Cardano network)
+- **Full Cardano database restorations**: `590` restorations
+- **Signer software adoption**: `73.9%` of the SPOs are running a recent version (one of the last three releases).
 
 You can find more information on the [Mithril protocol insights dashboard](https://lookerstudio.google.com/s/mbL23-8gibI).
 
