@@ -13,8 +13,6 @@ This is the monthly report on the progress of the Hydra and Mithril projects **f
 
 ### DMQ implementation update
 
-TODO: update
-
 Here is the current status of the DMQ implementation:
 
 | **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Mithril Relay** | **Haskell DMQ Node** |
@@ -26,29 +24,6 @@ Here is the current status of the DMQ implementation:
 <i><sup>\*</sup>: for testing purpose only</i>
 
 The network team kept working on the authentication of messages in the n2n mini-protocol and the peer discovery from ledger state of the Haskell DMQ node. We kept integrating it with the Mithril nodes and completed the testing of end-to-end communication. We have been able to produce Mithril certificates by relying only on the DMQ for communication between signers and aggregators.
-
-### Distributions
-
-TODO: update
-
-In September, we completed the following:
-
-- Released the new distribution [`2537`](https://github.com/input-output-hk/mithril/releases/tag/2537.0)
-- Stabilized the ledger state snapshot converter command in the Mithril client CLI
-- Stabilized the incremental Cardano database certification backend.
-
-In October, the following events are planned:
-
-- Release of a new distribution (`2542`).
-
-### Dev blog
-
-TODO: update
-
-We published the following posts:
-
-- [Pre-built Linux ARM binaries are now available](https://mithril.network/doc/dev-blog/2025/09/17/pre-built-linux-arm-binaries)
-- [Distribution `2537` is now available](https://mithril.network/doc/dev-blog/2025/09/17/distribution-2537).
 
 ### Decentralization of Mithril network configurations
 
