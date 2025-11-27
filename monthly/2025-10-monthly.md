@@ -74,5 +74,5 @@ TODO: update
 The monthly review meeting for October 2025 took place on November 6, 2025, via Google Meet.
 The presentation [slides][slides] and the [recording][recording] are available for review.
 
-[slides]: https://docs.google.com/presentation/d/1z-1Svu19IKPHZNc1K9mq8kmOnACO16H7y3SJpdmqKz4/edit?slide=sharing
-[recording]: https://drive.google.com/file/d/1blynT20UZNNLDhZC4gOd7uuIlKUqn5jK/view?usp=sharing
+[slides]: https://docs.google.com/presentation/d/1z-1Svu19IKPHZNc1K9mq8kmOnACO16H7y3SJpdmqKz4/edit?usp=sharing
+[recording]:  https://drive.google.com/file/d/13pxsOLjz8aRYFvNqKB_Aze4GHDqNCabx/view?usp=sharing
