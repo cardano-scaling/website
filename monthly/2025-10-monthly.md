@@ -15,7 +15,7 @@ This is the monthly report on the progress of the Hydra and Mithril projects **f
 
 Here is the current status of the DMQ implementation:
 
-| **Mini-protocols** | **Pallas** | **Mithril Signer** | **Mithril Aggregator** | **Mithril Relay** | **Haskell DMQ Node** |
+| **Mini-protocols** | **Pallas** | **Mithril signer** | **Mithril aggregator** | **Mithril relay** | **Haskell DMQ node** |
 | ------------------ | :--------: | :----------------: | :--------------------: | :---------------: | :------------------: |
 | N2C submission     |     ✓      |         ✓          |           -            |  ✓<sup>\*</sup>   |          ✓           |
 | N2C notification   |     ✓      |      Planned       |           ✓            |  ✓<sup>\*</sup>   |          ✓           |
