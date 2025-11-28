@@ -23,7 +23,7 @@ Here is the current status of the DMQ implementation:
 
 <i><sup>\*</sup>: for testing purpose only</i>
 
-The network team kept working on the authentication of messages in the n2n mini-protocol and the peer discovery from ledger state of the Haskell DMQ node. We kept integrating it with the Mithril nodes and completed the testing of end-to-end communication. We have been able to produce Mithril certificates by relying only on the DMQ for communication between signers and aggregators.
+The networking team continued working on message authentication in the n2n mini-protocol and on peer discovery from the ledger state of the Haskell DMQ node. We kept integrating it with the Mithril nodes and completed end-to-end communication testing. We have been able to produce Mithril certificates by relying only on the DMQ for communication between signers and aggregators.
 
 ### Decentralization of Mithril network configurations
 
