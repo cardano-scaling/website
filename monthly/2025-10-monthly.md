@@ -48,13 +48,13 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 ### Hydra 1.0!
 
-A big milestone for the team, and a representation of our committment to
+A big milestone for the team, and a representation of our commitment to
 Hydra. We are very proud to have gotten to this point, and are super grateful
-to the large community around Hydra that continue to have strong impact into
-the features we work. Thanks to everyone involved! Can't wait to continue this
+to the large community around Hydra that continues to have a substantial impact on
+the features we work on. Thanks to everyone involved! Can't wait to continue this
 journey with you.
 
-Subsequently we have released [Hydra
+Subsequently, we have released [Hydra
 1.1.0](https://github.com/cardano-scaling/hydra/releases/tag/1.1.0) to bring
 across some fixes for partial asset deposits.
 
