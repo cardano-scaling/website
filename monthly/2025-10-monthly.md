@@ -48,26 +48,42 @@ This month, notable [roadmap](https://github.com/orgs/cardano-scaling/projects/7
 
 ### Hydra 1.0!
 
-TODO: update
+A big milestone for the team, and a representation of our committment to
+Hydra. We are very proud to have gotten to this point, and are super grateful
+to the large community around Hydra that continue to have strong impact into
+the features we work. Thanks to everyone involved! Can't wait to continue this
+journey with you.
+
+Subsequently we have released [Hydra
+1.1.0](https://github.com/cardano-scaling/hydra/releases/tag/1.1.0) to bring
+across some fixes for partial asset deposits.
+
 
 ### Demo HTLC
 
-TODO: update
+An influx of demo's appeared, showing how to transfer funds _between_ Hydra
+Heads:
 
-### Best practice committing from a Dapp
+![](img/2025-10-htlc.png)
 
-TODO: update
+- From us: <https://github.com/cardano-scaling/hydra-lightning-router>
+- From VTech: <https://github.com/Vtechcom/hydra-htlc-demo>
+- From TxPipe: <https://github.com/cardano-scaling/eutxo-l2-interop>
+
+### Best practice committing from a dApp
+
+We've added a guide for showing [how to commit/deposit from a
+dApp](https://hydra.family/head-protocol/docs/how-to/best-practise-dapp).
 
 ### Roadmap update
 
-TODO: update
+Please bear with us while we refine our approach for the roadmap.
 
-- Delivered recovering in a closed state
-- Working on HTLC between two Hydra heads
-- Starting work on partial fanout
-- Starting work on a light-weight node via Raspberry Pi.
+In brief,
 
-![](img/2025-09-hydra.png)
+- Continuing work on partial fanout
+- Continuing work on a light-weight node via Raspberry Pi.
+- Planning next milestones.
 
 ## Links
 
