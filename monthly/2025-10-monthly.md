@@ -70,16 +70,16 @@ heads:
 - From VTech: <https://github.com/Vtechcom/hydra-htlc-demo>
 - From TxPipe: <https://github.com/cardano-scaling/eutxo-l2-interop>.
 
-### Best practice committing from a dApp
+### Best practice committing from a DApp
 
 We've added a guide for showing [how to commit/deposit from a
-dApp](https://hydra.family/head-protocol/docs/how-to/best-practise-dapp).
+DApp](https://hydra.family/head-protocol/docs/how-to/best-practise-dapp).
 
 ### Roadmap update
 
-Please bear with us while we refine our approach for the roadmap.
+Please bear with us while we refine our roadmap approach.
 
-In brief,
+In brief:
 
 - Continuing work on partial fanout
 - Continuing work on a light-weight node via Raspberry Pi.
