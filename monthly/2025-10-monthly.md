@@ -61,14 +61,14 @@ across some fixes for partial asset deposits.
 
 ### Demo HTLC
 
-An influx of demo's appeared, showing how to transfer funds _between_ Hydra
-Heads:
+An influx of demos appeared, showing how to transfer funds _between_ Hydra
+heads:
 
 ![](img/2025-10-htlc.png)
 
 - From us: <https://github.com/cardano-scaling/hydra-lightning-router>
 - From VTech: <https://github.com/Vtechcom/hydra-htlc-demo>
-- From TxPipe: <https://github.com/cardano-scaling/eutxo-l2-interop>
+- From TxPipe: <https://github.com/cardano-scaling/eutxo-l2-interop>.
 
 ### Best practice committing from a dApp
 
